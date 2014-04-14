@@ -1,0 +1,33 @@
+body{
+	background: #ff5511;
+}
+fieldset {
+	display: inline-block;
+	padding: 25px;
+	margin: 20px;
+}
+label {
+	font-size: 20px;
+	position: fixed;
+}
+input, textarea {
+	margin-left: 100px;
+	margin-bottom: 10px;
+	width: 250px;
+}
+div {
+	width: 350px;
+}
+input[type="submit"]{
+	width: auto;
+	
+}
+ul.nav{
+	list-style: none;
+	display: inline;
+}
+ul.nav li{
+	width: 80px;
+	display: inline-block;
+	padding: 2px;
+}
