@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'museo';
+    src: url('fonts/museo300-regular-webfont-webfont.eot');
+    src: url('fonts/museo300-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museo300-regular-webfont-webfont.woff') format('woff'),
+         url('fonts/museo300-regular-webfont-webfont.ttf') format('truetype'),
+         url('fonts/museo300-regular-webfont-webfont.svg#webfontuploaded_file') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo700';
+    src: url('fonts/Museo700-Regular-webfont.eot');
+    src: url('fonts/Museo700-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Museo700-Regular-webfont.woff') format('woff'),
+         url('fonts/Museo700-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Museo700-Regular-webfont.svg#Museo700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; outline: 0; }
+
+body, html { height: 100%; }
+
+body {
+    font-size: 12px;
+    line-height: 22px;
+    font-family: arial, sans-serif;
+    color: #828282;
+    background: url(images/body.png) repeat 0 0;
+
+}
+
+a { color: #ff9031; text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+a.dot { background: url(images/dot.png) no-repeat 0 5px; text-decoration: underline; padding-left: 7px;  }
+a.dot:hover { text-decoration: none; }
+a img { border: 0; }
+
+article, aside, details, footer, header, menu, nav, section { display: block; }
+input, textarea, select { font-size: 12px; font-family: arial, sans-serif; }
+textarea { overflow: auto; }
+
+
+
+.shell { outline: red solid 0px; width: 980px; margin: 0 auto; }
+/* header */
+.header { background: url(images/food.png) repeat; height: 200px; }
+.header .shell {outline: green solid 0px; background: url(images/asjan.png) no-repeat 280px 25px; position: relative; height: 100%;  }
+#logo { outline: red solid 0px; width: 150px; font-size: 0; line-height: 0; float: left; }
+#logo a { height: 141px; background: url(images/logo.png) no-repeat 0 0; text-indent: ; display: inherit; }
+
+
+
+.header-right { float: right; width: 264px; position: relative; margin-right: -10px;  }
+.subscribe { width: 120px; height: 54px; background: url(images/subscribe.png) no-repeat 0 0; float: left; font-family: 'museo', arial, helvetica, serif; line-height: 48px; padding: 0px 20px;  }
+.subscribe a { color: #fff; font-size: 16px; position: relative; padding-left: 40px; }
+.subscribe a span { background: url(images/sbubscribe-ico.png) no-repeat 0px 0px; width: 34px; height: 34px; position: absolute; display: block;  top: -5px; left: 0; }
+.subscribe a:hover { color: #f6c387; text-decoration: none; }
+
+.socials a { background: url(images/socials.png) no-repeat 0 0; width: 50px; height: 52px;  font-size: 0; line-height: 0; text-indent: -4000px; float: left; transition: margin 0.2s;
+-moz-transition: margin 0.2s;
+-webkit-transition: margin 0.2s;
+-o-transition: margin 0.2s; }
+.socials a.twitter-ico { background-position: right 0; }
+.socials a.twitter-ico:hover { background-position: right -55px; }
+.socials a:hover { background-position: 0 -55px; margin-top: -5px; }
+
+
+#navigation { outline: red solid 0px; background: url(images/navigation.png) no-repeat 0 0; width: 984px; height: 90px; padding-top: 9px; padding-left: 20px;  position: absolute; top: 140px; left: -10px; z-index: 100; }
+#navigation ul { list-style: none; list-style-position: outside; }
+#navigation ul li { float: left; font-size: 18px; font-family: 'museo', arial, helvetica, serif; background: url(images/nav-border.png) no-repeat right 0; line-height: 48px; padding: 0 29px; }
+#navigation ul li.last { background: transparent; }
+#navigation ul li a { color: #fff; text-shadow: rgba(0,0,0,0.6) 0px 1px 0px; }
+#navigation ul li a:hover { text-decoration: none; color: #f6c387; }
+
+
+/* main */
+.main { outline: green solid 0px; padding-top: 30px; min-height: 720px; }
+.main h3 { font-size: 24px; font-family: 'museo', arial, helvetica, serif; font-weight: normal; color: #c73331; padding-bottom: 24px; text-shadow: 0 1px 0 #fff; } 
+.main h4 { font-size: 14px; color: #ff9031; } 
+.main h4 a { color: #ff9031; } 
+.main h4 a:hover { color: #bf5902; text-decoration: none; } 
+.main .content {outline: red solid 0px; width: 984px; height: 580px;  float: none; margin:0 auto; padding: 10px 10px 10px 10px;}
+.main .content h3 { padding-bottom: 10px;}
+.main .menu-list {outline: red solid 0px; width: 980px; height:525px;}
+.main .menu-list li {display: inline-block; text-align: center; margin:5px 5px 10px 8px; min-height: 152px;}
+span, img {position: relative;border:none 0px #000000;
+-moz-border-radius-topleft: 24px;
+-moz-border-radius-topright:24px;
+-moz-border-radius-bottomleft:24px;
+-moz-border-radius-bottomright:24px;
+-webkit-border-top-left-radius:24px;
+-webkit-border-top-right-radius:24px;
+-webkit-border-bottom-left-radius:24px;
+-webkit-border-bottom-right-radius:24px;
+border-top-left-radius:24px;
+border-top-right-radius:24px;
+border-bottom-left-radius:24px;
+border-bottom-right-radius:24px;}
+
+
+
+
+/* end of main */
+
+/* footer */
+html, body {outline: red solid 0px; height: inherit; }
+#wrapper {outline: red solid 5px; min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -58px; }
+#footer { height: 58px; }
+#footer {outline: green solid 0px; background: url(images/footer.png) repeat-x 0 0; padding-top: 18px; height: 58px;   }
+#footer .footer-nav { float: left; }
+#footer .footer-nav ul { list-style: none; list-style-position: outside; font-size: 11px; }
+#footer .footer-nav ul li { float: left; border-right: 1px solid #cf8832; line-height: 11px; padding: 0 10px;  }
+#footer .footer-nav ul li a { color: #fbe0c0; }
+#footer .footer-nav ul li a:hover { color: #fff; text-decoration: none;  }
+#footer .footer-nav ul li.last { border-right: 0; padding-right: 0; }
+#footer p.copy { color: #fbe0c0; font-size: 11px; float: right; line-height: 11px; }
+#footer p.copy span { padding: 0 10px; color: #cf8832;  }
+#footer p.copy a { color: #fbe0c0; text-decoration: underline; }
+#footer p.copy a:hover { color: #fff; text-decoration: none; }
+/* end of footer */
