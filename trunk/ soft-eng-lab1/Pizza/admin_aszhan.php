@@ -14,10 +14,8 @@ if (!isset($_SESSION['admin']) || (isset($_SESSION['admin']) && !$_SESSION['admi
 	}
 }
 $content = "";
-if (isset($_SESSION['admin']) && $_SESSION['admin']) {
-	$content = "
-				";
-} else {
+if (isset($_SESSION['admin']) && $_SESSION['admin']) {} 
+else {
 	$error = "";
 	if (isset($_SESSION['error']))
 		$error = $_SESSION['error'];

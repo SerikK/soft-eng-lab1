@@ -6,13 +6,13 @@
 	}
 	if (isset($_FILES['image']) && isset($_POST['name']) && isset($_POST['desc']) && isset($_POST['price']) && isset($_POST['type'])) {
 		$img_name = $_FILES['image']['name'];
-		//if (file_exists("./images/" . $img_name)) {} 
-		//else {
-		$dest = __DIR__ . DIRECTORY_SEPARATOR . "images" . DIRECTORY_SEPARATOR . $img_name;
+		if (file_exists("./uploads/" . $img_name)) {} 
+		else {
+		$dest = __DIR__ . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $img_name;
 		$res = move_uploaded_file($_FILES["image"]["tmp_name"], $dest);
-	  	//}
+	 	}
 	$name = $_POST['name'];
-	$img = $img_name;
+	$img = 'uploads/'+""+$img_name;
 	$description = $_POST['desc'];
 	$price = $_POST['price'];
 	$type = $_POST['type'];
