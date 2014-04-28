@@ -53,6 +53,7 @@ if (!isset($_SESSION['admin']) || !$_SESSION['admin']) {
 					<ul>
 						<ol><a href="addItem.php">Добавить блюдо</a></ol>
 						<ol><a href="#">Изменить блюдо</a></ol>
+						<ol><a href="#">Добавить категорию</a></ol>
 					</ul>
 				</div>
 				</div>

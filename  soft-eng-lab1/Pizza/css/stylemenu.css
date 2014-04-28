@@ -30,9 +30,9 @@ body {
     font-family: arial, sans-serif;
     color: #828282;
     background: url(images/body.png) repeat 0 0;
-    min-width: 1000px;
-}
 
+}
+li {list-style-type: none;}
 a { color: #ff9031; text-decoration: none; cursor: pointer; }
 a:hover { text-decoration: underline; }
 a.dot { background: url(images/dot.png) no-repeat 0 5px; text-decoration: underline; padding-left: 7px;  }
@@ -67,7 +67,7 @@ textarea { overflow: auto; }
 .socials a.twitter-ico { background-position: right 0; }
 .socials a.twitter-ico:hover { background-position: right -55px; }
 .socials a:hover { background-position: 0 -55px; margin-top: -5px; }
-.main { background: url(images/wrapper.png) repeat-x 0 0; }
+
 
 #navigation { outline: red solid 0px; background: url(images/navigation.png) no-repeat 0 0; width: 984px; height: 90px; padding-top: 9px; padding-left: 20px;  position: absolute; top: 140px; left: -10px; z-index: 100; }
 #navigation ul { list-style: none; list-style-position: outside; }
@@ -78,22 +78,47 @@ textarea { overflow: auto; }
 
 
 /* main */
-.main { outline: green solid 1px; padding-top: 30px; min-height: 700px; }
+.main { outline: green solid 0px; padding-top: 30px; min-height: 1200px; background: url(images/food.png) repeat; height: 200px; }
 .main h3 { font-size: 24px; font-family: 'museo', arial, helvetica, serif; font-weight: normal; color: #c73331; padding-bottom: 24px; text-shadow: 0 1px 0 #fff; } 
 .main h4 { font-size: 14px; color: #ff9031; } 
 .main h4 a { color: #ff9031; } 
 .main h4 a:hover { color: #bf5902; text-decoration: none; } 
-.main .content {outline: red solid px; width: 984px; height: 420px;  float: none; margin:0 auto; padding: 10px 10px 10px 10px;}
+.main .content {outline: red solid 1px; width: 984px; height: 840px;  float: none; margin:0 auto; padding: 10px 10px 10px 10px;}
 .main .content h3 { padding-bottom: 10px;}
-.main .content .entry { padding-bottom: 33px;}
+.main .content .menu-list { width: 150px; height:525px; float: left;}
+.main .content .menu-list li { display: block; text-align: left; margin:5px 5px 10px 8px; }
+.main .content .all_content{ width: 800px; height: inherit;float: right;}
+.main .content .all_content >ul >li{ padding: 30px;}
+.main .content .all_content .description { float: left; margin: 0 20px; padding: 30px;}
+.main .content .all_content >ul >li >p { float: left;}
+.main .content .all_content .consist { float: left; font-size: 12px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px;border-radius: 10px;padding: 10px;margin-bottom: 8px; min-width: 200px;}
+.main .content .all_content .order{ float:right; padding: 45px 20px;}
+.main .content .all_content .order input{ width: 10px; line-height: 29px;float: left;margin: 5px;}
+.main .content .all_content .order button {line-height: 33px; width: 110px;float: right;font-size: 12px;color: #32221c;background: #ffba00;border: none; margin: 3px;}
+span, img {position: relative;border:none 0px #000000;
+-moz-border-radius-topleft: 24px;
+-moz-border-radius-topright:24px;
+-moz-border-radius-bottomleft:24px;
+-moz-border-radius-bottomright:24px;
+-webkit-border-top-left-radius:24px;
+-webkit-border-top-right-radius:24px;
+-webkit-border-bottom-left-radius:24px;
+-webkit-border-bottom-right-radius:24px;
+border-top-left-radius:24px;
+border-top-right-radius:24px;
+border-bottom-left-radius:24px;
+border-bottom-right-radius:24px;}
+
+
+
 
 /* end of main */
 
 /* footer */
-html, body {outline: red solid 0px; height: 100%; }
-#wrapper {outline: red solid 0px; min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -58px; }
+html, body {outline: red solid 0px; height: inherit; }
+#wrapper {outline: red solid 5px; min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -58px; }
 #footer { height: 58px; }
-#footer {outline: green solid 0px; background: url(images/footer.png) repeat-x 0 0; padding-top: 18px; height: 40px;  }
+#footer {outline: green solid 0px; background: url(images/footer.png) repeat-x 0 0; padding-top: 18px; height: 58px;   }
 #footer .footer-nav { float: left; }
 #footer .footer-nav ul { list-style: none; list-style-position: outside; font-size: 11px; }
 #footer .footer-nav ul li { float: left; border-right: 1px solid #cf8832; line-height: 11px; padding: 0 10px;  }

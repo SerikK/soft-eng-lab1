@@ -50,7 +50,7 @@ textarea { overflow: auto; }
 
 .shell { outline: red solid 0px; width: 980px; margin: 0 auto; }
 
-.header { background: url(images/food.png) repeat; height: 650px; }
+.header { background: url(images/food.png) repeat; height: 514px; }
 .header .shell {outline: green solid 0px; background: url(images/asjan.png) no-repeat 280px 25px; position: relative; height: 100%;  }
 #logo { outline: red solid 0px; width: 150px; font-size: 0; line-height: 0; float: left; }
 #logo a { height: 141px; background: url(images/logo.png) no-repeat 0 0; text-indent: ; display: inherit; }
@@ -74,64 +74,11 @@ textarea { overflow: auto; }
 
 #navigation { outline: red solid 0px; background: url(images/navigation.png) no-repeat 0 0; width: 984px; height: 90px; padding-top: 9px; padding-left: 20px;  position: absolute; top: 140px; left: -10px; z-index: 100; }
 #navigation ul { list-style: none; list-style-position: outside; }
-#navigation ul li { float: left; font-size: 18px; font-family: 'museo', arial, helvetica, serif; background: url(images/nav-border.png) no-repeat right 0; line-height: 48px; padding: 0 31px; }
+#navigation ul li { float: left; font-size: 18px; font-family: 'museo', arial, helvetica, serif; background: url(images/nav-border.png) no-repeat right 0; line-height: 48px; padding: 0 29px; }
 #navigation ul li.last { background: transparent; }
 #navigation ul li a { color: #fff; text-shadow: rgba(0,0,0,0.6) 0px 1px 0px; }
 #navigation ul li a:hover { text-decoration: none; color: #f6c387; }
-.side {outline: red solid 0px; width: 922px; height: 340px; padding: 80px 70px; overflow: hidden; position: relative; background: url(images/slider.png) no-repeat 0 0; position: absolute; top: 150px; left: -44px; z-index: 5;}
-.adding input, textarea, select {
-	margin-left: 100px;
-	margin-bottom: 10px;
-	width: 250px;
-}
-.adding label {
-	font-size: 20px;
-	position: fixed;
-}
-.adding input[type="submit"]{
-	width: auto;
-}
-.red {color: #e74c3c;}
-.input {
-	position: relative;
-	padding: 0px 10px;
-	border: 1px solid rgb(216, 216, 216);
-	height: 36px;
-	font-family: 'Open Sans', Verdana;
-	margin-bottom: 5px;
-}
-.btn {
-	background: #5e5e5e;
-	color: #fff !important;
-	word-spacing: 0.25em;
-	border: none;
-	line-height: 22px;
-	padding: 12px 13px 11px;
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	display: inline-block;
-	margin: 5px 5px 10px 0px;
-	text-decoration: none;
-	text-shadow: none;
-}
-.login{
-	margin-top: 500px;
-	margin-left: 50px;
-}
-.content {
-	min-height: 500px;
-	height: auto;
-	width: 100%;
-	color: #444444;
-	padding-top: 200px;
-}
-.table-div{
-	min-height: 300px;
-	height: auto;
-	width: 80%;
-	color: #444444;
-	padding-top: 100px;
-}
+
 .slider-holder {outline: red solid 0px; width: 922px; height: 340px; padding: 60px 70px; overflow: hidden; position: relative; background: url(images/slider.png) no-repeat 0 0; position: absolute; top: 150px; left: -44px; z-index: 5;}
 .big-slider { width: 922px; height: 340px; overflow: visible; position: static; }
 .big-slider ul.slides { position: relative; list-style: none; list-style-position: outside; overflow: visible; }
@@ -180,7 +127,7 @@ html, body {outline: red solid 0px; height: 100%; }
 #footer p.copy span { padding: 0 10px; color: #cf8832;  }
 #footer p.copy a { color: #fbe0c0; text-decoration: underline; }
 #footer p.copy a:hover { color: #fff; text-decoration: none; }
-
+.shell .content {margin-top: 100px;}
 table {
     *border-collapse: collapse; /* IE7 and lower */
     border-spacing: 0;
@@ -221,4 +168,57 @@ table {
     border-top: none;
     text-shadow: 0 1px 0 rgba(255,255,255,.5); 
 }
-
+.adding input, textarea, select {
+	margin-left: 100px;
+	margin-bottom: 10px;
+	width: 250px;
+}
+.adding label {
+	font-size: 20px;
+	position: fixed;
+}
+.adding input[type="submit"]{
+	width: auto;
+}
+.red {color: #e74c3c;}
+.input {
+	position: relative;
+	padding: 0px 10px;
+	border: 1px solid rgb(216, 216, 216);
+	height: 36px;
+	font-family: 'Open Sans', Verdana;
+	margin-bottom: 5px;
+}
+.btn {
+	background: #5e5e5e;
+	color: #fff !important;
+	word-spacing: 0.25em;
+	border: none;
+	line-height: 22px;
+	padding: 12px 13px 11px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	display: inline-block;
+	margin: 5px 5px 10px 0px;
+	text-decoration: none;
+	text-shadow: none;
+}
+.login{
+	margin-top: 500px;
+	margin-left: 50px;
+}
+.side {outline: red solid 0px; width: 922px; height: 340px; padding: 80px 70px; overflow: hidden; position: relative; background: url(images/slider.png) no-repeat 0 0; position: absolute; top: 150px; left: -44px; z-index: 5;}
+.content {
+	min-height: 500px;
+	height: auto;
+	width: 100%;
+	color: #444444;
+	padding-top: 200px;
+}
+.table-div{
+	min-height: 300px;
+	height: auto;
+	width: 80%;
+	color: #444444;
+	padding-top: 100px;
+}
