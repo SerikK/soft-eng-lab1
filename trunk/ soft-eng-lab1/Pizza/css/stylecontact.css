@@ -63,7 +63,7 @@ textarea { overflow: auto; }
 .main h4 { font-size: 14px; color: #ff9031; } 
 .main h4 a { color: #ff9031; } 
 .main h4 a:hover { color: #bf5902; text-decoration: none; } 
-.main .content {outline: red solid 0px; width: 984px; height: 420px;  float: none; margin:0 auto; padding: 10px 10px 10px 10px;}
+.main .content {outline: red solid 1px; width: 984px; height: 420px;  float: none; margin:0 auto; padding: 10px 10px 10px 10px;}
 .main .content h3 { padding-bottom: 10px;}
 .main .content .entry { padding-bottom: 33px;}
 .img {outline: white solid 0px; margin: 15px 10px; float:left; }

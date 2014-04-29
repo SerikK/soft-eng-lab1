@@ -32,14 +32,14 @@ body {
     background: url(images/body.png) repeat 0 0;
 
 }
-li {list-style-type: none;}
+
 a { color: #ff9031; text-decoration: none; cursor: pointer; }
 a:hover { text-decoration: underline; }
 a.dot { background: url(images/dot.png) no-repeat 0 5px; text-decoration: underline; padding-left: 7px;  }
 a.dot:hover { text-decoration: none; }
 a img { border: 0; }
-
-article, aside, details, footer, header, menu, nav, section { display: block; }
+li {list-style-type: none;}
+article, aside, details, footer, header, menu, nav, section { display: inline-block;}
 input, textarea, select { font-size: 12px; font-family: arial, sans-serif; }
 textarea { overflow: auto; }
 
@@ -49,15 +49,15 @@ textarea { overflow: auto; }
 /* header */
 .header { background: url(images/food.png) repeat; height: 200px; }
 .header .shell {outline: green solid 0px; background: url(images/asjan.png) no-repeat 280px 25px; position: relative; height: 100%;  }
-#logo { outline: red solid 0px; width: 150px; font-size: 0; line-height: 0; float: left; }
+#logo { outline: red solid 1px; width: 150px; font-size: 0; line-height: 0; float: left; }
 #logo a { height: 141px; background: url(images/logo.png) no-repeat 0 0; text-indent: ; display: inherit; }
 
 
 
 .header-right { float: right; width: 264px; position: relative; margin-right: -10px;  }
-.subscribe { width: 120px; height: 54px; background: url(images/subscribe.png) no-repeat 0 0; float: left; font-family: 'museo', arial, helvetica, serif; line-height: 48px; padding: 0px 20px;  }
+.subscribe { width: 120px; height: 54px; background: url(images/cor.png) no-repeat 0 0; float: left; font-family: 'museo', arial, helvetica, serif; line-height: 48px; padding: 0px 20px;  }
 .subscribe a { color: #fff; font-size: 16px; position: relative; padding-left: 40px; }
-.subscribe a span { background: url(images/sbubscribe-ico.png) no-repeat 0px 0px; width: 34px; height: 34px; position: absolute; display: block;  top: -5px; left: 0; }
+.subscribe a span { background: url(images/cor-ico.png) no-repeat 0px 0px; width: 34px; height: 34px; position: absolute; display: block;  top: -5px; left: 0; }
 .subscribe a:hover { color: #f6c387; text-decoration: none; }
 
 .socials a { background: url(images/socials.png) no-repeat 0 0; width: 50px; height: 52px;  font-size: 0; line-height: 0; text-indent: -4000px; float: left; transition: margin 0.2s;
@@ -71,29 +71,29 @@ textarea { overflow: auto; }
 
 #navigation { outline: red solid 0px; background: url(images/navigation.png) no-repeat 0 0; width: 984px; height: 90px; padding-top: 9px; padding-left: 20px;  position: absolute; top: 140px; left: -10px; z-index: 100; }
 #navigation ul { list-style: none; list-style-position: outside; }
-#navigation ul li { float: left; font-size: 18px; font-family: 'museo', arial, helvetica, serif; background: url(images/nav-border.png) no-repeat right 0; line-height: 48px; padding: 0 29px; }
+#navigation ul li { float: left; font-size: 18px; font-family: 'museo', arial, helvetica, serif; background: url(images/nav-border.png) no-repeat right 0; line-height: 48px; padding: 0 40px; }
 #navigation ul li.last { background: transparent; }
 #navigation ul li a { color: #fff; text-shadow: rgba(0,0,0,0.6) 0px 1px 0px; }
 #navigation ul li a:hover { text-decoration: none; color: #f6c387; }
 
 
 /* main */
-.main { outline: green solid 0px; padding-top: 30px; min-height: 1200px; background: url(images/food.png) repeat; height: 200px; }
+.main { outline: green solid 1px; padding-top: 30px; min-height: 720px; }
 .main h3 { font-size: 24px; font-family: 'museo', arial, helvetica, serif; font-weight: normal; color: #c73331; padding-bottom: 24px; text-shadow: 0 1px 0 #fff; } 
 .main h4 { font-size: 14px; color: #ff9031; } 
 .main h4 a { color: #ff9031; } 
 .main h4 a:hover { color: #bf5902; text-decoration: none; } 
-.main .content {outline: red solid 1px; width: 984px; height: 840px;  float: none; margin:0 auto; padding: 10px 10px 10px 10px;}
+.main .content {outline: red solid 1px; width: 984px; height: 580px;  float: none; margin:0 auto; padding: 10px 10px 10px 10px;}
 .main .content h3 { padding-bottom: 10px;}
-.main .content .menu-list { width: 150px; height:525px; float: left;}
-.main .content .menu-list li { display: block; text-align: left; margin:5px 5px 10px 8px; }
+.main .content .menu-list { float: left; display: inline-block;}
+.main .content .menu-list li { display: inline-block; text-align: left; margin:5px 5px 10px 8px; }
+.main .content .menu-list p { color: #ff2000;}
 .main .content .all_content{ width: 650px; height: inherit;float: right;}
 .main .content .all_content >div{ display:block;}
-.main .content .all_content >ul >li{ padding: 30px;}
 .main .content .all_content .description{ float: left; margin: 20px;}
 .main .content .all_content p { float: left;}
 .main .content .all_content .consist {  font-size: 12px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px;border-radius: 10px;margin-bottom: 8px;}
-.main .content .all_content .order{ float: left; padding: 45px 20px;}
+.main .content .all_content .order{ float: left; padding: 40px 40px;}
 .main .content .all_content .order input{ width: 10px; line-height: 29px;float: left;margin: 5px;}
 .main .content .all_content .order button {line-height: 33px; width: 110px;float: right;font-size: 12px;color: #32221c;background: #ffba00;border: none; margin: 3px;}
 span, img {position: relative;border:none 0px #000000;
@@ -109,6 +109,7 @@ border-top-left-radius:24px;
 border-top-right-radius:24px;
 border-bottom-left-radius:24px;
 border-bottom-right-radius:24px;}
+
 
 
 
@@ -131,3 +132,99 @@ html, body {outline: red solid 0px; height: inherit; }
 #footer p.copy a { color: #fbe0c0; text-decoration: underline; }
 #footer p.copy a:hover { color: #fff; text-decoration: none; }
 /* end of footer */
+
+
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width: 100%;    
+}
+
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;         
+}
+.bordered tr{
+	background: #fbf8e9;
+}
+    
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;    
+}
+
+.bordered th {
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+}
+.adding input, textarea, select {
+	margin-left: 100px;
+	margin-bottom: 10px;
+	width: 250px;
+}
+.adding label {
+	font-size: 20px;
+	position: fixed;
+}
+.adding input[type="submit"]{
+	width: auto;
+}
+.red {color: #e74c3c;}
+.input {
+	position: relative;
+	padding: 0px 10px;
+	border: 1px solid rgb(216, 216, 216);
+	height: 36px;
+	font-family: 'Open Sans', Verdana;
+	margin-bottom: 5px;
+}
+.btn {
+	background: #5e5e5e;
+	color: #fff !important;
+	word-spacing: 0.25em;
+	border: none;
+	line-height: 22px;
+	padding: 12px 13px 11px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	display: inline-block;
+	margin: 5px 5px 10px 0px;
+	text-decoration: none;
+	text-shadow: none;
+}
+.login{
+	margin-top: 500px;
+	margin-left: 50px;
+}
+.side {outline: red solid 0px; width: 922px; height: 340px; padding: 80px 70px; overflow: hidden; position: relative; background: url(images/slider.png) no-repeat 0 0; position: absolute; top: 150px; left: -44px; z-index: 5;}
+.content {
+	min-height: 500px;
+	height: auto;
+	width: 100%;
+	color: #444444;
+	padding-top: 200px;
+}
+.table-div{
+	min-height: 300px;
+	height: auto;
+	width: 80%;
+	color: #444444;
+	padding-top: 100px;
+}

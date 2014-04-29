@@ -17,7 +17,7 @@
   <div class="header">
 
     <div class="shell">
-      <h1 id="logo"><a href="index.html"></a></h1>
+      <h1 id="logo"><a href="index.php"></a></h1>
       <div class="testimonials">
 
       </div>
@@ -31,12 +31,12 @@
 
       <nav id="navigation">
         <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="aboutus.html">О нас</a></li>
-          <li><a href="menu.html">Меню</a></li>
-          <li><a href="gallery.html">Галерея</a></li>
-          <li><a href="catering.html">Кейтеринг-улсуги</a></li>
-          <li><a href="contact.html">Контакты</a></li>
+          <li><a href="index.php">Главная</a></li>
+          <li><a href="aboutus.php">О нас</a></li>
+          <li><a href="menu.php">Меню</a></li>
+          <li><a href="gallery.php">Галерея</a></li>
+          <li><a href="catering.php">Кейтеринг-улсуги</a></li>
+          <li><a href="contact.php">Контакты</a></li>
         </ul>
       </nav>
 
