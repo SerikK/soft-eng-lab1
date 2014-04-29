@@ -1,5 +1,22 @@
 <?php
   require_once 'db_config.php';
+  session_start();
+  if (!isset($_POST['order'])){
+  	$_SESSION['id'] = array();
+	$_SESSION['quantity'] = array();
+  }
+  if (isset($_POST['order'])){
+  	echo $_POST['quantity'];
+	  echo "<br>";
+  	array_push($_SESSION['id'], $_POST['id']);
+	array_push($_SESSION['quantity'], $_POST['quantity']);
+	$count = count($_SESSION['id']);
+	for ($i=0; $i < $count; $i++) { 
+		echo $_SESSION['id'][$i];
+	}
+	//echo $_SESSION['id'][0];
+  }
+  
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +26,6 @@
 <meta charset="utf-8">
 <link rel="shortcut icon" type="image/x-icon" href="css/images/logo.png">
 <link rel="stylesheet" href="css/stylemenu.css" type="text/css" media="all">
-<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -71,28 +87,33 @@
         	
       </div>
       <div class="all_content">
-      	<ul>
+      	
+					<ul>
       		<?php
 			if (isset($_GET['cat_id'])){
 			$id = $_GET['cat_id'];
+				
 			$result_dish = mysql_query("select * from dishes where type_id=".$id."");
 				while ($row = mysql_fetch_array($result_dish)){
+					echo "<form method='post' action=''>";
 					echo "<li>";
 					echo "<p><img src='".$row['urlphoto']."' style='width: 150px;height: 120px;'></p>";
-					echo "<div class='description' style='min-height: 150px;'>";
+					echo "<div class='description' style='min-height:150px;min-width: 150px;'>";
       				echo "<h1>".$row['name']."</h1>";
       				echo "<div class='consist'><p> ".$row['description']."</div>";
       				echo "</div>";
       				echo "<div class='order' style='min-height: 130px; min-width: 100px;'>";
       				echo "<input name='quantity' value='1'/>";
-	      			echo "<button name='order'>Заказать</button>"; 
+					echo "<input name='id' type='hidden' value='".$row['id']."'>";
+	      			echo "<button name='order'>Заказать</button>";
       				echo "</div>";
-					echo "</li";
+					echo "</li>";
+					echo "</form>";
 				}
 			}
 			?>
-      		
-      	</ul>
+			</ul>
+					
       </div>
     </div>
   </div>

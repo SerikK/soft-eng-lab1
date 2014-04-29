@@ -87,12 +87,13 @@ textarea { overflow: auto; }
 .main .content h3 { padding-bottom: 10px;}
 .main .content .menu-list { width: 150px; height:525px; float: left;}
 .main .content .menu-list li { display: block; text-align: left; margin:5px 5px 10px 8px; }
-.main .content .all_content{ width: 800px; height: inherit;float: right;}
+.main .content .all_content{ width: 650px; height: inherit;float: right;}
+.main .content .all_content >div{ display:block;}
 .main .content .all_content >ul >li{ padding: 30px;}
-.main .content .all_content .description { float: left; margin: 0 20px; padding: 30px;}
-.main .content .all_content >ul >li >p { float: left;}
-.main .content .all_content .consist { float: left; font-size: 12px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px;border-radius: 10px;padding: 10px;margin-bottom: 8px; min-width: 200px;}
-.main .content .all_content .order{ float:right; padding: 45px 20px;}
+.main .content .all_content .description{ float: left; margin: 20px;}
+.main .content .all_content p { float: left;}
+.main .content .all_content .consist {  font-size: 12px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px;border-radius: 10px;margin-bottom: 8px;}
+.main .content .all_content .order{ float: left; padding: 45px 20px;}
 .main .content .all_content .order input{ width: 10px; line-height: 29px;float: left;margin: 5px;}
 .main .content .all_content .order button {line-height: 33px; width: 110px;float: right;font-size: 12px;color: #32221c;background: #ffba00;border: none; margin: 3px;}
 span, img {position: relative;border:none 0px #000000;

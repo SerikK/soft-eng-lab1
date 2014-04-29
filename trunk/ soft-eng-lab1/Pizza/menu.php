@@ -36,7 +36,7 @@
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="aboutus.html">О нас</a></li>
-          <li><a href="menu.html">Меню</a></li>
+          <li><a href="menu.php">Меню</a></li>
           <li><a href="gallery.html">Галерея</a></li>
           <li><a href="#">Заказать</a></li>
           <li><a href="#">Кейтеринг-улсуги</a></li>
