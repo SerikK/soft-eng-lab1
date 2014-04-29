@@ -20,13 +20,13 @@
   <div class="header">
 
     <div class="shell">
-      <h1 id="logo"><a href="index.html"></a></h1>
+      <h1 id="logo"><a href="index.php"></a></h1>
       <div class="testimonials">
 
       </div>
 
       <div class="header-right">
-        <div class="subscribe"> <a href="#"><span></span>Subscribe</a> </div>
+        <div class="subscribe"> <a href="wishlist.php"><span></span>Ваш заказ</a> </div>
         <div class="socials"> <a href="#" class="facebook-ico">facebook</a> <a href="#" class="twitter-ico">twitter</a> </div>
         <div class="cl">&nbsp;</div>
       </div>
@@ -34,13 +34,12 @@
 
       <nav id="navigation">
         <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="aboutus.html">О нас</a></li>
+          <li><a href="index.php">Главная</a></li>
+          <li><a href="aboutus.php">О нас</a></li>
           <li><a href="menu.php">Меню</a></li>
-          <li><a href="gallery.html">Галерея</a></li>
-          <li><a href="#">Заказать</a></li>
-          <li><a href="#">Кейтеринг-улсуги</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="gallery.php">Галерея</a></li>
+          <li><a href="catering.php">Кейтеринг-улсуги</a></li>
+          <li><a href="contact.html">Контакты</a></li>
         </ul>
       </nav>
 
@@ -80,13 +79,12 @@
   <div class="shell">
     <div class="footer-nav">
       <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Галерея</a></li>
-        <li><a href="#">Меню</a></li>
-        <li><a href="#">Заказать</a></li>
-        <li><a href="#">Кейтеринг-услуги</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="index.php">Главная</a></li>
+          <li><a href="aboutus.php">О нас</a></li>
+          <li><a href="menu.php">Меню</a></li>
+          <li><a href="gallery.php">Галерея</a></li>
+          <li><a href="catering.php">Кейтеринг-улсуги</a></li>
+          <li><a href="contact.html">Контакты</a></li>
       </ul>
     </div>
     <p class="copy">© Copyright 2014
