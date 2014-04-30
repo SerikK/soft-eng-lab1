@@ -1,17 +1,6 @@
 <?php
     require_once 'db_config.php';
 	session_start();
-	if (isset($_SESSION['id']) && isset($_SESSION['quantity'])){
-		$count = count($_SESSION['id']);
-		for ($i=0; $i < $count; $i++) { 
-			echo "<p>".$_SESSION['id'][$i]."";
-			echo "<p>".$_SESSION['quantity'][$i]."";
-		}
-	}
-	
-	else {
-		echo "<p>string";
-	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,17 +19,40 @@
       <div class="cl">&nbsp;</div>
       <nav id="navigation">
         <ul>
-          <li><a href="change_menu.php">Меню</a></li>
-          <li><a href="Orders.php">Заказы</a></li>
-          <li><a href="change_news.php">Новости</a></li>
+          <li><a href="index.php">Главная</a></li>
+          <li><a href="aboutus.php">О нас</a></li>
+          <li><a href="menu.php">Меню</a></li>
+          <li><a href="gallery.php">Галерея</a></li>
+          <li><a href="catering.php">Кейтеринг-улсуги</a></li>
+          <li><a href="contact.html">Контакты</a></li>
         </ul>
       </nav>
       </div>
      
     </div>
     <div class="main">
-    	<div class="content"></div>
+    	<div class="all_content"></div>
+    	<ul>
+    		<?php 
+    			if (isset($_SESSION['id']) && isset($_SESSION['quantity'])){
+				$count = count($_SESSION['id']);
+				for ($i=0; $i < $count; $i++) { 
+				echo "<li>";
+				$result = mysql_query("select * from dishes where id='".$_SESSION['id'][$i]."'");
+				while ($row = mysql_fetch_array($result)){
+					echo "<p><img src='".$row['urlphoto']."' style='width: 150px;height: 120px;'>";
+					echo $row['name'];
+				}
+				echo "<li>";
+		}
+	}
+	
+	else {
+		echo "<p>string";
+	}
     		
+    		?>
+    		</ul>
     </div>
   </div>
 
@@ -50,9 +62,12 @@
   <div class="shell">
     <div class="footer-nav">
       <ul>
-        <li><a href="#">Меню</a></li>
-        <li><a href="#">Заказы</a></li>
-        <li><a href="#">Новости</a></li>
+        <li><a href="index.php">Главная</a></li>
+          <li><a href="aboutus.php">О нас</a></li>
+          <li><a href="menu.php">Меню</a></li>
+          <li><a href="gallery.php">Галерея</a></li>
+          <li><a href="catering.php">Кейтеринг-улсуги</a></li>
+          <li><a href="contact.html">Контакты</a></li>
       </ul>
     </div>
     <p class="copy">© Copyright 2014

@@ -8,16 +8,18 @@
   }
   if (!isset($_POST['order'])){
   	$_SESSION['id'] = array();
+	$_SESSION['quantity'] = array();
   }
   else {
   	array_push($_SESSION['id'], $_POST['id']);
+	array_push($_SESSION['quantity'], $_POST['quantity']);
 	$success = "Ваш продукт успешно добавлен в корзину";
   }
-  			$id = 1;
-			if (isset($_GET['cat_id'])){
-			$id = $_GET['cat_id'];
-			$_SESSION['cat_id'] = $_GET['cat_id'];
-			}
+  $id = 1;
+	if (isset($_GET['cat_id'])){
+		$id = $_GET['cat_id'];
+		$_SESSION['cat_id'] = $_GET['cat_id'];
+	}
   
 ?>
 
@@ -110,7 +112,7 @@
       				echo "<div class='consist'><p> ".$row['description']."</div>";
       				echo "</div>";
       				echo "<div class='order' style='min-height: 130px; min-width: 100px;'>";
-      				//echo "<input name='quantity' value='1'/>";
+      				echo "<input name='quantity' value='1'/>";
 					echo "<input name='id' type='hidden' value='".$row['id']."'>";
 	      			echo "<button name='order'>Заказать</button>";
       				echo "</div>";

@@ -30,7 +30,7 @@ textarea { overflow: auto; }
 
 .shell { outline: red solid 0px; width: 980px; margin: 0 auto; }
 
-.header { background: url(images/food.png) repeat; height: 514px; }
+.header { background: url(images/food.png) repeat; height: 200px; }
 .header .shell {outline: green solid 0px; background: url(images/asjan.png) no-repeat 280px 25px; position: relative; height: 100%;  }
 #logo { outline: red solid 0px; width: 150px; font-size: 0; line-height: 0; float: left; }
 #logo a { height: 141px; background: url(images/logo.png) no-repeat 0 0; text-indent: ; display: inherit; }
