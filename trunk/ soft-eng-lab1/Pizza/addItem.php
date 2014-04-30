@@ -2,7 +2,7 @@
     session_start();
 	require_once 'db_config.php';
 	if (!isset($_SESSION['admin']) || !$_SESSION['admin']) {
-	header("Location: ./index.html");
+	header("Location: ./index.php");
 	}
 	if (isset($_FILES['image']) && isset($_POST['name']) && isset($_POST['desc']) && isset($_POST['price']) && isset($_POST['type'])) {
 		$img_name = $_FILES['image']['name'];
@@ -12,7 +12,7 @@
 		$res = move_uploaded_file($_FILES["image"]["tmp_name"], $dest);
 	 	}
 	$name = $_POST['name'];
-	$img = 'images/'+""+$img_name;
+	$img = $img_name;
 	$description = $_POST['desc'];
 	$price = $_POST['price'];
 	$type = $_POST['type'];
