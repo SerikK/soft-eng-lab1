@@ -14,7 +14,10 @@ if (!isset($_SESSION['admin']) || (isset($_SESSION['admin']) && !$_SESSION['admi
 	}
 }
 $content = "";
-if (isset($_SESSION['admin']) && $_SESSION['admin']) {} 
+if (isset($_SESSION['admin']) && $_SESSION['admin']) {
+	$content =  "<span><h3><center>Приветствуем тебя дорогой АДМИН!</center></h3></span>";
+	
+} 
 else {
 	$error = "";
 	if (isset($_SESSION['error']))
@@ -60,22 +63,13 @@ else {
         <li><a href="add_news.php">Добавить Новости</a></li>
         </ul>
       </nav>
-<<<<<<< .mine
-      <div style="margin: 150px;">
-=======
      </div>
   </div>
-    <div  class="main">
+  <div  class="main">
       <div class="content">
->>>>>>> .r31
-				<span><h3><center>Приветствуем тебя дорогой АДМИН!</center></h3></span>
         <?php echo $content; ?>
 			</div>
     </div>
-     
-    
-    
-  </div>
    <div id="footer-push">
   </div>
 <div id="footer">
