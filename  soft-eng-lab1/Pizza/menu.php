@@ -55,7 +55,7 @@
           	<?php 
           	$result = mysql_query("select * from types");
 					while ($row = mysql_fetch_array($result)) {
-			echo "<li><a href='inside_menu.php?id=".$row['type_id']."'><img src='".$row['image']."' width='180' height='120'>";
+			echo "<li><a href='inside_menu.php?cat_id=".$row['type_id']."'><img src='".$row['image']."' width='180' height='120'>";
             echo "<span><h4>".$row['type']."</h4></span>";
             echo "</a>";
             echo "</li>";

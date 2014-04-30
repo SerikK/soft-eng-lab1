@@ -38,8 +38,11 @@
       </div>
      
     </div>
-    
-  </div>	
+    <div class="main">
+    	<div class="content"></div>
+    		
+    </div>
+  </div>
 
     <div id="footer-push">
   </div>

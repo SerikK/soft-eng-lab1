@@ -3,6 +3,9 @@
   session_start();
   $success = "";
   //$_SESSION['cat_id'] = 1;
+  if (isset($_POST['cat_id'])){
+  	$_SESSION['cat_id'] = $_POST['cat_id'];
+  }
   if (!isset($_POST['order'])){
   	$_SESSION['id'] = array();
   }
@@ -11,7 +14,6 @@
 	$success = "Ваш продукт успешно добавлен в корзину";
   }
   			$id = 1;
-			$_SESSION['cat_id'] = 1;
 			if (isset($_GET['cat_id'])){
 			$id = $_GET['cat_id'];
 			$_SESSION['cat_id'] = $_GET['cat_id'];
