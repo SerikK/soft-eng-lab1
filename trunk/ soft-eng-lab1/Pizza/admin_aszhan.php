@@ -60,10 +60,14 @@ else {
         <li><a href="add_news.php">Добавить Новости</a></li>
         </ul>
       </nav>
+<<<<<<< .mine
+      <div style="margin: 150px;">
+=======
      </div>
   </div>
     <div  class="main">
       <div class="content">
+>>>>>>> .r31
 				<span><h3><center>Приветствуем тебя дорогой АДМИН!</center></h3></span>
         <?php echo $content; ?>
 			</div>
