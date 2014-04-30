@@ -8,7 +8,7 @@
 <title>Пиццерия "АСЖАН"</title>
 <meta charset="utf-8">
 <link rel="shortcut icon" type="image/x-icon" href="css/images/logo.png">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/stylemenu.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all">
 </head>
 <body>
@@ -31,29 +31,35 @@
      
     </div>
     <div class="main">
-    	<div class="all_content"></div>
-    	<ul>
+    	<div class="content">
+    	<div class="all_content">
+    	<table class="table-div">
+    		<thead>
+    			<tr>
+    				<th>Имя</th>
+    				<th>Цена</th>
+    				<th>Количество</th>
+    			</tr>
+    		</thead>
     		<?php 
     			if (isset($_SESSION['id']) && isset($_SESSION['quantity'])){
 				$count = count($_SESSION['id']);
 				for ($i=0; $i < $count; $i++) { 
-				echo "<li>";
+				echo "<tr>";
 				$result = mysql_query("select * from dishes where id='".$_SESSION['id'][$i]."'");
 				while ($row = mysql_fetch_array($result)){
-					echo "<p><img src='".$row['urlphoto']."' style='width: 150px;height: 120px;'>";
-					echo $row['name'];
+					echo "<td><h3>".$row['name']."</h3></td>";
+					echo "<td>".$row['price']."</td>";
+					echo "<td>".$_SESSION['quantity'][$i]."</td>";
 				}
-				echo "<li>";
+				echo "</tr>";
 		}
-	}
-	
-	else {
-		echo "<p>string";
 	}
     		
     		?>
-    		</ul>
+    		</table>
     </div>
+  </div>
   </div>
 
     <div id="footer-push">

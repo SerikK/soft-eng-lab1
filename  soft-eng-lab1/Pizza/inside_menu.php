@@ -106,10 +106,11 @@
 				while ($row = mysql_fetch_array($result_dish)){
 					echo "<form method='post' action=''>";
 					echo "<li style='min-height: 150px; max-height: 200px;'>";
-					echo "<p><img src='".$row['urlphoto']."' style='width: 150px;height: 120px;'></p>";
+					echo "<p><img src='images/".$row['urlphoto']."' style='width: 150px;height: 120px;'></p>";
 					echo "<div class='description' style='min-height:150px;min-width: 150px;'>";
       				echo "<h1>".$row['name']."</h1>";
-      				echo "<div class='consist'><p> ".$row['description']."</div>";
+      				echo "<div class='consist'><p> ".$row['description']."</div><br>";
+					echo "<p>".$row['price']."тг";
       				echo "</div>";
       				echo "<div class='order' style='min-height: 130px; min-width: 100px;'>";
       				echo "<input name='quantity' value='1'/>";
