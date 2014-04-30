@@ -1,9 +1,6 @@
 <?php
 session_start();
 require_once 'db_config.php';
-if (!isset($_SESSION['admin']) || !$_SESSION['admin']) {
-	header("Location: ./index.html");
-}
 if (!isset($_SESSION['admin']) || (isset($_SESSION['admin']) && !$_SESSION['admin'])) {
 	if (isset($_POST['password'])) {
 		$table_name = "admin";
@@ -15,7 +12,10 @@ if (!isset($_SESSION['admin']) || (isset($_SESSION['admin']) && !$_SESSION['admi
 			$_SESSION['error'] = "Не правильный пароль";
 		}
 	}
-}else {
+}
+$content = "";
+if (isset($_SESSION['admin']) && $_SESSION['admin']) {} 
+else {
 	$error = "";
 	if (isset($_SESSION['error']))
 		$error = $_SESSION['error'];
@@ -38,66 +38,69 @@ if (!isset($_SESSION['admin']) || (isset($_SESSION['admin']) && !$_SESSION['admi
 <title>Пиццерия "АСЖАН"</title>
 <meta charset="utf-8">
 <link rel="shortcut icon" type="image/x-icon" href="css/images/logo.png">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/styleadmin.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all">
 </head>
 <body>
 <div id="wrapper">
   <div class="header">
     <div class="shell">
-      <h1 id="logo"><a href="index.html"></a></h1>
-    
+      <h1 id="logo"><a href="admin_aszhan.php"></a></h1>
       <div class="header-right">
-		<?php 
+      	<?php 
       	if (isset($_SESSION['admin']) && $_SESSION['admin']){
-      		echo "<h2>Добро пожаловать админ</h2><a href='logout.php'>Выйти</a>";
+      		echo "<div><h2>Добро пожаловать админ!!<a href='logout.php'></h2><h4>Выйти</a></h4></div>";
       	}
       	?>
-        <div class="cl">&nbsp;</div>
       </div>
-      <div class="cl">&nbsp;</div>
       <nav id="navigation">
         <ul>
-          <li><a href="change_menu.php">Меню</a></li>
-          <li><a href="Orders.php">Заказы</a></li>
-          <li><a href="change_news.php">Новости</a></li>
+        <li><a href="change_menu.php">Изменить Меню</a></li>
+        <li><a href="orders.php">Принять Заказы</a></li>
+        <li><a href="add_news.php">Добавить Новости</a></li>
         </ul>
       </nav>
-      <div class="table-div">
-		<table class="bordered">
-				<thead>
-					<tr>
-					<th><p>#<p></th>
-					<th><p>Имя<p></th>
-					<th><p>адрес</p></th>
-					<th><p>телефонный номер</p></th>
-					<th><p>Время</p></th>
-					</tr>
-				</thead>
-				<tr><?php
-					$result = mysql_query("select * from clients limit 5");
-					while ($row = mysql_fetch_array($result)) {
-						echo "<td>" . $row['id'] . "</td>";
-						echo "<td>" . $row['name'] . "</td>";
-						echo "<td>" . $row['address'] . "</td>";
-						echo "<td>" . $row['phone'] . "</td>";
-						echo "<td>" . $row['date'] . "</td>";
-					}
-				 ?></tr>
-		</table>
-		</div>	  
-      </div>
-     
+     </div>
+  </div>
+    <div  class="main">
+      <div class="content">
+      <div class="table">
+    <table class="bordered">
+        <thead>
+          <tr>
+          <th><p>#<p></th>
+          <th><p>Имя<p></th>
+          <th><p>адрес</p></th>
+          <th><p>телефонный номер</p></th>
+          <th><p>Время</p></th>
+          </tr>
+        </thead>
+        <tr><?php
+          $result = mysql_query("select * from clients limit 5");
+          while ($row = mysql_fetch_array($result)) {
+            echo "<td>" . $row['id'] . "</td>";
+            echo "<td>" . $row['name'] . "</td>";
+            echo "<td>" . $row['address'] . "</td>";
+            echo "<td>" . $row['phone'] . "</td>";
+            echo "<td>" . $row['date'] . "</td>";
+          }
+         ?></tr>
+    </table>
+    </div>    			</div>
     </div>
+     
     
-  </div>	
+    
+  </div>
+   <div id="footer-push">
+  </div>
 <div id="footer">
   <div class="shell">
     <div class="footer-nav">
       <ul>
-        <li><a href="change_menu.php">Меню</a></li>
-        <li><a href="Orders.php">Заказы</a></li>
-        <li><a href="#">Новости</a></li>
+        <li><a href="change_menu.php">Изменить Меню</a></li>
+        <li><a href="orders.php">Принять Заказы</a></li>
+        <li><a href="add_news.php">Добавить Новости</a></li>
       </ul>
     </div>
     <p class="copy">© Copyright 2014
