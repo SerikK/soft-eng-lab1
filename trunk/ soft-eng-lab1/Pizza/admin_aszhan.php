@@ -38,49 +38,49 @@ else {
 <title>Пиццерия "АСЖАН"</title>
 <meta charset="utf-8">
 <link rel="shortcut icon" type="image/x-icon" href="css/images/logo.png">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/styleadmin.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all">
 </head>
 <body>
 <div id="wrapper">
   <div class="header">
     <div class="shell">
-      <h1 id="logo"><a href="index.html"></a></h1>
-    
+      <h1 id="logo"><a href="admin_aszhan.php"></a></h1>
       <div class="header-right">
       	<?php 
       	if (isset($_SESSION['admin']) && $_SESSION['admin']){
-      		echo "<div><h2>Добро пожаловать админ</h2><a href='logout.php'>Выйти</a></div>";
+      		echo "<div><h2>Добро пожаловать админ!!<a href='logout.php'></h2><h4>Выйти</a></h4></div>";
       	}
       	?>
-        <div class="cl">&nbsp;</div>
       </div>
-      <div class="cl">&nbsp;</div>
       <nav id="navigation">
         <ul>
-          <li><a href="change_menu.php">Меню</a></li>
-          <li><a href="Orders.php">Заказы</a></li>
-          <li><a href="change_news.php">Новости</a></li>
+        <li><a href="change_menu.php">Изменить Меню</a></li>
+        <li><a href="orders.php">Принять Заказы</a></li>
+        <li><a href="add_news.php">Добавить Новости</a></li>
         </ul>
       </nav>
+     </div>
+  </div>
+    <div  class="main">
       <div class="content">
-				<?php echo $content; ?>
+				<span><h3><center>Приветствуем тебя дорогой АДМИН!</center></h3></span>
+        <?php echo $content; ?>
 			</div>
-      </div>
-     
     </div>
+     
     
-  </div>	
-
-    <div id="footer-push">
+    
+  </div>
+   <div id="footer-push">
   </div>
 <div id="footer">
   <div class="shell">
     <div class="footer-nav">
       <ul>
-        <li><a href="#">Меню</a></li>
-        <li><a href="#">Заказы</a></li>
-        <li><a href="#">Новости</a></li>
+        <li><a href="change_menu.php">Изменить Меню</a></li>
+        <li><a href="orders.php">Принять Заказы</a></li>
+        <li><a href="add_news.php">Добавить Новости</a></li>
       </ul>
     </div>
     <p class="copy">© Copyright 2014
