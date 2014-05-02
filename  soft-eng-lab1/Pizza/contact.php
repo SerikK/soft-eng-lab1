@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION['food_id'])){
+	unset($_SESSION['food_id']);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -2,22 +2,23 @@
   require_once 'db_config.php';
   session_start();
   $success = "";
-  //$_SESSION['cat_id'] = 1;
-  if (isset($_POST['cat_id'])){
-  	$_SESSION['cat_id'] = $_POST['cat_id'];
+  if (isset($_POST['order'])){
+  	 $existed = false; 
+  	 for ($i=0; $i < count($_SESSION['food_id']); $i++) { 
+		   if ($_SESSION['food_id'][$i] == $_POST['id']){
+		   		$existed = true;
+			   	break;
+		   }
+	   }
+	 if (!$existed){
+	 array_push($_SESSION['food_id'], $_POST['id']);
+	 }
+	 $success = "Ваш продукт успешно добавлен в корзину";
   }
-  if (!isset($_POST['order'])){
-  	$_SESSION['id'] = array();
-	$_SESSION['quantity'] = array();
+  if (!isset($_SESSION['food_id'])){
+  		$_SESSION['food_id'] = array();
   }
-  else {
-  	array_push($_SESSION['id'], $_POST['id']);
-	array_push($_SESSION['quantity'], $_POST['quantity']);
-	$success = "Ваш продукт успешно добавлен в корзину";
-  }
-  $id = 1;
 	if (isset($_GET['cat_id'])){
-		$id = $_GET['cat_id'];
 		$_SESSION['cat_id'] = $_GET['cat_id'];
 	}
   
@@ -44,7 +45,7 @@
       </div>
 
       <div class="header-right">
-        <div class="subscribe"> <a href="wishlist.php"><span></span>Ваш заказ</a> </div>
+        <div class="subscribe"> <a href="shopping_cart.php"><span></span>Ваш заказ</a> </div>
         <div class="socials"> <a href="#" class="facebook-ico">facebook</a> <a href="#" class="twitter-ico">twitter</a> </div>
         <div class="cl">&nbsp;</div>
       </div>
@@ -102,7 +103,7 @@
 					<ul>
       		<?php
       		
-			$result_dish = mysql_query("select * from dishes where type_id=".$id."");
+			$result_dish = mysql_query("select * from dishes where type_id=".$_SESSION['cat_id']."");
 				while ($row = mysql_fetch_array($result_dish)){
 					echo "<form method='post' action=''>";
 					echo "<li style='min-height: 150px; max-height: 200px;'>";
@@ -113,7 +114,6 @@
 					echo "<p>".$row['price']."тг";
       				echo "</div>";
       				echo "<div class='order' style='min-height: 130px; min-width: 100px;'>";
-      				echo "<input name='quantity' value='1'/>";
 					echo "<input name='id' type='hidden' value='".$row['id']."'>";
 	      			echo "<button name='order'>Заказать</button>";
       				echo "</div>";

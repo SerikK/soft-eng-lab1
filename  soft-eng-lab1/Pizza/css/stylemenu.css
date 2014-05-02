@@ -1,25 +1,3 @@
-@font-face {
-    font-family: 'museo';
-    src: url('fonts/museo300-regular-webfont-webfont.eot');
-    src: url('fonts/museo300-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/museo300-regular-webfont-webfont.woff') format('woff'),
-         url('fonts/museo300-regular-webfont-webfont.ttf') format('truetype'),
-         url('fonts/museo300-regular-webfont-webfont.svg#webfontuploaded_file') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'museo700';
-    src: url('fonts/Museo700-Regular-webfont.eot');
-    src: url('fonts/Museo700-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Museo700-Regular-webfont.woff') format('woff'),
-         url('fonts/Museo700-Regular-webfont.ttf') format('truetype'),
-         url('fonts/Museo700-Regular-webfont.svg#Museo700') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * { margin: 0; padding: 0; outline: 0; }
 
 body, html { height: 100%; }
@@ -78,22 +56,22 @@ textarea { overflow: auto; }
 
 
 /* main */
-.main { padding-top: 30px; min-height: 720px; }
+.main { outline red solid 1px; padding-top: 30px; min-height: 320px; }
 .main h3 { font-size: 24px; font-family: 'museo', arial, helvetica, serif; font-weight: normal; color: #c73331; padding-bottom: 24px; text-shadow: 0 1px 0 #fff; } 
 .main h4 { font-size: 14px; color: #ff9031; } 
 .main h4 a { color: #ff9031; } 
 .main h4 a:hover { color: #bf5902; text-decoration: none; } 
-.main .content { width: 984px; height: 580px;  float: none; margin:0 auto; padding: 10px 10px 10px 10px;}
+.main .content { outline red solid 1px; width: 984px; height: 580px;  float: none; margin:0 auto; padding: 10px 10px 10px 10px;}
 .main .content h3 { padding-bottom: 10px;}
 .main .content .menu-list { float: left; display: inline-block;}
 .main .content .menu-list li {  display: inline-block; text-align: left; margin:5px 5px 10px 8px; }
 .main .content .menu-list p { color: #ff2000;}
-.main .content .all_content{ width: 800px; height: inherit;float: right;}
+.main .content .all_content{ width: 800px; height: inherit; float: right;}
 .main .content .all_content li {outline: red solid 1px; display:inline;}
 .main .content .all_content .description{ float: left; margin: 20px;}
 .main .content .all_content p { float: left;}
 .main .content .all_content .consist {  font-size: 12px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px;border-radius: 10px;margin-bottom: 8px;}
-.main .content .all_content .order{ float: left; padding: 40px 40px;}
+.main .content .all_content .order{ float: right; padding: 40px 40px;}
 .main .content .all_content .order input{ width: 10px; line-height: 29px;float: left;margin: 5px;}
 .main .content .all_content .order button {line-height: 33px; width: 110px;float: right;font-size: 12px;color: #32221c;background: #ffba00;border: none; margin: 3px;}
 span, img {position: relative;border:none 0px #000000;
@@ -157,7 +135,7 @@ table {
     border-left: 1px solid #ccc;
     border-top: 1px solid #ccc;
     padding: 10px;
-    text-align: left;    
+    text-align: center;    
 }
 
 .bordered th {

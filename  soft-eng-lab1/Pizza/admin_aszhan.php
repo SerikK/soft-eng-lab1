@@ -1,6 +1,9 @@
 <?php
 session_start();
 require_once 'db_config.php';
+if (isset($_SESSION['food_id'])){
+	unset($_SESSION['food_id']);
+}
 if (!isset($_SESSION['admin']) || (isset($_SESSION['admin']) && !$_SESSION['admin'])) {
 	if (isset($_POST['password'])) {
 		$table_name = "admin";
