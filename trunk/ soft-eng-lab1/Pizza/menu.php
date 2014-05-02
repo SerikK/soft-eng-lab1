@@ -26,7 +26,7 @@
       </div>
 
       <div class="header-right">
-        <div class="subscribe"> <a href="wishlist.php"><span></span>Ваш заказ</a> </div>
+        <div class="subscribe"> <a href="shopping_cart.php"><span></span>Ваш заказ</a> </div>
         <div class="socials"> <a href="#" class="facebook-ico">facebook</a> <a href="#" class="twitter-ico">twitter</a> </div>
         <div class="cl">&nbsp;</div>
       </div>
@@ -39,7 +39,7 @@
           <li><a href="menu.php">Меню</a></li>
           <li><a href="gallery.php">Галерея</a></li>
           <li><a href="catering.php">Кейтеринг-улсуги</a></li>
-          <li><a href="contact.html">Контакты</a></li>
+          <li><a href="contact.php">Контакты</a></li>
         </ul>
       </nav>
 
