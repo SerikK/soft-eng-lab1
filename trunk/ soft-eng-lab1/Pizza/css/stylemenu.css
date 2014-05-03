@@ -117,8 +117,8 @@ table {
     width: 100%;    
 }
 
-.bordered {
-    border: solid #ccc 1px;
+.border_bottom {
+    border-bottom: solid #ccc 1px;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
@@ -126,13 +126,12 @@ table {
     -moz-box-shadow: 0 1px 1px #ccc; 
     box-shadow: 0 1px 1px #ccc;         
 }
-.bordered tr{
+.border_bottom tr{
 	background: #fbf8e9;
 }
     
-.bordered td, .bordered th {
-    border-left: 1px solid #ccc;
-    border-top: 1px solid #ccc;
+.border_bottom td, .border_bottom th {
+    border-bottom: 1px solid #ccc;
     padding: 10px;
     text-align: center;    
 }

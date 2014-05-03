@@ -50,7 +50,7 @@
     <div class="main">
     	<div class="content">
     		<form method="post" action="">
-    		<table class="bordered">
+    		<table class="border_bottom">
     		<thead>
     			<tr>
     				<th>Имя</th>
