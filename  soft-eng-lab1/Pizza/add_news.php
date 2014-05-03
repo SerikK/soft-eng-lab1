@@ -51,11 +51,13 @@ if (isset($_POST['submit'])){
 			</div>
 			<div  class="main">
 				<div class="content">
+					<div class="adding">
 					<form method="post" action="">
-					<p>Название</p><input name="title" />
-					<p>Описание</p><textarea name="description" rows="10" cols="70"></textarea>
+					<label>Название</label><input name="title" /><br>
+					<label>Описание</label><textarea name="description" rows="10" cols="70"></textarea><br>
 					<input type="submit" name="submit" />
 					</form>
+					</div>
 				</div>
 			</div>
 

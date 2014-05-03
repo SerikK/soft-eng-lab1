@@ -56,7 +56,6 @@ textarea { overflow: auto; }
 .main .content h3 { padding-bottom: 37px;  }
 .main .content .entry { padding-bottom: 33px;  }
 .main .content .table {outline: red solid 0px; }
-
 .adding input, textarea, select {
 	margin-left: 100px;
 	margin-bottom: 10px;
@@ -64,7 +63,7 @@ textarea { overflow: auto; }
 }
 .adding label {
 	font-size: 20px;
-	position: fixed;
+	position: absolute;
 }
 .adding input[type="submit"]{
 	width: auto;

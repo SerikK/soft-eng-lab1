@@ -12,6 +12,7 @@ $(document).ready(function(){
 	$("#total").html(tot);
 	if (tot*1 < 2000){
 		$("#amount").show();
+		$("#next").hide();
 	}
 	else {
 		$("#amount").hide();

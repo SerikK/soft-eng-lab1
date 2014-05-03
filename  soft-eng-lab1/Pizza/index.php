@@ -1,8 +1,12 @@
 <?php
 session_start();
+require_once 'db_config.php';
 if (isset($_SESSION['food_id'])){
 	unset($_SESSION['food_id']);
 }
+$result = mysql_query("select * from news order by id");
+$row1 = mysql_fetch_array($result);
+$row2 = mysql_fetch_array($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,24 +80,23 @@ if (isset($_SESSION['food_id'])){
       <section class="cols">
         <div class="col">
           <h3>Быстрая доставка </h3>
-          <img src="css/images/cols-img.png" alt="" class="alignleft">
+          <img src="css/images/delivery.png" alt="" class="alignleft" style="min-height: 80px;">
           <div class="cnt">
-            <p>Stkjpsdfledfmjowefmjolwefwof<br>
-              sectetur adipiscing elit. Cras molestie condimentum conse am leom.</p>
+              <p>Быстрая доставка до двери Вашего дома.</p>
              </div>
         </div>
         <div class="col">
           <h3>Качество блюд</h3>
           <img src="css/images/cols-img2.png" alt="" class="alignleft">
           <div class="cnt">
-            <p>ladknflkdnasflkndsklnflkas'[lf[lfopsdajgpapgpmafpigpewrpgjepgiperjgpeor.</p>
+            <p>Качество наших блюд не оставит Вас равнодушными</p>
              </div>
         </div>
         <div class="col">
           <h3>Приемлемые цены</h3>
           <img src="css/images/cols-img3.png" alt="" class="alignleft">
           <div class="cnt">
-            <p>ad;fmmasdfpasfjaopefjijeiofjirfghrtghihjdifhisdfhiherifherghiehrigher.</p>
+            <p>У нас приемлемые цены.</p>
              </div>
         </div>
         <div class="cl">&nbsp;</div>
@@ -104,15 +107,15 @@ if (isset($_SESSION['food_id'])){
         <div class="entry">
         
           <div class="cnt">
-            <h4>Тема 1</h4>
-            <p>LpoaskjpdfosjfiowejfowejofijrejwojowofijriowhgcdklvnklaneflgnlaengjfavninrgnjIONNADFVNERO. </p>
+            <h4><?php echo $row1['title'];?></h4>
+            <p><?php echo $row1['description'];?></p>
             <a href="#" class="dot">Подробнее</a> </div>
         </div>
         <div class="entry">
          
           <div class="cnt">
-            <h4>Тема 2</h4>
-            <p>ikjpJSDPASJFJ0WEJFOJJSDolnsdlfnjsdfwoerkfowjofdfmvladfnmvlnmdflvldfgn;sdfg;/adfbnealrgnlangvngo;rgijoergnoergno. </p>
+            <h4><?php echo $row2['title'];?></h4>
+            <p><?php echo $row2['description'];?></p>
             <a href="#" class="dot">Подробнее</a> </div>
         </div>
       </div>

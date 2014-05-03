@@ -79,9 +79,9 @@
 					echo "</tr>";
 				}
 				echo "<tr><td></td><td></td>";
-				echo "<td><p id='total' name='tot'>0</p></td><td></td></tr>";
+				echo "<td><p id='total' name='tot'>0</p></td><td><button name='next' id='next'>Дальше</button></td></tr>";
 				echo "<tr><td></td><td></td><td><span class='error' id='amount'>Сумма должна превышать 2000 тг</span></td>";
-				echo "<td><button name='next' id='next'>Дальше</button></td>";
+				echo "<td></td>";
 				echo "</tr>";
 				}
     		
