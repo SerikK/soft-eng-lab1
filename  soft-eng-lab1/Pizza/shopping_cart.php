@@ -1,6 +1,20 @@
 <?php
     require_once 'db_config.php';
 	session_start();
+	if (isset($_POST['next'])){
+		$products = array();
+		$product = array();
+		if (isset($_POST['tot'])){echo "total";}
+		// else {
+			// for ($i=0; $i < $_POST['total_quantity']; $i++) {
+				// $product["id"] = $_SESSION['food_id'][$i];
+			 	// $product["quantity"] = $_POST['quantity'.$i.''];
+			 	// array_push($products, $product);
+			// }
+			// $_SESSION['product'] = array_unique($products);
+			// header("Location: client_form.php");
+		// }
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +49,7 @@
     <div class="main">
     	<div class="content">
     	<div class="all_content">
-    	<ul>
+    		<form method="post" action="">
     		<table class="bordered">
     		<thead>
     			<tr>
@@ -48,27 +62,26 @@
     			$counter = 0;
     			if (isset($_SESSION['food_id'])){
 				$count = count($_SESSION['food_id']);
-				$totalPrice = 0;
-				echo "<input id='total_quantity' value='".$count."' type='hidden' /";
+				echo "<input id='total_quantity' name='total_quantity' value='".$count."' type='hidden' />";				
 				for ($i=0; $i < $count; $i++) {
-				echo "<tr>";
-				$result = mysql_query("select * from dishes where id='".$_SESSION['food_id'][$i]."'");
-				
-				while ($row = mysql_fetch_array($result)){
-					
-					echo "<td><h3>".$row['name']."</h3></td>";
-					echo "<td><p id='price".$counter."'>".$row['price']."</p></td>";
-					echo "<td><input class='quant' id='quantity".$counter."' type='number' value='0'></td>";
+					echo "<tr>";
+					$result = mysql_query("select * from dishes where id='".$_SESSION['food_id'][$i]."'");
+					while ($row = mysql_fetch_array($result)){
+						echo "<td><h3>".$row['name']."</h3></td>";
+						echo "<td><p id='price".$counter."'>".$row['price']."</p></td>";
+						echo "<td><input class='quant' name='quantity".$counter."' id='quantity".$counter."' type='number' value='0'></td>";
+					}
+					$counter++;
+					echo "</tr>";
 				}
-				$counter++;
-				echo "</tr>";
-		}
-				echo "<span id='total'>0</span>";
-	}
-				
+				echo "<p id='total' name='tot'>0</p>";
+				echo "<span class='error' id='amount'></span>";
+				//echo "<>";
+				}
     		
     		?>
     		</table>
+    		</form>
     </div>
   </div>
   </div>

@@ -1,6 +1,7 @@
 <?php
   require_once 'db_config.php';
   session_start();
+  
   $success = "";
   if (isset($_POST['order'])){
   	 $existed = false; 
@@ -12,8 +13,11 @@
 	   }
 	 if (!$existed){
 	 array_push($_SESSION['food_id'], $_POST['id']);
-	 }
 	 $success = "Ваш продукт успешно добавлен в корзину";
+	 }
+	 else {
+		$success = "Ваш продукт уже добавлен в корзину"; 
+	 }
   }
   if (!isset($_SESSION['food_id'])){
   		$_SESSION['food_id'] = array();
@@ -86,15 +90,6 @@
 			}
         	?>
         </ul> 
-        	<?php
-			// if (isset($_GET['cat_id'])){
-			// $id = $_GET['cat_id'];
-			// $result_dish = mysql_query("select * from dishes where type_id=".$id."");
-				// while ($row = mysql_fetch_array($result_dish)) {
-					// echo "".$row['name']."";
-				// }
-			// }
-        	?>
         	
       </div>
       <div class="all_content">

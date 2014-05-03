@@ -10,7 +10,6 @@ body {
     background: url(images/body.png) repeat 0 0;
 
 }
-
 a { color: #ff9031; text-decoration: none; cursor: pointer; }
 a:hover { text-decoration: underline; }
 a.dot { background: url(images/dot.png) no-repeat 0 5px; text-decoration: underline; padding-left: 7px;  }
@@ -21,7 +20,9 @@ article, aside, details, footer, header, menu, nav, section { display: inline-bl
 input, textarea, select { font-size: 12px; font-family: arial, sans-serif; }
 textarea { overflow: auto; }
 
-
+.error {
+    color: #FF0000;
+}
 
 .shell { outline: red solid 0px; width: 980px; margin: 0 auto; }
 /* header */
@@ -110,8 +111,6 @@ html, body {outline: red solid 0px; height: inherit; }
 #footer p.copy a { color: #fbe0c0; text-decoration: underline; }
 #footer p.copy a:hover { color: #fff; text-decoration: none; }
 /* end of footer */
-
-
 table {
     *border-collapse: collapse; /* IE7 and lower */
     border-spacing: 0;
