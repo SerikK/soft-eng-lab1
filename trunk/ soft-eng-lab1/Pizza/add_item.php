@@ -105,13 +105,9 @@
   </div>
     <div  class="main">
       <div class="content">
-      	      <div class="side">
+      	<div class="adding">
 		<form action="" method="post" enctype="multipart/form-data">
-			
-				<legend>
-					Добавление продукта
-				</legend>
-				<div class="adding">
+				
 					<label>Название</label>
 					<input name="name" type="text"/ value="<?php if (isset($_SESSION['name'])) {echo $_SESSION['name'];} ?>"><br />
 					<label>Категория</label>
@@ -138,10 +134,9 @@
 				}
 				$try = 0;
 				?>
-				</div>
+				
 		</form>
 		</div>
-		
 		</div>
     </div>
      
