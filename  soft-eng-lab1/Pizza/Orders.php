@@ -1,36 +1,9 @@
 <?php
 session_start();
 require_once 'db_config.php';
-if (!isset($_SESSION['admin']) || (isset($_SESSION['admin']) && !$_SESSION['admin'])) {
-	if (isset($_POST['password'])) {
-		$table_name = "admin";
-		$result = mysql_query("select * from $table_name;");
-		$row = mysql_fetch_array($result);
-		if (isset($row['password']) && $row['password'] == $_POST['password']) {
-			$_SESSION['admin'] = TRUE;
-		} else {
-			$_SESSION['error'] = "Не правильный пароль";
-		}
+if (!isset($_SESSION['admin']) || !$_SESSION['admin']) {
+	header("Location: ./index.php");
 	}
-}
-$content = "";
-if (isset($_SESSION['admin']) && $_SESSION['admin']) {} 
-else {
-	$error = "";
-	if (isset($_SESSION['error']))
-		$error = $_SESSION['error'];
-	$content = "
-				<h3>Введите пароль для авторизации</h3>
-				<p class='red'>$error</p>
-				<form method='post' action=''>
-					<input class='input' type='password' name='password' size='50' />
-					<br>
-					<input class='btn'type='submit' name='submit' />
-				</form>
-				";
-	if (isset($_SESSION['error']))
-		unset($_SESSION['error']);
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +28,7 @@ else {
       </div>
       <nav id="navigation">
         <ul>
-        <li><a href="change_menu.php">Изменить Меню</a></li>
+        <li><a href="edit_menu.php">Изменить Меню</a></li>
         <li><a href="orders.php">Принять Заказы</a></li>
         <li><a href="add_news.php">Добавить Новости</a></li>
         </ul>
@@ -98,7 +71,7 @@ else {
   <div class="shell">
     <div class="footer-nav">
       <ul>
-        <li><a href="change_menu.php">Изменить Меню</a></li>
+        <li><a href="edit_menu.php">Изменить Меню</a></li>
         <li><a href="orders.php">Принять Заказы</a></li>
         <li><a href="add_news.php">Добавить Новости</a></li>
       </ul>

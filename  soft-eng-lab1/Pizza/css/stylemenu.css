@@ -28,7 +28,7 @@ textarea { overflow: auto; }
 /* header */
 .header { background: url(images/food.png) repeat; height: 200px; }
 .header .shell {outline: green solid 0px; background: url(images/asjan.png) no-repeat 280px 25px; position: relative; height: 100%;  }
-#logo { outline: red solid 1px; width: 150px; font-size: 0; line-height: 0; float: left; }
+#logo {  width: 150px; font-size: 0; line-height: 0; float: left; }
 #logo a { height: 141px; background: url(images/logo.png) no-repeat 0 0; text-indent: ; display: inherit; }
 
 
@@ -68,11 +68,11 @@ textarea { overflow: auto; }
 .main .content .menu-list li {  display: inline-block; text-align: left; margin:5px 5px 10px 8px; }
 .main .content .menu-list p { color: #ff2000;}
 .main .content .all_content{ width: 800px; height: inherit; float: right;}
-.main .content .all_content li {outline: red solid 1px; display:inline;}
+.main .content .all_content li { display:inline;}
 .main .content .all_content .description{ float: left; margin: 20px;}
 .main .content .all_content p { float: left;}
-.main .content .all_content .consist {  font-size: 12px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px;border-radius: 10px;margin-bottom: 8px;}
-.main .content .all_content .order{ float: right; padding: 40px 40px;}
+.main .content .all_content .consist {  font-size: 12px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px;border-radius: 10px;margin-bottom: 8px;max-width: 310px;}
+.main .content .all_content .order{ float: right; padding: 30px 30px;}
 .main .content .all_content .order input{ width: 10px; line-height: 29px;float: left;margin: 5px;}
 .main .content .all_content .order button {line-height: 33px; width: 110px;float: right;font-size: 12px;color: #32221c;background: #ffba00;border: none; margin: 3px;}
 span, img {position: relative;border:none 0px #000000;
@@ -150,18 +150,6 @@ table {
     box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
     border-top: none;
     text-shadow: 0 1px 0 rgba(255,255,255,.5); 
-}
-.adding input, textarea, select {
-	margin-left: 100px;
-	margin-bottom: 10px;
-	width: 250px;
-}
-.adding label {
-	font-size: 20px;
-	position: fixed;
-}
-.adding input[type="submit"]{
-	width: auto;
 }
 .red {color: #e74c3c;}
 .input {

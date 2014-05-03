@@ -19,7 +19,7 @@
 		if (empty($phone)) {
 			$phonErr = "*";
 		}
-		if (!(empty($name) && empty($surname) && empty($address) && empty($phone))){
+		if (!(empty($name) || empty($surname) || empty($address) || empty($phone))){
 			date_default_timezone_set("Asia/Almaty");	
 			$date = date('Y-m-d H-i-s');
 	    	$result = mysql_query("INSERT INTO `clients`(`name`,surname, `address`, `phone`, date) VALUES ('$name','$surname','$address',$phone, '$date')");
