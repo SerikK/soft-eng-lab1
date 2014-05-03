@@ -4,6 +4,7 @@
   
   $success = "";
   if (isset($_POST['order'])){
+  	 $_SESSION['food_id'] = array_values(array_unique($_SESSION['food_id'])); //removing null
   	 $existed = false; 
   	 for ($i=0; $i < count($_SESSION['food_id']); $i++) { 
 		   if ($_SESSION['food_id'][$i] == $_POST['id']){

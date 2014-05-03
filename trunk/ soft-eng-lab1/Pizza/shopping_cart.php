@@ -4,16 +4,17 @@
 	if (isset($_POST['next'])){
 		$products = array();
 		$product = array();
-		if (isset($_POST['tot'])){echo "total";}
-		// else {
-			// for ($i=0; $i < $_POST['total_quantity']; $i++) {
-				// $product["id"] = $_SESSION['food_id'][$i];
-			 	// $product["quantity"] = $_POST['quantity'.$i.''];
-			 	// array_push($products, $product);
-			// }
-			// $_SESSION['product'] = array_unique($products);
-			// header("Location: client_form.php");
-		// }
+		for ($i=0; $i < $_POST['total_quantity']; $i++) {
+			$product["id"] = $_SESSION['food_id'][$i];
+		 	$product["quantity"] = $_POST['quantity'.$i.''];
+		 	array_push($products, $product);
+		}
+		$_SESSION['product'] = array_unique($products);
+		header("Location: client_form.php");
+	}
+	elseif (isset($_GET['delete'])) {
+		$k = $_GET['delete'];
+		unset($_SESSION['food_id'][$k]);
 	}
 ?>
 <!DOCTYPE html>
@@ -48,7 +49,6 @@
     </div>
     <div class="main">
     	<div class="content">
-    	<div class="all_content">
     		<form method="post" action="">
     		<table class="bordered">
     		<thead>
@@ -56,34 +56,39 @@
     				<th>Имя</th>
     				<th>Цена</th>
     				<th>Количество</th>
+    				<th></th>
     			</tr>
     		</thead>
     		<?php 
     			$counter = 0;
     			if (isset($_SESSION['food_id'])){
-				$count = count($_SESSION['food_id']);
+    			$_SESSION['food_id'] = array_values($_SESSION['food_id']);
+    			$foods = $_SESSION['food_id'];
+				$count = count($foods);
 				echo "<input id='total_quantity' name='total_quantity' value='".$count."' type='hidden' />";				
 				for ($i=0; $i < $count; $i++) {
 					echo "<tr>";
-					$result = mysql_query("select * from dishes where id='".$_SESSION['food_id'][$i]."'");
+					$result = mysql_query("select * from dishes where id='".$foods[$i]."'");
 					while ($row = mysql_fetch_array($result)){
 						echo "<td><h3>".$row['name']."</h3></td>";
 						echo "<td><p id='price".$counter."'>".$row['price']."</p></td>";
 						echo "<td><input class='quant' name='quantity".$counter."' id='quantity".$counter."' type='number' value='0'></td>";
+						echo "<td><a href='shopping_cart.php?delete=".$counter."'><img src='css/images/DeleteRed.png' style='width: 35px; height:35px;'></a></td>";
 					}
 					$counter++;
 					echo "</tr>";
 				}
-				echo "<p id='total' name='tot'>0</p>";
-				echo "<span class='error' id='amount'></span>";
-				//echo "<>";
+				echo "<tr><td></td><td></td>";
+				echo "<td><p id='total' name='tot'>0</p></td><td></td></tr>";
+				echo "<tr><td></td><td></td><td><span class='error' id='amount'>Сумма должна превышать 2000 тг</span></td>";
+				echo "<td><button name='next' id='next'>Дальше</button></td>";
+				echo "</tr>";
 				}
     		
     		?>
     		</table>
     		</form>
     </div>
-  </div>
   </div>
 
     <div id="footer-push">

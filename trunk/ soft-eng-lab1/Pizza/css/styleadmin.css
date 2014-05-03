@@ -57,7 +57,18 @@ textarea { overflow: auto; }
 .main .content .entry { padding-bottom: 33px;  }
 .main .content .table {outline: red solid 0px; }
 
-
+.adding input, textarea, select {
+	margin-left: 100px;
+	margin-bottom: 10px;
+	width: 250px;
+}
+.adding label {
+	font-size: 20px;
+	position: fixed;
+}
+.adding input[type="submit"]{
+	width: auto;
+}
 html, body {outline: red solid 0px; height: 100%; }
 #wrapper {outline: red solid 0px; min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -58px; }
 #footer, #footer-push { height: 58px; }

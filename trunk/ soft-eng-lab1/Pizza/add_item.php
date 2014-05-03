@@ -4,7 +4,7 @@
 	if (!isset($_SESSION['admin']) || !$_SESSION['admin']) {
 	header("Location: ./index.php");
 	}
-	if (isset($_FILES['image']) && isset($_POST['name']) && isset($_POST['desc']) && isset($_POST['price']) && isset($_POST['type'])) {
+	if (!(isset($_SESSION['update'])) && isset($_FILES['image']) && isset($_POST['name']) && isset($_POST['description']) && isset($_POST['price']) && isset($_POST['type'])) {
 		$img_name = $_FILES['image']['name'];
 		if (file_exists("./images/" . $img_name)) {} 
 		else {
@@ -13,7 +13,7 @@
 	 	}
 	$name = $_POST['name'];
 	$img = $img_name;
-	$description = $_POST['desc'];
+	$description = $_POST['description'];
 	$price = $_POST['price'];
 	$type = $_POST['type'];
 	$query = "insert into dishes(name, urlphoto, description, price, type_id) values('$name','$img','$description',$price, '$type')";
@@ -21,10 +21,56 @@
 	if ($result == false) {
 		$_SESSION['error'] = "Проверьте данные еще раз";
 	} else {
-		header("Location: ./change_menu.php");
+		header("Location: ./edit_menu.php");
 	}
 	
 	}
+	elseif (isset($_SESSION['update']) && isset($_SESSION['id']) && isset($_POST['submit'])) {
+	$id = $_SESSION['id'];
+	if (isset($_FILES['image']) && $_FILES['image']['name'] != "") {
+		$img_name = $_FILES['image']['name'];
+		if (file_exists("./images/" . $img_name)) {
+		} else {
+			$dest = __DIR__ . DIRECTORY_SEPARATOR . "images" . DIRECTORY_SEPARATOR . $img_name;
+			$res = move_uploaded_file($_FILES["image"]["tmp_name"], $dest);
+		}
+		$query = "update dishes set img='$img_name' where id=$id";
+		$result = mysql_query($query);
+	}
+	if (isset($_POST['name'])) {
+		$name = $_POST['name'];
+		$query = "update dishes set name='$name' where id=$id";
+		$result = mysql_query($query);
+	}
+	if (isset($_POST['description'])) {
+		$description = $_POST['description'];
+		$query = "update dishes set description='$description' where id=$id";
+		$result = mysql_query($query);
+	}
+	if (isset($_POST['price'])) {
+		$price = $_POST['price'];
+		$query = "update dishes set price=$price where id=$id";
+		$result = mysql_query($query);
+	}
+	if (isset($_POST['type'])) {
+		$type = $_POST['type'];
+		$query = "update dishes set type=$type where id=$id";
+		$result = mysql_query($query);
+	}
+	if (isset($_SESSION['id']))
+		unset($_SESSION['id']);
+	if (isset($_SESSION['name']))
+		unset($_SESSION['name']);
+	if (isset($_SESSION['description']))
+		unset($_SESSION['description']);
+	if (isset($_SESSION['price']))
+		unset($_SESSION['price']);
+	if (isset($_SESSION['type']))
+		unset($_SESSION['type']);
+	if (isset($_SESSION['update']))
+		unset($_SESSION['update']);
+	header("Location: ./edit_menu.php");
+}
 	
 ?>
 <!DOCTYPE html>
@@ -50,7 +96,7 @@
       </div>
       <nav id="navigation">
         <ul>
-        <li><a href="change_menu.php">Изменить Меню</a></li>
+        <li><a href="edit_menu.php">Изменить Меню</a></li>
         <li><a href="orders.php">Принять Заказы</a></li>
         <li><a href="add_news.php">Добавить Новости</a></li>
         </ul>
@@ -67,7 +113,7 @@
 				</legend>
 				<div class="adding">
 					<label>Название</label>
-					<input name="name" type="text"/><br />
+					<input name="name" type="text"/ value="<?php if (isset($_SESSION['name'])) {echo $_SESSION['name'];} ?>"><br />
 					<label>Категория</label>
 					<select name="type">
 						<?php
@@ -79,15 +125,15 @@
 						?>
 					</select><br />
 					<label>Описание</label>
-					<textarea name="desc" rows="5"></textarea><br />
+					<textarea name="description" rows="5"><?php if (isset($_SESSION['description'])) {echo $_SESSION['description'];} ?>
+					</textarea><br />
 					<label>Цена</label>
-					<input name="price" type="number"><br />
+					<input name="price" type="number" value="<?php if (isset($_SESSION['price'])) {echo $_SESSION['price'];} ?>"><br />
 					<label>Фото</label>
-					<input type="file" name="image"><br />
+					<input type="file" name="image" value="<?php if (isset($_SESSION['img'])) {echo $_SESSION['img'];} ?>"><br />
 					<input type="submit" value="Отправить" name="submit">
 					<?php if (isset($_SESSION['error'])) {
-					echo "<h2>" . $_SESSION['error'] . "
-</h2>";
+					echo "<h2>" . $_SESSION['error'] . "</h2>";
 					unset($_SESSION['error']);
 				}
 				$try = 0;
@@ -108,7 +154,7 @@
   <div class="shell">
     <div class="footer-nav">
       <ul>
-        <li><a href="change_menu.php">Изменить Меню</a></li>
+        <li><a href="edit_menu.php">Изменить Меню</a></li>
         <li><a href="orders.php">Принять Заказы</a></li>
         <li><a href="add_news.php">Добавить Новости</a></li>
       </ul>

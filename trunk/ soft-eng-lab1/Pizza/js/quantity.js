@@ -2,6 +2,7 @@
  * @author User
  */
 $(document).ready(function(){
+	$("#next").hide();
 	totalquant = $("#total_quantity").val();
 	$(".quant").keyup(function(){
 		tot = 0;
@@ -10,11 +11,11 @@ $(document).ready(function(){
 		}
 	$("#total").html(tot);
 	if (tot*1 < 2000){
-		$("#amount").text("You must buy more than 2000");
+		$("#amount").show();
 	}
 	else {
-		$("#amount").html("Good <button name='next'>Дальше</button>");
-		
+		$("#amount").hide();
+		$("#next").show();
 	}
 	});
 	

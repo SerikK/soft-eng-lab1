@@ -61,7 +61,7 @@ else {
       </div>
       <nav id="navigation">
         <ul>
-        <li><a href="change_menu.php">Изменить Меню</a></li>
+        <li><a href="edit_menu.php">Изменить Меню</a></li>
         <li><a href="orders.php">Принять Заказы</a></li>
         <li><a href="add_news.php">Добавить Новости</a></li>
         </ul>
@@ -70,8 +70,7 @@ else {
   </div>
   <div  class="main">
       <div class="content">
-        <?php echo $content; ?>
-			</div>
+      	<?php echo $content;?>
     </div>
    <div id="footer-push">
   </div>
@@ -79,7 +78,7 @@ else {
   <div class="shell">
     <div class="footer-nav">
       <ul>
-        <li><a href="change_menu.php">Изменить Меню</a></li>
+        <li><a href="edit_menu.php">Изменить Меню</a></li>
         <li><a href="orders.php">Принять Заказы</a></li>
         <li><a href="add_news.php">Добавить Новости</a></li>
       </ul>
