@@ -71,7 +71,7 @@ else {
 						<ul>
 							<li><a href="edit_menu.php">Изменить Меню</a></li>
         					<li><a href="orders.php">Принять Заказы</a></li>
-        					<li><a href="add_news.php">Добавить Новости</a></li>
+        					<li><a href="edit_news.php">Добавить Новости</a></li>
 						</ul>
 					</nav>
 
@@ -85,7 +85,7 @@ else {
 					<center>
 						<span>Меню пиццерий Асжана!</span>
 					</center></h3>
-					<div class="menu-list" style="width: 100px;">
+					<div class="menu-list" style="width: 120px;">
 						<ul>
 							<?php
 							$result = mysql_query("select * from types");
@@ -118,8 +118,8 @@ else {
 								echo "</div>";
 								echo "<div class='order' style='min-height: 130px; min-width: 100px;'>";
 								echo "<input name='id' type='hidden' value='" . $row['id'] . "'>";
-								echo "<button name='edit'>Исправить</button>";
-								echo "<button name='remove'>Удалить</button>";
+								echo "<button name='edit' class='bn'>Исправить</button>";
+								echo "<button name='remove' class='bn'>Удалить</button>";
 								echo "</div>";
 								echo "</li>";
 								echo "</form>";
@@ -138,7 +138,7 @@ else {
 					<ul>
 						<li><a href="edit_menu.php">Изменить Меню</a></li>
         				<li><a href="orders.php">Принять Заказы</a></li>
-        				<li><a href="add_news.php">Добавить Новости</a></li>
+        				<li><a href="edit_news.php">Добавить Новости</a></li>
 					</ul>
 				</div>
 				<p class="copy">

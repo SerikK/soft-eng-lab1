@@ -1,10 +1,24 @@
 <?php
 session_start();
+$upd_title = $upd_desc = "";
 require_once 'db_config.php';
 if (!isset($_SESSION['admin']) || !$_SESSION['admin']) {
 	header("Location: ./index.php");
 }
-if (isset($_POST['submit'])){
+if (isset($_SESSION['update'])){
+	$result = mysql_query("select * from news where id='".$_SESSION['id']."'");
+	$row = mysql_fetch_array($result);
+	$upd_title = $row['title'];
+	$upd_desc = $row['description'];
+}
+if (isset($_POST['submit']) && isset($_SESSION['update'])){
+	$title = $_POST['title'];
+	mysql_query("update news set title='$title' where id='".$_SESSION['id']."'");
+	$description = $_POST['description'];
+	mysql_query("update news set description='$description' where id='".$_SESSION['id']."'");
+	header("Location: ./edit_news.php");
+}
+elseif (isset($_POST['submit'])){
 	$title = $_POST['title'];
 	$description = $_POST['description'];
 	$result = mysql_query("insert into news(title, description) values('$title', '$description')");
@@ -43,7 +57,7 @@ if (isset($_POST['submit'])){
 								<a href="orders.php">Принять Заказы</a>
 							</li>
 							<li>
-								<a href="add_news.php">Добавить Новости</a>
+								<a href="">Добавить Новости</a>
 							</li>
 						</ul>
 					</nav>
@@ -53,8 +67,8 @@ if (isset($_POST['submit'])){
 				<div class="content">
 					<div class="adding">
 					<form method="post" action="">
-					<label>Название</label><input name="title" /><br>
-					<label>Описание</label><textarea name="description" rows="10" cols="70"></textarea><br>
+					<label>Название</label><input name="title"value="<?php if (isset($_SESSION['update'])){echo $upd_title;}?>" /><br>
+					<label>Описание</label><textarea name="description" rows="10" cols="70"><?php if (isset($_SESSION['update'])){echo $upd_desc;}?></textarea><br>
 					<input type="submit" name="submit" />
 					</form>
 					</div>
@@ -74,7 +88,7 @@ if (isset($_POST['submit'])){
 							<a href="orders.php">Принять Заказы</a>
 						</li>
 						<li>
-							<a href="add_news.php">Добавить Новости</a>
+							<a href="">Добавить Новости</a>
 						</li>
 					</ul>
 				</div>
