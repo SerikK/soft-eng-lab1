@@ -74,7 +74,7 @@ textarea { overflow: auto; }
 .main .content .all_content .consist {  font-size: 12px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px;border-radius: 10px;margin-bottom: 8px;max-width: 310px;}
 .main .content .all_content .order{ float: right; padding: 30px 30px;}
 .main .content .all_content .order input{ width: 10px; line-height: 29px;float: left;margin: 5px;}
-.main .content .all_content .order button {line-height: 33px; width: 110px;float: right;font-size: 12px;color: #32221c;background: #ffba00;border: none; margin: 3px;}
+ .bn {line-height: 33px; width: 110px;font-size: 12px;color: #32221c;background: #ffba00;border: none; margin: 3px;}
 span, img {position: relative;border:none 0px #000000;
 -moz-border-radius-topleft: 24px;
 -moz-border-radius-topright:24px;
@@ -114,20 +114,14 @@ html, body {outline: red solid 0px; height: inherit; }
 table {
     *border-collapse: collapse; /* IE7 and lower */
     border-spacing: 0;
-    width: 100%;    
+    width: 100%; 
 }
 
 .border_bottom {
-    border-bottom: solid #ccc 1px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 1px 1px #ccc; 
-    -moz-box-shadow: 0 1px 1px #ccc; 
-    box-shadow: 0 1px 1px #ccc;         
+    
 }
 .border_bottom tr{
-	background: #fbf8e9;
+	
 }
     
 .border_bottom td, .border_bottom th {
@@ -136,17 +130,11 @@ table {
     text-align: center;    
 }
 
-.bordered th {
-    background-color: #dce9f9;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
-    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
-    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
-    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
-    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
-    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+.border_bottom th {
+    
     -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
     -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
-    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;    
     border-top: none;
     text-shadow: 0 1px 0 rgba(255,255,255,.5); 
 }
