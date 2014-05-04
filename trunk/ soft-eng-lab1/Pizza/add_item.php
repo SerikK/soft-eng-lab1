@@ -98,7 +98,7 @@
         <ul>
         <li><a href="edit_menu.php">Изменить Меню</a></li>
         <li><a href="orders.php">Принять Заказы</a></li>
-        <li><a href="add_news.php">Добавить Новости</a></li>
+        <li><a href="edit_news.php">Добавить Новости</a></li>
         </ul>
       </nav>
      </div>
@@ -151,7 +151,7 @@
       <ul>
         <li><a href="edit_menu.php">Изменить Меню</a></li>
         <li><a href="orders.php">Принять Заказы</a></li>
-        <li><a href="add_news.php">Добавить Новости</a></li>
+        <li><a href="edit_news.php">Добавить Новости</a></li>
       </ul>
     </div>
     <p class="copy">© Copyright 2014

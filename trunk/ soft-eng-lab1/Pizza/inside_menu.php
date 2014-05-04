@@ -51,7 +51,6 @@
 
       <div class="header-right">
         <div class="subscribe"> <a href="shopping_cart.php"><span></span>Ваш заказ</a> </div>
-        <div class="socials"> <a href="#" class="facebook-ico">facebook</a> <a href="#" class="twitter-ico">twitter</a> </div>
         <div class="cl">&nbsp;</div>
       </div>
       <div class="cl">&nbsp;</div>
@@ -75,7 +74,7 @@
   <div class="main">
     <div class="content">
       <h3><center><span>Меню пиццерий Асжана!</span></center></h3>
-      	<div class="menu-list" style="width: 100px;">
+      	<div class="menu-list" style="width: 120px;"">
       	<ul>
         	<?php 
         	$result = mysql_query("select * from types");
@@ -87,7 +86,7 @@
 				else {
 					echo "<a href='./inside_menu.php?cat_id=".$row['type_id']."'>".$row['type']."</a>";
 				}
-				echo "</li>";
+				echo "</li><br>";
 			}
         	?>
         </ul> 

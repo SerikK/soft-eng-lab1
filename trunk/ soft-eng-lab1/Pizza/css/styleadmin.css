@@ -52,7 +52,7 @@ textarea { overflow: auto; }
 .main h4 { font-size: 14px; color: #ff9031; } 
 .main h4 a { color: #ff9031; } 
 .main h4 a:hover { color: #bf5902; text-decoration: none;} 
-.main .content {outline: red solid 0px; width: 620px; height: 250px; float:; margin: 10px auto; }
+.main .content {outline: red solid 0px; width: 700px; height: 250px; float:; margin: 10px auto; }
 .main .content h3 { padding-bottom: 37px;  }
 .main .content .entry { padding-bottom: 33px;  }
 .main .content .table {outline: red solid 0px; }
@@ -68,6 +68,25 @@ textarea { overflow: auto; }
 .adding input[type="submit"]{
 	width: auto;
 }
+.main .content ul.border_list li{
+	list-style-type: none;
+	list-style-position: inside;
+	outline: 1px orange solid;
+	margin: 10px;
+}
+.main .content .border_list label{
+	font-size: 14px;
+	position: absolute;
+}
+.bn {
+	line-height: 20px; 
+	width: 100px;
+	font-size: 12px;
+	color: #32221c;
+	background: #ffba00;
+	border: none;
+	margin-left: 700px;
+	}
 table {
     *border-collapse: collapse; /* IE7 and lower */
     border-spacing: 0;
