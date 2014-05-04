@@ -111,7 +111,7 @@
       				echo "</div>";
       				echo "<div class='order' style='min-height: 130px; min-width: 100px;'>";
 					echo "<input name='id' type='hidden' value='".$row['id']."'>";
-	      			echo "<button name='order'>Заказать</button>";
+	      			echo "<button name='order' class='bn'>Заказать</button>";
       				echo "</div>";
 					echo "</li>";
 					echo "</form>";
