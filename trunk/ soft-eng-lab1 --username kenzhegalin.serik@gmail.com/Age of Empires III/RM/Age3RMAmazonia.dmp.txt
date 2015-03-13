@@ -1,0 +1,1764 @@
+//==============================================================================
+// CXSDump
+//==============================================================================
+Main FunctionID=1.
+
+File Data:
+  Files:          2 files.
+  Symbols:      857 symbols.
+  Variables:     54 variables.
+  Functions:      2 functions.
+  RuleGroups:     0 groups.
+  Rules:          0 rules.
+  Code:       18153 bytes (MAX=32768).
+
+6 Variable Types:
+  Void   (Value=1).
+  Int    (Value=2).
+  Float  (Value=4).
+  Bool   (Value=8).
+  String (Value=16).
+  Vector (Value=32).
+
+2 Files:
+  Amazonia.xs                    (ID=   0).
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries.xs (ID=   1).
+
+857 Symbols:
+  EXTERN$cInvalidVector          (ID=   0) SymType= 1, SymValue=-1.
+  EXTERN$cOriginVector           (ID=   1) SymType= 1, SymValue=-2.
+  xsDisableRule                  (ID=   2) SymType= 0, SymValue=0.
+  xsDisableSelf                  (ID=   3) SymType= 0, SymValue=1.
+  xsEnableRule                   (ID=   4) SymType= 0, SymValue=2.
+  xsIsRuleEnabled                (ID=   5) SymType= 0, SymValue=3.
+  xsSetRulePriority              (ID=   6) SymType= 0, SymValue=4.
+  xsSetRulePrioritySelf          (ID=   7) SymType= 0, SymValue=5.
+  xsSetRuleMinInterval           (ID=   8) SymType= 0, SymValue=6.
+  xsSetRuleMinIntervalSelf       (ID=   9) SymType= 0, SymValue=7.
+  xsSetRuleMaxInterval           (ID=  10) SymType= 0, SymValue=8.
+  xsSetRuleMaxIntervalSelf       (ID=  11) SymType= 0, SymValue=9.
+  xsEnableRuleGroup              (ID=  12) SymType= 0, SymValue=10.
+  xsDisableRuleGroup             (ID=  13) SymType= 0, SymValue=11.
+  xsIsRuleGroupEnabled           (ID=  14) SymType= 0, SymValue=12.
+  xsVectorGetX                   (ID=  15) SymType= 0, SymValue=13.
+  xsVectorGetY                   (ID=  16) SymType= 0, SymValue=14.
+  xsVectorGetZ                   (ID=  17) SymType= 0, SymValue=15.
+  xsVectorSetX                   (ID=  18) SymType= 0, SymValue=16.
+  xsVectorSetY                   (ID=  19) SymType= 0, SymValue=17.
+  xsVectorSetZ                   (ID=  20) SymType= 0, SymValue=18.
+  xsVectorSet                    (ID=  21) SymType= 0, SymValue=19.
+  xsVectorLength                 (ID=  22) SymType= 0, SymValue=20.
+  xsVectorNormalize              (ID=  23) SymType= 0, SymValue=21.
+  xsArrayCreateInt               (ID=  24) SymType= 0, SymValue=22.
+  xsArraySetInt                  (ID=  25) SymType= 0, SymValue=23.
+  xsArrayGetInt                  (ID=  26) SymType= 0, SymValue=24.
+  xsArrayCreateFloat             (ID=  27) SymType= 0, SymValue=25.
+  xsArraySetFloat                (ID=  28) SymType= 0, SymValue=26.
+  xsArrayGetFloat                (ID=  29) SymType= 0, SymValue=27.
+  xsArrayCreateBool              (ID=  30) SymType= 0, SymValue=28.
+  xsArraySetBool                 (ID=  31) SymType= 0, SymValue=29.
+  xsArrayGetBool                 (ID=  32) SymType= 0, SymValue=30.
+  xsArrayCreateString            (ID=  33) SymType= 0, SymValue=31.
+  xsArraySetString               (ID=  34) SymType= 0, SymValue=32.
+  xsArrayGetString               (ID=  35) SymType= 0, SymValue=33.
+  xsArrayCreateVector            (ID=  36) SymType= 0, SymValue=34.
+  xsArraySetVector               (ID=  37) SymType= 0, SymValue=35.
+  xsArrayGetVector               (ID=  38) SymType= 0, SymValue=36.
+  xsArrayGetSize                 (ID=  39) SymType= 0, SymValue=37.
+  xsDumpArrays                   (ID=  40) SymType= 0, SymValue=38.
+  xsGetContextPlayer             (ID=  41) SymType= 0, SymValue=39.
+  xsSetContextPlayer             (ID=  42) SymType= 0, SymValue=40.
+  xsGetTime                      (ID=  43) SymType= 0, SymValue=41.
+  xsAddRuntimeEvent              (ID=  44) SymType= 0, SymValue=42.
+  xsGetFunctionID                (ID=  45) SymType= 0, SymValue=43.
+  rmEchoWarning                  (ID=  46) SymType= 0, SymValue=44.
+  rmEchoError                    (ID=  47) SymType= 0, SymValue=45.
+  rmEchoInfo                     (ID=  48) SymType= 0, SymValue=46.
+  rmRandFloat                    (ID=  49) SymType= 0, SymValue=47.
+  rmRandInt                      (ID=  50) SymType= 0, SymValue=48.
+  rmGetNomadStart                (ID=  51) SymType= 0, SymValue=49.
+  rmGetIsFFA                     (ID=  52) SymType= 0, SymValue=50.
+  rmSetMapSize                   (ID=  53) SymType= 0, SymValue=51.
+  rmGetMapXSize                  (ID=  54) SymType= 0, SymValue=52.
+  rmGetMapZSize                  (ID=  55) SymType= 0, SymValue=53.
+  rmSetSeaLevel                  (ID=  56) SymType= 0, SymValue=54.
+  rmGetSeaLevel                  (ID=  57) SymType= 0, SymValue=55.
+  rmSetSeaType                   (ID=  58) SymType= 0, SymValue=56.
+  rmSetMapElevationParameters    (ID=  59) SymType= 0, SymValue=57.
+  rmSetBaseTerrainMix            (ID=  60) SymType= 0, SymValue=58.
+  rmAddMapTerrainByHeightInfo    (ID=  61) SymType= 0, SymValue=59.
+  rmAddMapTerrainByAngleInfo     (ID=  62) SymType= 0, SymValue=60.
+  rmSetMapElevationHeightBlend   (ID=  63) SymType= 0, SymValue=61.
+  rmPlaceMapClusters             (ID=  64) SymType= 0, SymValue=62.
+  rmSetMapClusteringPlacementParams (ID=  65) SymType= 0, SymValue=63.
+  rmSetMapClusteringObjectParams (ID=  66) SymType= 0, SymValue=64.
+  rmSetMapClusteringNoiseParams  (ID=  67) SymType= 0, SymValue=65.
+  rmAreaFractionToTiles          (ID=  68) SymType= 0, SymValue=66.
+  rmAreaTilesToFraction          (ID=  69) SymType= 0, SymValue=67.
+  rmXFractionToTiles             (ID=  70) SymType= 0, SymValue=68.
+  rmXTilesToFraction             (ID=  71) SymType= 0, SymValue=69.
+  rmZFractionToTiles             (ID=  72) SymType= 0, SymValue=70.
+  rmZTilesToFraction             (ID=  73) SymType= 0, SymValue=71.
+  rmDegreesToRadians             (ID=  74) SymType= 0, SymValue=72.
+  rmMetersToTiles                (ID=  75) SymType= 0, SymValue=73.
+  rmTilesToMeters                (ID=  76) SymType= 0, SymValue=74.
+  rmXMetersToFraction            (ID=  77) SymType= 0, SymValue=75.
+  rmZMetersToFraction            (ID=  78) SymType= 0, SymValue=76.
+  rmXFractionToMeters            (ID=  79) SymType= 0, SymValue=77.
+  rmZFractionToMeters            (ID=  80) SymType= 0, SymValue=78.
+  rmCreateArea                   (ID=  81) SymType= 0, SymValue=79.
+  rmSetAreaSize                  (ID=  82) SymType= 0, SymValue=80.
+  rmSetAreaEdgeFilling           (ID=  83) SymType= 0, SymValue=81.
+  rmSetAreaLocation              (ID=  84) SymType= 0, SymValue=82.
+  rmSetAreaLocPlayer             (ID=  85) SymType= 0, SymValue=83.
+  rmSetAreaLocTeam               (ID=  86) SymType= 0, SymValue=84.
+  rmBuildArea                    (ID=  87) SymType= 0, SymValue=85.
+  rmBuildAllAreas                (ID=  88) SymType= 0, SymValue=86.
+  rmSetAreaTerrainType           (ID=  89) SymType= 0, SymValue=87.
+  rmSetAreaMix                   (ID=  90) SymType= 0, SymValue=88.
+  rmPaintAreaTerrain             (ID=  91) SymType= 0, SymValue=89.
+  rmPaintAreaTerrainByHeight     (ID=  92) SymType= 0, SymValue=90.
+  rmPaintAreaTerrainByAngle      (ID=  93) SymType= 0, SymValue=91.
+  rmSetAreaBaseHeight            (ID=  94) SymType= 0, SymValue=92.
+  rmSetAreaWarnFailure           (ID=  95) SymType= 0, SymValue=93.
+  rmSetAreaForestType            (ID=  96) SymType= 0, SymValue=94.
+  rmSetAreaForestDensity         (ID=  97) SymType= 0, SymValue=95.
+  rmSetAreaForestClumpiness      (ID=  98) SymType= 0, SymValue=96.
+  rmSetAreaForestUnderbrush      (ID=  99) SymType= 0, SymValue=97.
+  rmSetAreaWaterType             (ID= 100) SymType= 0, SymValue=98.
+  rmGetAreaClosestPoint          (ID= 101) SymType= 0, SymValue=99.
+  rmSetAreaCliffType             (ID= 102) SymType= 0, SymValue=100.
+  rmSetAreaCliffPainting         (ID= 103) SymType= 0, SymValue=101.
+  rmSetAreaCliffEdge             (ID= 104) SymType= 0, SymValue=102.
+  rmSetAreaCliffHeight           (ID= 105) SymType= 0, SymValue=103.
+  rmAddAreaCliffEdgeAvoidClass   (ID= 106) SymType= 0, SymValue=104.
+  rmRiverCreate                  (ID= 107) SymType= 0, SymValue=105.
+  rmRiverSetConnections          (ID= 108) SymType= 0, SymValue=106.
+  rmRiverConnectRiver            (ID= 109) SymType= 0, SymValue=107.
+  rmRiverAddWaypoint             (ID= 110) SymType= 0, SymValue=108.
+  rmRiverSetBankNoiseParams      (ID= 111) SymType= 0, SymValue=109.
+  rmRiverSetShallowRadius        (ID= 112) SymType= 0, SymValue=110.
+  rmRiverAddShallow              (ID= 113) SymType= 0, SymValue=111.
+  rmRiverAddShallows             (ID= 114) SymType= 0, SymValue=112.
+  rmRiverAvoid                   (ID= 115) SymType= 0, SymValue=113.
+  rmRiverBuild                   (ID= 116) SymType= 0, SymValue=114.
+  rmRiverReveal                  (ID= 117) SymType= 0, SymValue=115.
+  rmSetRiverFoundationParams     (ID= 118) SymType= 0, SymValue=116.
+  rmSetWorldCircleConstraint     (ID= 119) SymType= 0, SymValue=117.
+  rmSetAreaObeyWorldCircleConstraint (ID= 120) SymType= 0, SymValue=118.
+  rmAddAreaTerrainLayer          (ID= 121) SymType= 0, SymValue=119.
+  rmSetAreaTerrainLayerVariance  (ID= 122) SymType= 0, SymValue=120.
+  rmSetAreaMinBlobs              (ID= 123) SymType= 0, SymValue=121.
+  rmSetAreaMaxBlobs              (ID= 124) SymType= 0, SymValue=122.
+  rmSetAreaMinBlobDistance       (ID= 125) SymType= 0, SymValue=123.
+  rmSetAreaMaxBlobDistance       (ID= 126) SymType= 0, SymValue=124.
+  rmSetAreaCoherence             (ID= 127) SymType= 0, SymValue=125.
+  rmSetAreaSmoothDistance        (ID= 128) SymType= 0, SymValue=126.
+  rmSetAreaHeightBlend           (ID= 129) SymType= 0, SymValue=127.
+  rmAreaID                       (ID= 130) SymType= 0, SymValue=128.
+  rmAddAreaInfluencePoint        (ID= 131) SymType= 0, SymValue=129.
+  rmAddAreaInfluenceSegment      (ID= 132) SymType= 0, SymValue=130.
+  rmAddAreaRemoveType            (ID= 133) SymType= 0, SymValue=131.
+  rmAddAreaTerrainReplacement    (ID= 134) SymType= 0, SymValue=132.
+  rmSetAreaElevationType         (ID= 135) SymType= 0, SymValue=133.
+  rmSetAreaElevationMinFrequency (ID= 136) SymType= 0, SymValue=134.
+  rmSetAreaElevationOctaves      (ID= 137) SymType= 0, SymValue=135.
+  rmSetAreaElevationPersistence  (ID= 138) SymType= 0, SymValue=136.
+  rmSetAreaElevationVariation    (ID= 139) SymType= 0, SymValue=137.
+  rmSetAreaElevationEdgeFalloffDist (ID= 140) SymType= 0, SymValue=138.
+  rmSetAreaElevationNoiseBias    (ID= 141) SymType= 0, SymValue=139.
+  rmSetAreaReveal                (ID= 142) SymType= 0, SymValue=140.
+  rmSetGlobalSnow                (ID= 143) SymType= 0, SymValue=141.
+  rmSetGlobalRain                (ID= 144) SymType= 0, SymValue=142.
+  rmSetGlobalStormLength         (ID= 145) SymType= 0, SymValue=143.
+  rmSetWindMagnitude             (ID= 146) SymType= 0, SymValue=144.
+  rmTerrainInitialize            (ID= 147) SymType= 0, SymValue=145.
+  rmFillMapCorners               (ID= 148) SymType= 0, SymValue=146.
+  rmSetLightingSet               (ID= 149) SymType= 0, SymValue=147.
+  rmDoLightingFade               (ID= 150) SymType= 0, SymValue=148.
+  rmDoLightingEffect             (ID= 151) SymType= 0, SymValue=149.
+  rmSetGaiaCiv                   (ID= 152) SymType= 0, SymValue=150.
+  rmAllocateSubCivs              (ID= 153) SymType= 0, SymValue=151.
+  rmSetSubCiv                    (ID= 154) SymType= 0, SymValue=152.
+  rmGetCivID                     (ID= 155) SymType= 0, SymValue=153.
+  rmAddMerc                      (ID= 156) SymType= 0, SymValue=154.
+  rmSetPlayerLocation            (ID= 157) SymType= 0, SymValue=155.
+  rmSetPlayerPlacementArea       (ID= 158) SymType= 0, SymValue=156.
+  rmSetTeamSpacingModifier       (ID= 159) SymType= 0, SymValue=157.
+  rmSetPlacementTeam             (ID= 160) SymType= 0, SymValue=158.
+  rmSetPlacementSection          (ID= 161) SymType= 0, SymValue=159.
+  rmPlacePlayersCircular         (ID= 162) SymType= 0, SymValue=160.
+  rmPlacePlayersSquare           (ID= 163) SymType= 0, SymValue=161.
+  rmPlacePlayersLine             (ID= 164) SymType= 0, SymValue=162.
+  rmPlacePlayersRiver            (ID= 165) SymType= 0, SymValue=163.
+  rmPlacePlayer                  (ID= 166) SymType= 0, SymValue=164.
+  rmSetPlayerArea                (ID= 167) SymType= 0, SymValue=165.
+  rmPlayerLocXFraction           (ID= 168) SymType= 0, SymValue=166.
+  rmPlayerLocZFraction           (ID= 169) SymType= 0, SymValue=167.
+  rmAddFairLoc                   (ID= 170) SymType= 0, SymValue=168.
+  rmPlaceFairLocs                (ID= 171) SymType= 0, SymValue=169.
+  rmResetFairLocs                (ID= 172) SymType= 0, SymValue=170.
+  rmGetNumberFairLocs            (ID= 173) SymType= 0, SymValue=171.
+  rmFairLocXFraction             (ID= 174) SymType= 0, SymValue=172.
+  rmFairLocZFraction             (ID= 175) SymType= 0, SymValue=173.
+  rmSetPlayerResource            (ID= 176) SymType= 0, SymValue=174.
+  rmAddPlayerResource            (ID= 177) SymType= 0, SymValue=175.
+  rmMultiplyPlayerResource       (ID= 178) SymType= 0, SymValue=176.
+  rmGetPlayerName                (ID= 179) SymType= 0, SymValue=177.
+  rmGetPlayerTeam                (ID= 180) SymType= 0, SymValue=178.
+  rmGetPlayerCiv                 (ID= 181) SymType= 0, SymValue=179.
+  rmGetPlayerCulture             (ID= 182) SymType= 0, SymValue=180.
+  rmGetNumberPlayersOnTeam       (ID= 183) SymType= 0, SymValue=181.
+  rmSetTeamArea                  (ID= 184) SymType= 0, SymValue=182.
+  rmCreateBoxConstraint          (ID= 185) SymType= 0, SymValue=183.
+  rmCreatePieConstraint          (ID= 186) SymType= 0, SymValue=184.
+  rmCreateAreaOverlapConstraint  (ID= 187) SymType= 0, SymValue=185.
+  rmCreateAreaConstraint         (ID= 188) SymType= 0, SymValue=186.
+  rmCreateAreaDistanceConstraint (ID= 189) SymType= 0, SymValue=187.
+  rmCreateAreaMaxDistanceConstraint (ID= 190) SymType= 0, SymValue=188.
+  rmCreateEdgeConstraint         (ID= 191) SymType= 0, SymValue=189.
+  rmCreateEdgeDistanceConstraint (ID= 192) SymType= 0, SymValue=190.
+  rmCreateEdgeMaxDistanceConstraint (ID= 193) SymType= 0, SymValue=191.
+  rmCreateCliffEdgeConstraint    (ID= 194) SymType= 0, SymValue=192.
+  rmCreateCliffEdgeDistanceConstraint (ID= 195) SymType= 0, SymValue=193.
+  rmCreateCliffEdgeMaxDistanceConstraint (ID= 196) SymType= 0, SymValue=194.
+  rmCreateCliffRampConstraint    (ID= 197) SymType= 0, SymValue=195.
+  rmCreateCliffRampDistanceConstraint (ID= 198) SymType= 0, SymValue=196.
+  rmCreateCliffRampMaxDistanceConstraint (ID= 199) SymType= 0, SymValue=197.
+  rmCreateClassDistanceConstraint (ID= 200) SymType= 0, SymValue=198.
+  rmCreateTypeDistanceConstraint (ID= 201) SymType= 0, SymValue=199.
+  rmCreateTerrainDistanceConstraint (ID= 202) SymType= 0, SymValue=200.
+  rmCreateTerrainMaxDistanceConstraint (ID= 203) SymType= 0, SymValue=201.
+  rmCreateCornerConstraint       (ID= 204) SymType= 0, SymValue=202.
+  rmCreateTradeRouteDistanceConstraint (ID= 205) SymType= 0, SymValue=203.
+  rmAddAreaConstraint            (ID= 206) SymType= 0, SymValue=204.
+  rmCreateHCGPConstraint         (ID= 207) SymType= 0, SymValue=205.
+  rmCreateHCGPSelfConstraint     (ID= 208) SymType= 0, SymValue=206.
+  rmCreateHCGPAllyConstraint     (ID= 209) SymType= 0, SymValue=207.
+  rmCreateHCGPEnemyConstraint    (ID= 210) SymType= 0, SymValue=208.
+  rmCreateMaxHeightConstraint    (ID= 211) SymType= 0, SymValue=209.
+  rmAddFairLocConstraint         (ID= 212) SymType= 0, SymValue=210.
+  rmAddObjectDefConstraint       (ID= 213) SymType= 0, SymValue=211.
+  rmDefineClass                  (ID= 214) SymType= 0, SymValue=212.
+  rmAddAreaToClass               (ID= 215) SymType= 0, SymValue=213.
+  rmAddObjectDefToClass          (ID= 216) SymType= 0, SymValue=214.
+  rmClassID                      (ID= 217) SymType= 0, SymValue=215.
+  rmConstraintID                 (ID= 218) SymType= 0, SymValue=216.
+  rmCreateObjectDef              (ID= 219) SymType= 0, SymValue=217.
+  rmCreateStartingUnitsObjectDef (ID= 220) SymType= 0, SymValue=218.
+  rmSetObjectDefMinDistance      (ID= 221) SymType= 0, SymValue=219.
+  rmSetObjectDefMaxDistance      (ID= 222) SymType= 0, SymValue=220.
+  rmSetObjectDefGarrisonSecondaryUnits (ID= 223) SymType= 0, SymValue=221.
+  rmSetObjectDefGarrisonStartingUnits (ID= 224) SymType= 0, SymValue=222.
+  rmSetObjectDefCreateHerd       (ID= 225) SymType= 0, SymValue=223.
+  rmSetObjectDefHerdAngle        (ID= 226) SymType= 0, SymValue=224.
+  rmSetObjectDefAllowOverlap     (ID= 227) SymType= 0, SymValue=225.
+  rmSetObjectDefForceFullRotation (ID= 228) SymType= 0, SymValue=226.
+  rmAddObjectDefItem             (ID= 229) SymType= 0, SymValue=227.
+  rmAddObjectDefItemByTypeID     (ID= 230) SymType= 0, SymValue=228.
+  rmPlaceObjectDefAtLoc          (ID= 231) SymType= 0, SymValue=229.
+  rmPlaceObjectDefAtPoint        (ID= 232) SymType= 0, SymValue=230.
+  rmSetObjectDefTradeRouteID     (ID= 233) SymType= 0, SymValue=231.
+  rmPlaceObjectDefPerPlayer      (ID= 234) SymType= 0, SymValue=232.
+  rmPlaceObjectDefAtAreaLoc      (ID= 235) SymType= 0, SymValue=233.
+  rmPlaceObjectDefInArea         (ID= 236) SymType= 0, SymValue=234.
+  rmPlaceObjectDefAtRandomAreaOfClass (ID= 237) SymType= 0, SymValue=235.
+  rmPlaceObjectDefInRandomAreaOfClass (ID= 238) SymType= 0, SymValue=236.
+  rmCreateConnection             (ID= 239) SymType= 0, SymValue=237.
+  rmSetConnectionType            (ID= 240) SymType= 0, SymValue=238.
+  rmAddConnectionArea            (ID= 241) SymType= 0, SymValue=239.
+  rmSetConnectionPositionVariance (ID= 242) SymType= 0, SymValue=240.
+  rmSetConnectionWidth           (ID= 243) SymType= 0, SymValue=241.
+  rmSetConnectionBaseHeight      (ID= 244) SymType= 0, SymValue=242.
+  rmSetConnectionCoherence       (ID= 245) SymType= 0, SymValue=243.
+  rmSetConnectionWarnFailure     (ID= 246) SymType= 0, SymValue=244.
+  rmSetConnectionHeightBlend     (ID= 247) SymType= 0, SymValue=245.
+  rmSetConnectionSmoothDistance  (ID= 248) SymType= 0, SymValue=246.
+  rmAddConnectionTerrainReplacement (ID= 249) SymType= 0, SymValue=247.
+  rmSetConnectionTerrainCost     (ID= 250) SymType= 0, SymValue=248.
+  rmSetConnectionBaseTerrainCost (ID= 251) SymType= 0, SymValue=249.
+  rmBuildConnection              (ID= 252) SymType= 0, SymValue=250.
+  rmAddConnectionToClass         (ID= 253) SymType= 0, SymValue=251.
+  rmAddConnectionConstraint      (ID= 254) SymType= 0, SymValue=252.
+  rmAddConnectionStartConstraint (ID= 255) SymType= 0, SymValue=253.
+  rmAddConnectionEndConstraint   (ID= 256) SymType= 0, SymValue=254.
+  rmSetStatusText                (ID= 257) SymType= 0, SymValue=255.
+  sqrt                           (ID= 258) SymType= 0, SymValue=256.
+  rmSetVPFile                    (ID= 259) SymType= 0, SymValue=257.
+  rmCreateTrigger                (ID= 260) SymType= 0, SymValue=258.
+  rmSwitchToTrigger              (ID= 261) SymType= 0, SymValue=259.
+  rmTriggerID                    (ID= 262) SymType= 0, SymValue=260.
+  rmSetTriggerPriority           (ID= 263) SymType= 0, SymValue=261.
+  rmSetTriggerActive             (ID= 264) SymType= 0, SymValue=262.
+  rmSetTriggerRunImmediately     (ID= 265) SymType= 0, SymValue=263.
+  rmSetTriggerLoop               (ID= 266) SymType= 0, SymValue=264.
+  rmAddTriggerCondition          (ID= 267) SymType= 0, SymValue=265.
+  rmSetTriggerConditionParam     (ID= 268) SymType= 0, SymValue=266.
+  rmSetTriggerConditionParamInt  (ID= 269) SymType= 0, SymValue=267.
+  rmSetTriggerConditionParamFloat (ID= 270) SymType= 0, SymValue=268.
+  rmSetTriggerConditionParamArmy (ID= 271) SymType= 0, SymValue=269.
+  rmAddTriggerEffect             (ID= 272) SymType= 0, SymValue=270.
+  rmSetTriggerEffectParam        (ID= 273) SymType= 0, SymValue=271.
+  rmSetTriggerEffectParamInt     (ID= 274) SymType= 0, SymValue=272.
+  rmSetTriggerEffectParamFloat   (ID= 275) SymType= 0, SymValue=273.
+  rmSetTriggerEffectParamArmy    (ID= 276) SymType= 0, SymValue=274.
+  rmCreateArmy                   (ID= 277) SymType= 0, SymValue=275.
+  rmAddUnitsToArmy               (ID= 278) SymType= 0, SymValue=276.
+  rmGetNumberUnitsPlaced         (ID= 279) SymType= 0, SymValue=277.
+  rmGetUnitPlaced                (ID= 280) SymType= 0, SymValue=278.
+  rmGetUnitPlacedOfPlayer        (ID= 281) SymType= 0, SymValue=279.
+  rmDefineConstant               (ID= 282) SymType= 0, SymValue=280.
+  rmSetIgnoreForceToGaia         (ID= 283) SymType= 0, SymValue=281.
+  rmCreateGrouping               (ID= 284) SymType= 0, SymValue=282.
+  rmAddGroupingConstraint        (ID= 285) SymType= 0, SymValue=283.
+  rmPlaceGroupingAtLoc           (ID= 286) SymType= 0, SymValue=284.
+  rmPlaceGroupingAtPoint         (ID= 287) SymType= 0, SymValue=285.
+  rmPlaceGroupingInArea          (ID= 288) SymType= 0, SymValue=286.
+  rmSetGroupingMinDistance       (ID= 289) SymType= 0, SymValue=287.
+  rmSetGroupingMaxDistance       (ID= 290) SymType= 0, SymValue=288.
+  rmAddGroupingToClass           (ID= 291) SymType= 0, SymValue=289.
+  rmCreateTradeRoute             (ID= 292) SymType= 0, SymValue=290.
+  rmAddTradeRouteWaypoint        (ID= 293) SymType= 0, SymValue=291.
+  rmAddTradeRouteWaypointVector  (ID= 294) SymType= 0, SymValue=292.
+  rmAddRandomTradeRouteWaypoints (ID= 295) SymType= 0, SymValue=293.
+  rmAddRandomTradeRouteWaypointsVector (ID= 296) SymType= 0, SymValue=294.
+  rmCreateTradeRouteWaypointsInArea (ID= 297) SymType= 0, SymValue=295.
+  rmGetTradeRouteWayPoint        (ID= 298) SymType= 0, SymValue=296.
+  rmBuildTradeRoute              (ID= 299) SymType= 0, SymValue=297.
+  rmSetHomeCityGatherPoint       (ID= 300) SymType= 0, SymValue=298.
+  rmSetHomeCityWaterSpawnPoint   (ID= 301) SymType= 0, SymValue=299.
+  rmGetLowHomeCityLevel          (ID= 302) SymType= 0, SymValue=300.
+  rmGetAverageHomeCityLevel      (ID= 303) SymType= 0, SymValue=301.
+  rmGetHighHomeCityLevel         (ID= 304) SymType= 0, SymValue=302.
+  rmGetHomeCityLevel             (ID= 305) SymType= 0, SymValue=303.
+  rmGetUnitPosition              (ID= 306) SymType= 0, SymValue=304.
+  rmSetMapType                   (ID= 307) SymType= 0, SymValue=305.
+  rmIsMapType                    (ID= 308) SymType= 0, SymValue=306.
+  rmEnableLocalWater             (ID= 309) SymType= 0, SymValue=307.
+  rmAddClosestPointConstraint    (ID= 310) SymType= 0, SymValue=308.
+  rmClearClosestPointConstraints (ID= 311) SymType= 0, SymValue=309.
+  rmFindClosestPoint             (ID= 312) SymType= 0, SymValue=310.
+  rmFindClosestPointVector       (ID= 313) SymType= 0, SymValue=311.
+  rmFindCloserArea               (ID= 314) SymType= 0, SymValue=312.
+  rmAddAreaCliffWaypoint         (ID= 315) SymType= 0, SymValue=313.
+  rmAddAreaCliffRandomWaypoints  (ID= 316) SymType= 0, SymValue=314.
+  rmSetNuggetDifficulty          (ID= 317) SymType= 0, SymValue=315.
+  rmSetOceanReveal               (ID= 318) SymType= 0, SymValue=316.
+  EXTERN$cNumberPlayers          (ID= 319) SymType= 1, SymValue=-3.
+  EXTERN$cNumberNonGaiaPlayers   (ID= 320) SymType= 1, SymValue=-4.
+  EXTERN$cNumberTeams            (ID= 321) SymType= 1, SymValue=-5.
+  EXTERN$cFilename               (ID= 322) SymType= 1, SymValue=-6.
+  EXTERN$cCultureNature          (ID= 323) SymType= 1, SymValue=-7.
+  EXTERN$cCultureWesternEurope   (ID= 324) SymType= 1, SymValue=-8.
+  EXTERN$cCultureMediterranean   (ID= 325) SymType= 1, SymValue=-9.
+  EXTERN$cCultureEasternEurope   (ID= 326) SymType= 1, SymValue=-10.
+  EXTERN$cCultureStone           (ID= 327) SymType= 1, SymValue=-11.
+  EXTERN$cCultureGrass           (ID= 328) SymType= 1, SymValue=-12.
+  EXTERN$cCultureWood            (ID= 329) SymType= 1, SymValue=-13.
+  EXTERN$cCultureHide            (ID= 330) SymType= 1, SymValue=-14.
+  EXTERN$cCivNature              (ID= 331) SymType= 1, SymValue=-15.
+  EXTERN$cCivSpanish             (ID= 332) SymType= 1, SymValue=-16.
+  EXTERN$cCivBritish             (ID= 333) SymType= 1, SymValue=-17.
+  EXTERN$cCivFrench              (ID= 334) SymType= 1, SymValue=-18.
+  EXTERN$cCivPortuguese          (ID= 335) SymType= 1, SymValue=-19.
+  EXTERN$cCivDutch               (ID= 336) SymType= 1, SymValue=-20.
+  EXTERN$cCivRussians            (ID= 337) SymType= 1, SymValue=-21.
+  EXTERN$cCivGermans             (ID= 338) SymType= 1, SymValue=-22.
+  EXTERN$cCivOttomans            (ID= 339) SymType= 1, SymValue=-23.
+  EXTERN$cCivSPCAct1             (ID= 340) SymType= 1, SymValue=-24.
+  EXTERN$cCivSPCAct2             (ID= 341) SymType= 1, SymValue=-25.
+  EXTERN$cCivSPCAct3             (ID= 342) SymType= 1, SymValue=-26.
+  EXTERN$cCivPirate              (ID= 343) SymType= 1, SymValue=-27.
+  EXTERN$cCivTheCircle           (ID= 344) SymType= 1, SymValue=-28.
+  EXTERN$cCivNativeAmerican      (ID= 345) SymType= 1, SymValue=-29.
+  EXTERN$cCivAztecs              (ID= 346) SymType= 1, SymValue=-30.
+  EXTERN$cCivCaribs              (ID= 347) SymType= 1, SymValue=-31.
+  EXTERN$cCivCherokee            (ID= 348) SymType= 1, SymValue=-32.
+  EXTERN$cCivComanche            (ID= 349) SymType= 1, SymValue=-33.
+  EXTERN$cCivCree                (ID= 350) SymType= 1, SymValue=-34.
+  EXTERN$cCivIncas               (ID= 351) SymType= 1, SymValue=-35.
+  EXTERN$cCivIroquois            (ID= 352) SymType= 1, SymValue=-36.
+  EXTERN$cCivLakota              (ID= 353) SymType= 1, SymValue=-37.
+  EXTERN$cCivMaya                (ID= 354) SymType= 1, SymValue=-38.
+  EXTERN$cCivNootka              (ID= 355) SymType= 1, SymValue=-39.
+  EXTERN$cCivSeminoles           (ID= 356) SymType= 1, SymValue=-40.
+  EXTERN$cCivTupi                (ID= 357) SymType= 1, SymValue=-41.
+  EXTERN$cConnectAreas           (ID= 358) SymType= 1, SymValue=-42.
+  EXTERN$cConnectPlayers         (ID= 359) SymType= 1, SymValue=-43.
+  EXTERN$cConnectAllies          (ID= 360) SymType= 1, SymValue=-44.
+  EXTERN$cConnectEnemies         (ID= 361) SymType= 1, SymValue=-45.
+  EXTERN$cMapSize                (ID= 362) SymType= 1, SymValue=-46.
+  EXTERN$cMapResources           (ID= 363) SymType= 1, SymValue=-47.
+  EXTERN$cElevNormal             (ID= 364) SymType= 1, SymValue=-48.
+  EXTERN$cElevFractalSum         (ID= 365) SymType= 1, SymValue=-49.
+  EXTERN$cElevTurbulence         (ID= 366) SymType= 1, SymValue=-50.
+  EXTERN$cClusterLand            (ID= 367) SymType= 1, SymValue=-51.
+  EXTERN$cClusterWater           (ID= 368) SymType= 1, SymValue=-52.
+  EXTERN$cClusterShallowWater    (ID= 369) SymType= 1, SymValue=-53.
+  EXTERN$cClusterEverywhere      (ID= 370) SymType= 1, SymValue=-54.
+  Amazonia                       (ID= 371) SymType= 8, SymValue=0.
+  mercenaries.xs                 (ID= 372) SymType= 8, SymValue=1.
+  chooseMercs                    (ID= 373) SymType= 3, SymValue=0.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L0 (ID= 374) SymType= 4, SymValue=0.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L1 (ID= 375) SymType= 4, SymValue=1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR0 (ID= 376) SymType= 2, SymValue=0.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L2 (ID= 377) SymType= 4, SymValue=2.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L3 (ID= 378) SymType= 4, SymValue=3.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR1 (ID= 379) SymType= 2, SymValue=1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L4 (ID= 380) SymType= 4, SymValue=4.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L5 (ID= 381) SymType= 4, SymValue=5.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR2 (ID= 382) SymType= 2, SymValue=2.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L6 (ID= 383) SymType= 4, SymValue=6.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L7 (ID= 384) SymType= 4, SymValue=7.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR3 (ID= 385) SymType= 2, SymValue=3.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L8 (ID= 386) SymType= 4, SymValue=8.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L9 (ID= 387) SymType= 4, SymValue=9.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR4 (ID= 388) SymType= 2, SymValue=4.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L10 (ID= 389) SymType= 4, SymValue=10.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L11 (ID= 390) SymType= 4, SymValue=11.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR5 (ID= 391) SymType= 2, SymValue=5.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR6 (ID= 392) SymType= 2, SymValue=6.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L12 (ID= 393) SymType= 4, SymValue=12.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L13 (ID= 394) SymType= 4, SymValue=13.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR7 (ID= 395) SymType= 2, SymValue=7.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L14 (ID= 396) SymType= 4, SymValue=14.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L15 (ID= 397) SymType= 4, SymValue=15.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR8 (ID= 398) SymType= 2, SymValue=8.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L16 (ID= 399) SymType= 4, SymValue=16.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L17 (ID= 400) SymType= 4, SymValue=17.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR9 (ID= 401) SymType= 2, SymValue=9.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L18 (ID= 402) SymType= 4, SymValue=18.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L19 (ID= 403) SymType= 4, SymValue=19.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR10 (ID= 404) SymType= 2, SymValue=10.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L20 (ID= 405) SymType= 4, SymValue=20.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L21 (ID= 406) SymType= 4, SymValue=21.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR11 (ID= 407) SymType= 2, SymValue=11.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L22 (ID= 408) SymType= 4, SymValue=22.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L23 (ID= 409) SymType= 4, SymValue=23.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR12 (ID= 410) SymType= 2, SymValue=12.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L24 (ID= 411) SymType= 4, SymValue=24.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L25 (ID= 412) SymType= 4, SymValue=25.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR13 (ID= 413) SymType= 2, SymValue=13.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L26 (ID= 414) SymType= 4, SymValue=26.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L27 (ID= 415) SymType= 4, SymValue=27.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR14 (ID= 416) SymType= 2, SymValue=14.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR15 (ID= 417) SymType= 2, SymValue=15.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L28 (ID= 418) SymType= 4, SymValue=28.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L29 (ID= 419) SymType= 4, SymValue=29.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR16 (ID= 420) SymType= 2, SymValue=16.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L30 (ID= 421) SymType= 4, SymValue=30.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L31 (ID= 422) SymType= 4, SymValue=31.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR17 (ID= 423) SymType= 2, SymValue=17.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L32 (ID= 424) SymType= 4, SymValue=32.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L33 (ID= 425) SymType= 4, SymValue=33.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR18 (ID= 426) SymType= 2, SymValue=18.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L34 (ID= 427) SymType= 4, SymValue=34.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L35 (ID= 428) SymType= 4, SymValue=35.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR19 (ID= 429) SymType= 2, SymValue=19.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L36 (ID= 430) SymType= 4, SymValue=36.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L37 (ID= 431) SymType= 4, SymValue=37.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR20 (ID= 432) SymType= 2, SymValue=20.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L38 (ID= 433) SymType= 4, SymValue=38.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L39 (ID= 434) SymType= 4, SymValue=39.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR21 (ID= 435) SymType= 2, SymValue=21.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L40 (ID= 436) SymType= 4, SymValue=40.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L41 (ID= 437) SymType= 4, SymValue=41.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR22 (ID= 438) SymType= 2, SymValue=22.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L42 (ID= 439) SymType= 4, SymValue=42.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L43 (ID= 440) SymType= 4, SymValue=43.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR23 (ID= 441) SymType= 2, SymValue=23.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR24 (ID= 442) SymType= 2, SymValue=24.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L44 (ID= 443) SymType= 4, SymValue=44.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L45 (ID= 444) SymType= 4, SymValue=45.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR25 (ID= 445) SymType= 2, SymValue=25.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L46 (ID= 446) SymType= 4, SymValue=46.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L47 (ID= 447) SymType= 4, SymValue=47.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR26 (ID= 448) SymType= 2, SymValue=26.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L48 (ID= 449) SymType= 4, SymValue=48.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L49 (ID= 450) SymType= 4, SymValue=49.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR27 (ID= 451) SymType= 2, SymValue=27.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L50 (ID= 452) SymType= 4, SymValue=50.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L51 (ID= 453) SymType= 4, SymValue=51.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR28 (ID= 454) SymType= 2, SymValue=28.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR29 (ID= 455) SymType= 2, SymValue=29.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L52 (ID= 456) SymType= 4, SymValue=52.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L53 (ID= 457) SymType= 4, SymValue=53.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR30 (ID= 458) SymType= 2, SymValue=30.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR31 (ID= 459) SymType= 2, SymValue=31.
+  main                           (ID= 460) SymType= 3, SymValue=1.
+  Amazonia$main1$TEMPVAR0        (ID= 461) SymType= 2, SymValue=0.
+  Amazonia$main1$subCiv0         (ID= 462) SymType= 2, SymValue=1.
+  Amazonia$main1$subCiv1         (ID= 463) SymType= 2, SymValue=2.
+  Amazonia$main1$subCiv2         (ID= 464) SymType= 2, SymValue=3.
+  Amazonia$main1$L54             (ID= 465) SymType= 4, SymValue=54.
+  Amazonia$main1$L55             (ID= 466) SymType= 4, SymValue=55.
+  Amazonia$main1$TEMPVAR4        (ID= 467) SymType= 2, SymValue=4.
+  Amazonia$main1$TEMPVAR5        (ID= 468) SymType= 2, SymValue=5.
+  Amazonia$main1$L56             (ID= 469) SymType= 4, SymValue=56.
+  Amazonia$main1$L57             (ID= 470) SymType= 4, SymValue=57.
+  Amazonia$main1$TEMPVAR6        (ID= 471) SymType= 2, SymValue=6.
+  Amazonia$main1$TEMPVAR7        (ID= 472) SymType= 2, SymValue=7.
+  Amazonia$main1$TEMPVAR8        (ID= 473) SymType= 2, SymValue=8.
+  Amazonia$main1$L58             (ID= 474) SymType= 4, SymValue=58.
+  Amazonia$main1$L59             (ID= 475) SymType= 4, SymValue=59.
+  Amazonia$main1$TEMPVAR9        (ID= 476) SymType= 2, SymValue=9.
+  Amazonia$main1$L60             (ID= 477) SymType= 4, SymValue=60.
+  Amazonia$main1$L61             (ID= 478) SymType= 4, SymValue=61.
+  Amazonia$main1$TEMPVAR10       (ID= 479) SymType= 2, SymValue=10.
+  Amazonia$main1$TEMPVAR11       (ID= 480) SymType= 2, SymValue=11.
+  Amazonia$main1$L62             (ID= 481) SymType= 4, SymValue=62.
+  Amazonia$main1$L63             (ID= 482) SymType= 4, SymValue=63.
+  Amazonia$main1$TEMPVAR12       (ID= 483) SymType= 2, SymValue=12.
+  Amazonia$main1$TEMPVAR13       (ID= 484) SymType= 2, SymValue=13.
+  Amazonia$main1$TEMPVAR14       (ID= 485) SymType= 2, SymValue=14.
+  Amazonia$main1$L64             (ID= 486) SymType= 4, SymValue=64.
+  Amazonia$main1$L65             (ID= 487) SymType= 4, SymValue=65.
+  Amazonia$main1$TEMPVAR15       (ID= 488) SymType= 2, SymValue=15.
+  Amazonia$main1$playerTiles     (ID= 489) SymType= 2, SymValue=16.
+  Amazonia$main1$L66             (ID= 490) SymType= 4, SymValue=66.
+  Amazonia$main1$L67             (ID= 491) SymType= 4, SymValue=67.
+  Amazonia$main1$L68             (ID= 492) SymType= 4, SymValue=68.
+  Amazonia$main1$L69             (ID= 493) SymType= 4, SymValue=69.
+  Amazonia$main1$size            (ID= 494) SymType= 2, SymValue=17.
+  Amazonia$main1$TEMPVAR18       (ID= 495) SymType= 2, SymValue=18.
+  Amazonia$main1$TEMPVAR19       (ID= 496) SymType= 2, SymValue=19.
+  Amazonia$main1$TEMPVAR20       (ID= 497) SymType= 2, SymValue=20.
+  Amazonia$main1$TEMPVAR21       (ID= 498) SymType= 2, SymValue=21.
+  Amazonia$main1$TEMPVAR22       (ID= 499) SymType= 2, SymValue=22.
+  Amazonia$main1$TEMPVAR23       (ID= 500) SymType= 2, SymValue=23.
+  Amazonia$main1$TEMPVAR24       (ID= 501) SymType= 2, SymValue=24.
+  Amazonia$main1$TEMPVAR25       (ID= 502) SymType= 2, SymValue=25.
+  Amazonia$main1$TEMPVAR26       (ID= 503) SymType= 2, SymValue=26.
+  Amazonia$main1$TEMPVAR27       (ID= 504) SymType= 2, SymValue=27.
+  Amazonia$main1$classPlayer     (ID= 505) SymType= 2, SymValue=28.
+  Amazonia$main1$TEMPVAR29       (ID= 506) SymType= 2, SymValue=29.
+  Amazonia$main1$TEMPVAR30       (ID= 507) SymType= 2, SymValue=30.
+  Amazonia$main1$TEMPVAR31       (ID= 508) SymType= 2, SymValue=31.
+  Amazonia$main1$TEMPVAR32       (ID= 509) SymType= 2, SymValue=32.
+  Amazonia$main1$TEMPVAR33       (ID= 510) SymType= 2, SymValue=33.
+  Amazonia$main1$TEMPVAR34       (ID= 511) SymType= 2, SymValue=34.
+  Amazonia$main1$TEMPVAR35       (ID= 512) SymType= 2, SymValue=35.
+  Amazonia$main1$classIsland     (ID= 513) SymType= 2, SymValue=36.
+  Amazonia$main1$TEMPVAR37       (ID= 514) SymType= 2, SymValue=37.
+  Amazonia$main1$classTeamIsland (ID= 515) SymType= 2, SymValue=38.
+  Amazonia$main1$TEMPVAR39       (ID= 516) SymType= 2, SymValue=39.
+  Amazonia$main1$playerEdgeConstraint (ID= 517) SymType= 2, SymValue=40.
+  Amazonia$main1$TEMPVAR41       (ID= 518) SymType= 2, SymValue=41.
+  Amazonia$main1$Northward       (ID= 519) SymType= 2, SymValue=42.
+  Amazonia$main1$TEMPVAR43       (ID= 520) SymType= 2, SymValue=43.
+  Amazonia$main1$Southward       (ID= 521) SymType= 2, SymValue=44.
+  Amazonia$main1$TEMPVAR45       (ID= 522) SymType= 2, SymValue=45.
+  Amazonia$main1$Eastward        (ID= 523) SymType= 2, SymValue=46.
+  Amazonia$main1$TEMPVAR47       (ID= 524) SymType= 2, SymValue=47.
+  Amazonia$main1$Westward        (ID= 525) SymType= 2, SymValue=48.
+  Amazonia$main1$TEMPVAR49       (ID= 526) SymType= 2, SymValue=49.
+  Amazonia$main1$playerConstraint (ID= 527) SymType= 2, SymValue=50.
+  Amazonia$main1$TEMPVAR51       (ID= 528) SymType= 2, SymValue=51.
+  Amazonia$main1$shipVsShip      (ID= 529) SymType= 2, SymValue=52.
+  Amazonia$main1$TEMPVAR53       (ID= 530) SymType= 2, SymValue=53.
+  Amazonia$main1$TEMPVAR54       (ID= 531) SymType= 2, SymValue=54.
+  Amazonia$main1$flagLand        (ID= 532) SymType= 2, SymValue=55.
+  Amazonia$main1$TEMPVAR56       (ID= 533) SymType= 2, SymValue=56.
+  Amazonia$main1$TEMPVAR57       (ID= 534) SymType= 2, SymValue=57.
+  Amazonia$main1$flagVsFlag      (ID= 535) SymType= 2, SymValue=58.
+  Amazonia$main1$TEMPVAR59       (ID= 536) SymType= 2, SymValue=59.
+  Amazonia$main1$TEMPVAR60       (ID= 537) SymType= 2, SymValue=60.
+  Amazonia$main1$flagEdgeConstraint (ID= 538) SymType= 2, SymValue=61.
+  Amazonia$main1$TEMPVAR62       (ID= 539) SymType= 2, SymValue=62.
+  Amazonia$main1$islandConstraint (ID= 540) SymType= 2, SymValue=63.
+  Amazonia$main1$TEMPVAR64       (ID= 541) SymType= 2, SymValue=64.
+  Amazonia$main1$fishVsFishID    (ID= 542) SymType= 2, SymValue=65.
+  Amazonia$main1$TEMPVAR66       (ID= 543) SymType= 2, SymValue=66.
+  Amazonia$main1$TEMPVAR67       (ID= 544) SymType= 2, SymValue=67.
+  Amazonia$main1$fishLand        (ID= 545) SymType= 2, SymValue=68.
+  Amazonia$main1$TEMPVAR69       (ID= 546) SymType= 2, SymValue=69.
+  Amazonia$main1$TEMPVAR70       (ID= 547) SymType= 2, SymValue=70.
+  Amazonia$main1$forestObjConstraint (ID= 548) SymType= 2, SymValue=71.
+  Amazonia$main1$TEMPVAR72       (ID= 549) SymType= 2, SymValue=72.
+  Amazonia$main1$TEMPVAR73       (ID= 550) SymType= 2, SymValue=73.
+  Amazonia$main1$forestConstraint (ID= 551) SymType= 2, SymValue=74.
+  Amazonia$main1$TEMPVAR75       (ID= 552) SymType= 2, SymValue=75.
+  Amazonia$main1$TEMPVAR76       (ID= 553) SymType= 2, SymValue=76.
+  Amazonia$main1$avoidResource   (ID= 554) SymType= 2, SymValue=77.
+  Amazonia$main1$TEMPVAR78       (ID= 555) SymType= 2, SymValue=78.
+  Amazonia$main1$TEMPVAR79       (ID= 556) SymType= 2, SymValue=79.
+  Amazonia$main1$avoidCoin       (ID= 557) SymType= 2, SymValue=80.
+  Amazonia$main1$TEMPVAR81       (ID= 558) SymType= 2, SymValue=81.
+  Amazonia$main1$TEMPVAR82       (ID= 559) SymType= 2, SymValue=82.
+  Amazonia$main1$avoidNugget     (ID= 560) SymType= 2, SymValue=83.
+  Amazonia$main1$TEMPVAR84       (ID= 561) SymType= 2, SymValue=84.
+  Amazonia$main1$TEMPVAR85       (ID= 562) SymType= 2, SymValue=85.
+  Amazonia$main1$avoidImpassableLand (ID= 563) SymType= 2, SymValue=86.
+  Amazonia$main1$TEMPVAR87       (ID= 564) SymType= 2, SymValue=87.
+  Amazonia$main1$TEMPVAR88       (ID= 565) SymType= 2, SymValue=88.
+  Amazonia$main1$shortAvoidImpassableLand (ID= 566) SymType= 2, SymValue=89.
+  Amazonia$main1$TEMPVAR90       (ID= 567) SymType= 2, SymValue=90.
+  Amazonia$main1$TEMPVAR91       (ID= 568) SymType= 2, SymValue=91.
+  Amazonia$main1$mediumShortAvoidImpassableLand (ID= 569) SymType= 2, SymValue=92.
+  Amazonia$main1$TEMPVAR93       (ID= 570) SymType= 2, SymValue=93.
+  Amazonia$main1$TEMPVAR94       (ID= 571) SymType= 2, SymValue=94.
+  Amazonia$main1$mediumAvoidImpassableLand (ID= 572) SymType= 2, SymValue=95.
+  Amazonia$main1$TEMPVAR96       (ID= 573) SymType= 2, SymValue=96.
+  Amazonia$main1$TEMPVAR97       (ID= 574) SymType= 2, SymValue=97.
+  Amazonia$main1$longAvoidImpassableLand (ID= 575) SymType= 2, SymValue=98.
+  Amazonia$main1$TEMPVAR99       (ID= 576) SymType= 2, SymValue=99.
+  Amazonia$main1$TEMPVAR100      (ID= 577) SymType= 2, SymValue=100.
+  Amazonia$main1$avoidWater4     (ID= 578) SymType= 2, SymValue=101.
+  Amazonia$main1$TEMPVAR102      (ID= 579) SymType= 2, SymValue=102.
+  Amazonia$main1$TEMPVAR103      (ID= 580) SymType= 2, SymValue=103.
+  Amazonia$main1$avoidWater10    (ID= 581) SymType= 2, SymValue=104.
+  Amazonia$main1$TEMPVAR105      (ID= 582) SymType= 2, SymValue=105.
+  Amazonia$main1$TEMPVAR106      (ID= 583) SymType= 2, SymValue=106.
+  Amazonia$main1$avoidWater20    (ID= 584) SymType= 2, SymValue=107.
+  Amazonia$main1$TEMPVAR108      (ID= 585) SymType= 2, SymValue=108.
+  Amazonia$main1$TEMPVAR109      (ID= 586) SymType= 2, SymValue=109.
+  Amazonia$main1$ferryOnShore    (ID= 587) SymType= 2, SymValue=110.
+  Amazonia$main1$TEMPVAR111      (ID= 588) SymType= 2, SymValue=111.
+  Amazonia$main1$TEMPVAR112      (ID= 589) SymType= 2, SymValue=112.
+  Amazonia$main1$avoidImportantItem (ID= 590) SymType= 2, SymValue=113.
+  Amazonia$main1$TEMPVAR114      (ID= 591) SymType= 2, SymValue=114.
+  Amazonia$main1$TEMPVAR115      (ID= 592) SymType= 2, SymValue=115.
+  Amazonia$main1$farAvoidImportantItem (ID= 593) SymType= 2, SymValue=116.
+  Amazonia$main1$TEMPVAR117      (ID= 594) SymType= 2, SymValue=117.
+  Amazonia$main1$TEMPVAR118      (ID= 595) SymType= 2, SymValue=118.
+  Amazonia$main1$avoidTownCenter (ID= 596) SymType= 2, SymValue=119.
+  Amazonia$main1$TEMPVAR120      (ID= 597) SymType= 2, SymValue=120.
+  Amazonia$main1$TEMPVAR121      (ID= 598) SymType= 2, SymValue=121.
+  Amazonia$main1$avoidTownCenterFar (ID= 599) SymType= 2, SymValue=122.
+  Amazonia$main1$TEMPVAR123      (ID= 600) SymType= 2, SymValue=123.
+  Amazonia$main1$TEMPVAR124      (ID= 601) SymType= 2, SymValue=124.
+  Amazonia$main1$avoidAll        (ID= 602) SymType= 2, SymValue=125.
+  Amazonia$main1$TEMPVAR126      (ID= 603) SymType= 2, SymValue=126.
+  Amazonia$main1$TEMPVAR127      (ID= 604) SymType= 2, SymValue=127.
+  Amazonia$main1$avoidCliff      (ID= 605) SymType= 2, SymValue=128.
+  Amazonia$main1$TEMPVAR129      (ID= 606) SymType= 2, SymValue=129.
+  Amazonia$main1$TEMPVAR130      (ID= 607) SymType= 2, SymValue=130.
+  Amazonia$main1$avoidTradeRoute (ID= 608) SymType= 2, SymValue=131.
+  Amazonia$main1$TEMPVAR132      (ID= 609) SymType= 2, SymValue=132.
+  Amazonia$main1$avoidTradeRouteFar (ID= 610) SymType= 2, SymValue=133.
+  Amazonia$main1$TEMPVAR134      (ID= 611) SymType= 2, SymValue=134.
+  Amazonia$main1$teamStartLoc    (ID= 612) SymType= 2, SymValue=135.
+  Amazonia$main1$L70             (ID= 613) SymType= 4, SymValue=70.
+  Amazonia$main1$L71             (ID= 614) SymType= 4, SymValue=71.
+  Amazonia$main1$L72             (ID= 615) SymType= 4, SymValue=72.
+  Amazonia$main1$L73             (ID= 616) SymType= 4, SymValue=73.
+  Amazonia$main1$L74             (ID= 617) SymType= 4, SymValue=74.
+  Amazonia$main1$L75             (ID= 618) SymType= 4, SymValue=75.
+  Amazonia$main1$L76             (ID= 619) SymType= 4, SymValue=76.
+  Amazonia$main1$L77             (ID= 620) SymType= 4, SymValue=77.
+  Amazonia$main1$randomTreeID    (ID= 621) SymType= 2, SymValue=136.
+  Amazonia$main1$TEMPVAR137      (ID= 622) SymType= 2, SymValue=137.
+  Amazonia$main1$TEMPVAR138      (ID= 623) SymType= 2, SymValue=138.
+  Amazonia$main1$TEMPVAR139      (ID= 624) SymType= 2, SymValue=139.
+  Amazonia$main1$northIslandID   (ID= 625) SymType= 2, SymValue=140.
+  Amazonia$main1$TEMPVAR141      (ID= 626) SymType= 2, SymValue=141.
+  Amazonia$main1$areaSizerNum    (ID= 627) SymType= 2, SymValue=142.
+  Amazonia$main1$areaSizer       (ID= 628) SymType= 2, SymValue=143.
+  Amazonia$main1$L78             (ID= 629) SymType= 4, SymValue=78.
+  Amazonia$main1$L79             (ID= 630) SymType= 4, SymValue=79.
+  Amazonia$main1$TEMPVAR144      (ID= 631) SymType= 2, SymValue=144.
+  Amazonia$main1$TEMPVAR145      (ID= 632) SymType= 2, SymValue=145.
+  Amazonia$main1$TEMPVAR146      (ID= 633) SymType= 2, SymValue=146.
+  Amazonia$main1$southIslandID   (ID= 634) SymType= 2, SymValue=147.
+  Amazonia$main1$TEMPVAR148      (ID= 635) SymType= 2, SymValue=148.
+  Amazonia$main1$TEMPVAR149      (ID= 636) SymType= 2, SymValue=149.
+  Amazonia$main1$TEMPVAR150      (ID= 637) SymType= 2, SymValue=150.
+  Amazonia$main1$northIslandConstraint (ID= 638) SymType= 2, SymValue=151.
+  Amazonia$main1$TEMPVAR152      (ID= 639) SymType= 2, SymValue=152.
+  Amazonia$main1$southIslandConstraint (ID= 640) SymType= 2, SymValue=153.
+  Amazonia$main1$TEMPVAR154      (ID= 641) SymType= 2, SymValue=154.
+  Amazonia$main1$TEMPVAR155      (ID= 642) SymType= 2, SymValue=155.
+  Amazonia$main1$startingUnits   (ID= 643) SymType= 2, SymValue=156.
+  Amazonia$main1$TEMPVAR157      (ID= 644) SymType= 2, SymValue=157.
+  Amazonia$main1$TEMPVAR158      (ID= 645) SymType= 2, SymValue=158.
+  Amazonia$main1$TEMPVAR159      (ID= 646) SymType= 2, SymValue=159.
+  Amazonia$main1$tradeRouteNum   (ID= 647) SymType= 2, SymValue=160.
+  Amazonia$main1$L80             (ID= 648) SymType= 4, SymValue=80.
+  Amazonia$main1$L81             (ID= 649) SymType= 4, SymValue=81.
+  Amazonia$main1$tradeRouteID    (ID= 650) SymType= 2, SymValue=161.
+  Amazonia$main1$tradeRoute2ID   (ID= 651) SymType= 2, SymValue=162.
+  Amazonia$main1$tradeRoute3ID   (ID= 652) SymType= 2, SymValue=163.
+  Amazonia$main1$tradeRoute4ID   (ID= 653) SymType= 2, SymValue=164.
+  Amazonia$main1$socketID        (ID= 654) SymType= 2, SymValue=165.
+  Amazonia$main1$TEMPVAR166      (ID= 655) SymType= 2, SymValue=166.
+  Amazonia$main1$TEMPVAR167      (ID= 656) SymType= 2, SymValue=167.
+  Amazonia$main1$L82             (ID= 657) SymType= 4, SymValue=82.
+  Amazonia$main1$L83             (ID= 658) SymType= 4, SymValue=83.
+  Amazonia$main1$placedTradeRoute (ID= 659) SymType= 2, SymValue=168.
+  Amazonia$main1$TEMPVAR169      (ID= 660) SymType= 2, SymValue=169.
+  Amazonia$main1$L84             (ID= 661) SymType= 4, SymValue=84.
+  Amazonia$main1$L85             (ID= 662) SymType= 4, SymValue=85.
+  Amazonia$main1$TEMPVAR170      (ID= 663) SymType= 2, SymValue=170.
+  Amazonia$main1$socketLoc       (ID= 664) SymType= 2, SymValue=171.
+  Amazonia$main1$L86             (ID= 665) SymType= 4, SymValue=86.
+  Amazonia$main1$L87             (ID= 666) SymType= 4, SymValue=87.
+  Amazonia$main1$placedTradeRoute2 (ID= 667) SymType= 2, SymValue=172.
+  Amazonia$main1$TEMPVAR173      (ID= 668) SymType= 2, SymValue=173.
+  Amazonia$main1$L88             (ID= 669) SymType= 4, SymValue=88.
+  Amazonia$main1$L89             (ID= 670) SymType= 4, SymValue=89.
+  Amazonia$main1$TEMPVAR174      (ID= 671) SymType= 2, SymValue=174.
+  Amazonia$main1$socket2Loc      (ID= 672) SymType= 2, SymValue=175.
+  Amazonia$main1$placedTradeRoute3 (ID= 673) SymType= 2, SymValue=176.
+  Amazonia$main1$TEMPVAR177      (ID= 674) SymType= 2, SymValue=177.
+  Amazonia$main1$L90             (ID= 675) SymType= 4, SymValue=90.
+  Amazonia$main1$L91             (ID= 676) SymType= 4, SymValue=91.
+  Amazonia$main1$TEMPVAR178      (ID= 677) SymType= 2, SymValue=178.
+  Amazonia$main1$socket3Loc      (ID= 678) SymType= 2, SymValue=179.
+  Amazonia$main1$placedTradeRoute4 (ID= 679) SymType= 2, SymValue=180.
+  Amazonia$main1$TEMPVAR181      (ID= 680) SymType= 2, SymValue=181.
+  Amazonia$main1$L92             (ID= 681) SymType= 4, SymValue=92.
+  Amazonia$main1$L93             (ID= 682) SymType= 4, SymValue=93.
+  Amazonia$main1$TEMPVAR182      (ID= 683) SymType= 2, SymValue=182.
+  Amazonia$main1$socket4Loc      (ID= 684) SymType= 2, SymValue=183.
+  Amazonia$main1$TEMPVAR184      (ID= 685) SymType= 2, SymValue=184.
+  Amazonia$main1$TCfloat         (ID= 686) SymType= 2, SymValue=185.
+  Amazonia$main1$L94             (ID= 687) SymType= 4, SymValue=94.
+  Amazonia$main1$L95             (ID= 688) SymType= 4, SymValue=95.
+  Amazonia$main1$TCID            (ID= 689) SymType= 2, SymValue=186.
+  Amazonia$main1$TEMPVAR187      (ID= 690) SymType= 2, SymValue=187.
+  Amazonia$main1$L96             (ID= 691) SymType= 4, SymValue=96.
+  Amazonia$main1$L97             (ID= 692) SymType= 4, SymValue=97.
+  Amazonia$main1$TEMPVAR188      (ID= 693) SymType= 2, SymValue=188.
+  Amazonia$main1$TEMPVAR189      (ID= 694) SymType= 2, SymValue=189.
+  Amazonia$main1$playerMarketID  (ID= 695) SymType= 2, SymValue=190.
+  Amazonia$main1$TEMPVAR191      (ID= 696) SymType= 2, SymValue=191.
+  Amazonia$main1$TEMPVAR192      (ID= 697) SymType= 2, SymValue=192.
+  Amazonia$main1$waterFlagID     (ID= 698) SymType= 2, SymValue=193.
+  Amazonia$main1$i               (ID= 699) SymType= 2, SymValue=194.
+  Amazonia$main1$L98             (ID= 700) SymType= 4, SymValue=98.
+  Amazonia$main1$L99             (ID= 701) SymType= 4, SymValue=99.
+  Amazonia$main1$L100            (ID= 702) SymType= 4, SymValue=100.
+  Amazonia$main1$TEMPVAR195      (ID= 703) SymType= 2, SymValue=195.
+  Amazonia$main1$TEMPVAR196      (ID= 704) SymType= 2, SymValue=196.
+  Amazonia$main1$playerSilverID  (ID= 705) SymType= 2, SymValue=197.
+  Amazonia$main1$TEMPVAR198      (ID= 706) SymType= 2, SymValue=198.
+  Amazonia$main1$TEMPVAR199      (ID= 707) SymType= 2, SymValue=199.
+  Amazonia$main1$playerDeerID    (ID= 708) SymType= 2, SymValue=200.
+  Amazonia$main1$TEMPVAR201      (ID= 709) SymType= 2, SymValue=201.
+  Amazonia$main1$TEMPVAR202      (ID= 710) SymType= 2, SymValue=202.
+  Amazonia$main1$playerTreeID    (ID= 711) SymType= 2, SymValue=203.
+  Amazonia$main1$TEMPVAR204      (ID= 712) SymType= 2, SymValue=204.
+  Amazonia$main1$TEMPVAR205      (ID= 713) SymType= 2, SymValue=205.
+  Amazonia$main1$L101            (ID= 714) SymType= 4, SymValue=101.
+  Amazonia$main1$L102            (ID= 715) SymType= 4, SymValue=102.
+  Amazonia$main1$L103            (ID= 716) SymType= 4, SymValue=103.
+  Amazonia$main1$TCLoc           (ID= 717) SymType= 2, SymValue=206.
+  Amazonia$main1$L104            (ID= 718) SymType= 4, SymValue=104.
+  Amazonia$main1$L105            (ID= 719) SymType= 4, SymValue=105.
+  Amazonia$main1$closestPoint    (ID= 720) SymType= 2, SymValue=207.
+  Amazonia$main1$NativeVillageLoc (ID= 721) SymType= 2, SymValue=208.
+  Amazonia$main1$L106            (ID= 722) SymType= 4, SymValue=106.
+  Amazonia$main1$L107            (ID= 723) SymType= 4, SymValue=107.
+  Amazonia$main1$TEMPVAR209      (ID= 724) SymType= 2, SymValue=209.
+  Amazonia$main1$tupiVillageID   (ID= 725) SymType= 2, SymValue=210.
+  Amazonia$main1$tupiVillageType (ID= 726) SymType= 2, SymValue=211.
+  Amazonia$main1$TEMPVAR212      (ID= 727) SymType= 2, SymValue=212.
+  Amazonia$main1$TEMPVAR213      (ID= 728) SymType= 2, SymValue=213.
+  Amazonia$main1$TEMPVAR214      (ID= 729) SymType= 2, SymValue=214.
+  Amazonia$main1$TEMPVAR215      (ID= 730) SymType= 2, SymValue=215.
+  Amazonia$main1$L108            (ID= 731) SymType= 4, SymValue=108.
+  Amazonia$main1$L109            (ID= 732) SymType= 4, SymValue=109.
+  Amazonia$main1$L110            (ID= 733) SymType= 4, SymValue=110.
+  Amazonia$main1$L111            (ID= 734) SymType= 4, SymValue=111.
+  Amazonia$main1$L112            (ID= 735) SymType= 4, SymValue=112.
+  Amazonia$main1$L113            (ID= 736) SymType= 4, SymValue=113.
+  Amazonia$main1$L114            (ID= 737) SymType= 4, SymValue=114.
+  Amazonia$main1$L115            (ID= 738) SymType= 4, SymValue=115.
+  Amazonia$main1$TEMPVAR216      (ID= 739) SymType= 2, SymValue=216.
+  Amazonia$main1$caribVillageID  (ID= 740) SymType= 2, SymValue=217.
+  Amazonia$main1$caribVillageType (ID= 741) SymType= 2, SymValue=218.
+  Amazonia$main1$TEMPVAR219      (ID= 742) SymType= 2, SymValue=219.
+  Amazonia$main1$TEMPVAR220      (ID= 743) SymType= 2, SymValue=220.
+  Amazonia$main1$TEMPVAR221      (ID= 744) SymType= 2, SymValue=221.
+  Amazonia$main1$TEMPVAR222      (ID= 745) SymType= 2, SymValue=222.
+  Amazonia$main1$L116            (ID= 746) SymType= 4, SymValue=116.
+  Amazonia$main1$L117            (ID= 747) SymType= 4, SymValue=117.
+  Amazonia$main1$L118            (ID= 748) SymType= 4, SymValue=118.
+  Amazonia$main1$L119            (ID= 749) SymType= 4, SymValue=119.
+  Amazonia$main1$L120            (ID= 750) SymType= 4, SymValue=120.
+  Amazonia$main1$L121            (ID= 751) SymType= 4, SymValue=121.
+  Amazonia$main1$L122            (ID= 752) SymType= 4, SymValue=122.
+  Amazonia$main1$L123            (ID= 753) SymType= 4, SymValue=123.
+  Amazonia$main1$TEMPVAR223      (ID= 754) SymType= 2, SymValue=223.
+  Amazonia$main1$tupi2VillageID  (ID= 755) SymType= 2, SymValue=224.
+  Amazonia$main1$tupi2VillageType (ID= 756) SymType= 2, SymValue=225.
+  Amazonia$main1$TEMPVAR226      (ID= 757) SymType= 2, SymValue=226.
+  Amazonia$main1$TEMPVAR227      (ID= 758) SymType= 2, SymValue=227.
+  Amazonia$main1$TEMPVAR228      (ID= 759) SymType= 2, SymValue=228.
+  Amazonia$main1$TEMPVAR229      (ID= 760) SymType= 2, SymValue=229.
+  Amazonia$main1$L124            (ID= 761) SymType= 4, SymValue=124.
+  Amazonia$main1$L125            (ID= 762) SymType= 4, SymValue=125.
+  Amazonia$main1$L126            (ID= 763) SymType= 4, SymValue=126.
+  Amazonia$main1$L127            (ID= 764) SymType= 4, SymValue=127.
+  Amazonia$main1$L128            (ID= 765) SymType= 4, SymValue=128.
+  Amazonia$main1$L129            (ID= 766) SymType= 4, SymValue=129.
+  Amazonia$main1$TEMPVAR230      (ID= 767) SymType= 2, SymValue=230.
+  Amazonia$main1$inca2VillageID  (ID= 768) SymType= 2, SymValue=231.
+  Amazonia$main1$inca2VillageType (ID= 769) SymType= 2, SymValue=232.
+  Amazonia$main1$TEMPVAR233      (ID= 770) SymType= 2, SymValue=233.
+  Amazonia$main1$TEMPVAR234      (ID= 771) SymType= 2, SymValue=234.
+  Amazonia$main1$TEMPVAR235      (ID= 772) SymType= 2, SymValue=235.
+  Amazonia$main1$TEMPVAR236      (ID= 773) SymType= 2, SymValue=236.
+  Amazonia$main1$L130            (ID= 774) SymType= 4, SymValue=130.
+  Amazonia$main1$L131            (ID= 775) SymType= 4, SymValue=131.
+  Amazonia$main1$L132            (ID= 776) SymType= 4, SymValue=132.
+  Amazonia$main1$L133            (ID= 777) SymType= 4, SymValue=133.
+  Amazonia$main1$TEMPVAR237      (ID= 778) SymType= 2, SymValue=237.
+  Amazonia$main1$numTries        (ID= 779) SymType= 2, SymValue=238.
+  Amazonia$main1$failCount       (ID= 780) SymType= 2, SymValue=239.
+  Amazonia$main1$TEMPVAR240      (ID= 781) SymType= 2, SymValue=240.
+  Amazonia$main1$southNugget1    (ID= 782) SymType= 2, SymValue=241.
+  Amazonia$main1$TEMPVAR242      (ID= 783) SymType= 2, SymValue=242.
+  Amazonia$main1$TEMPVAR243      (ID= 784) SymType= 2, SymValue=243.
+  Amazonia$main1$northNugget1    (ID= 785) SymType= 2, SymValue=244.
+  Amazonia$main1$TEMPVAR245      (ID= 786) SymType= 2, SymValue=245.
+  Amazonia$main1$TEMPVAR246      (ID= 787) SymType= 2, SymValue=246.
+  Amazonia$main1$southNugget2    (ID= 788) SymType= 2, SymValue=247.
+  Amazonia$main1$TEMPVAR248      (ID= 789) SymType= 2, SymValue=248.
+  Amazonia$main1$TEMPVAR249      (ID= 790) SymType= 2, SymValue=249.
+  Amazonia$main1$northNugget2    (ID= 791) SymType= 2, SymValue=250.
+  Amazonia$main1$TEMPVAR251      (ID= 792) SymType= 2, SymValue=251.
+  Amazonia$main1$TEMPVAR252      (ID= 793) SymType= 2, SymValue=252.
+  Amazonia$main1$southNugget3    (ID= 794) SymType= 2, SymValue=253.
+  Amazonia$main1$TEMPVAR254      (ID= 795) SymType= 2, SymValue=254.
+  Amazonia$main1$TEMPVAR255      (ID= 796) SymType= 2, SymValue=255.
+  Amazonia$main1$northNugget3    (ID= 797) SymType= 2, SymValue=256.
+  Amazonia$main1$TEMPVAR257      (ID= 798) SymType= 2, SymValue=257.
+  Amazonia$main1$TEMPVAR258      (ID= 799) SymType= 2, SymValue=258.
+  Amazonia$main1$nuggetNutsNum   (ID= 800) SymType= 2, SymValue=259.
+  Amazonia$main1$L134            (ID= 801) SymType= 4, SymValue=134.
+  Amazonia$main1$L135            (ID= 802) SymType= 4, SymValue=135.
+  Amazonia$main1$southNugget4    (ID= 803) SymType= 2, SymValue=260.
+  Amazonia$main1$TEMPVAR261      (ID= 804) SymType= 2, SymValue=261.
+  Amazonia$main1$TEMPVAR262      (ID= 805) SymType= 2, SymValue=262.
+  Amazonia$main1$northNugget4    (ID= 806) SymType= 2, SymValue=263.
+  Amazonia$main1$TEMPVAR264      (ID= 807) SymType= 2, SymValue=264.
+  Amazonia$main1$TEMPVAR265      (ID= 808) SymType= 2, SymValue=265.
+  Amazonia$main1$fishID          (ID= 809) SymType= 2, SymValue=266.
+  Amazonia$main1$TEMPVAR267      (ID= 810) SymType= 2, SymValue=267.
+  Amazonia$main1$TEMPVAR268      (ID= 811) SymType= 2, SymValue=268.
+  Amazonia$main1$TEMPVAR269      (ID= 812) SymType= 2, SymValue=269.
+  Amazonia$main1$silverType      (ID= 813) SymType= 2, SymValue=270.
+  Amazonia$main1$silverID        (ID= 814) SymType= 2, SymValue=271.
+  Amazonia$main1$silverCount     (ID= 815) SymType= 2, SymValue=272.
+  Amazonia$main1$TEMPVAR273      (ID= 816) SymType= 2, SymValue=273.
+  Amazonia$main1$L136            (ID= 817) SymType= 4, SymValue=136.
+  Amazonia$main1$L137            (ID= 818) SymType= 4, SymValue=137.
+  Amazonia$main1$L138            (ID= 819) SymType= 4, SymValue=138.
+  Amazonia$main1$southSilverID   (ID= 820) SymType= 2, SymValue=274.
+  Amazonia$main1$TEMPVAR275      (ID= 821) SymType= 2, SymValue=275.
+  Amazonia$main1$TEMPVAR276      (ID= 822) SymType= 2, SymValue=276.
+  Amazonia$main1$L139            (ID= 823) SymType= 4, SymValue=139.
+  Amazonia$main1$L140            (ID= 824) SymType= 4, SymValue=140.
+  Amazonia$main1$L141            (ID= 825) SymType= 4, SymValue=141.
+  Amazonia$main1$TEMPVAR277      (ID= 826) SymType= 2, SymValue=277.
+  Amazonia$main1$TEMPVAR278      (ID= 827) SymType= 2, SymValue=278.
+  Amazonia$main1$forestTreeID    (ID= 828) SymType= 2, SymValue=279.
+  Amazonia$main1$L142            (ID= 829) SymType= 4, SymValue=142.
+  Amazonia$main1$L143            (ID= 830) SymType= 4, SymValue=143.
+  Amazonia$main1$L144            (ID= 831) SymType= 4, SymValue=144.
+  Amazonia$main1$forest          (ID= 832) SymType= 2, SymValue=280.
+  Amazonia$main1$TEMPVAR281      (ID= 833) SymType= 2, SymValue=281.
+  Amazonia$main1$TEMPVAR282      (ID= 834) SymType= 2, SymValue=282.
+  Amazonia$main1$TEMPVAR283      (ID= 835) SymType= 2, SymValue=283.
+  Amazonia$main1$L145            (ID= 836) SymType= 4, SymValue=145.
+  Amazonia$main1$L146            (ID= 837) SymType= 4, SymValue=146.
+  Amazonia$main1$L147            (ID= 838) SymType= 4, SymValue=147.
+  Amazonia$main1$L148            (ID= 839) SymType= 4, SymValue=148.
+  Amazonia$main1$TEMPVAR284      (ID= 840) SymType= 2, SymValue=284.
+  Amazonia$main1$tapirCount      (ID= 841) SymType= 2, SymValue=285.
+  Amazonia$main1$capyCount       (ID= 842) SymType= 2, SymValue=286.
+  Amazonia$main1$tapirNID        (ID= 843) SymType= 2, SymValue=287.
+  Amazonia$main1$TEMPVAR288      (ID= 844) SymType= 2, SymValue=288.
+  Amazonia$main1$TEMPVAR289      (ID= 845) SymType= 2, SymValue=289.
+  Amazonia$main1$tapirSID        (ID= 846) SymType= 2, SymValue=290.
+  Amazonia$main1$TEMPVAR291      (ID= 847) SymType= 2, SymValue=291.
+  Amazonia$main1$TEMPVAR292      (ID= 848) SymType= 2, SymValue=292.
+  Amazonia$main1$TEMPVAR293      (ID= 849) SymType= 2, SymValue=293.
+  Amazonia$main1$capybaraNID     (ID= 850) SymType= 2, SymValue=294.
+  Amazonia$main1$TEMPVAR295      (ID= 851) SymType= 2, SymValue=295.
+  Amazonia$main1$TEMPVAR296      (ID= 852) SymType= 2, SymValue=296.
+  Amazonia$main1$capybaraSID     (ID= 853) SymType= 2, SymValue=297.
+  Amazonia$main1$TEMPVAR298      (ID= 854) SymType= 2, SymValue=298.
+  Amazonia$main1$TEMPVAR299      (ID= 855) SymType= 2, SymValue=299.
+  Amazonia$main1$TEMPVAR300      (ID= 856) SymType= 2, SymValue=300.
+
+54 'Global (as in not in a function)' Variables:
+  EXTERN$cInvalidVector          (SymID=   0), VECTOR, Value=(-1.000000, -1.000000, -1.000000).
+  EXTERN$cOriginVector           (SymID=   1), VECTOR, Value=(0.000000, 0.000000, 0.000000).
+  EXTERN$cNumberPlayers          (SymID= 319), INT, Value=5.
+  EXTERN$cNumberNonGaiaPlayers   (SymID= 320), INT, Value=4.
+  EXTERN$cNumberTeams            (SymID= 321), INT, Value=2.
+  EXTERN$cFilename               (SymID= 322), STRING, Value=A.
+  EXTERN$cCultureNature          (SymID= 323), INT, Value=0.
+  EXTERN$cCultureWesternEurope   (SymID= 324), INT, Value=1.
+  EXTERN$cCultureMediterranean   (SymID= 325), INT, Value=2.
+  EXTERN$cCultureEasternEurope   (SymID= 326), INT, Value=3.
+  EXTERN$cCultureStone           (SymID= 327), INT, Value=4.
+  EXTERN$cCultureGrass           (SymID= 328), INT, Value=5.
+  EXTERN$cCultureWood            (SymID= 329), INT, Value=6.
+  EXTERN$cCultureHide            (SymID= 330), INT, Value=7.
+  EXTERN$cCivNature              (SymID= 331), INT, Value=0.
+  EXTERN$cCivSpanish             (SymID= 332), INT, Value=1.
+  EXTERN$cCivBritish             (SymID= 333), INT, Value=2.
+  EXTERN$cCivFrench              (SymID= 334), INT, Value=3.
+  EXTERN$cCivPortuguese          (SymID= 335), INT, Value=4.
+  EXTERN$cCivDutch               (SymID= 336), INT, Value=5.
+  EXTERN$cCivRussians            (SymID= 337), INT, Value=6.
+  EXTERN$cCivGermans             (SymID= 338), INT, Value=7.
+  EXTERN$cCivOttomans            (SymID= 339), INT, Value=8.
+  EXTERN$cCivSPCAct1             (SymID= 340), INT, Value=9.
+  EXTERN$cCivSPCAct2             (SymID= 341), INT, Value=10.
+  EXTERN$cCivSPCAct3             (SymID= 342), INT, Value=11.
+  EXTERN$cCivPirate              (SymID= 343), INT, Value=12.
+  EXTERN$cCivTheCircle           (SymID= 344), INT, Value=13.
+  EXTERN$cCivNativeAmerican      (SymID= 345), INT, Value=14.
+  EXTERN$cCivAztecs              (SymID= 346), INT, Value=15.
+  EXTERN$cCivCaribs              (SymID= 347), INT, Value=16.
+  EXTERN$cCivCherokee            (SymID= 348), INT, Value=17.
+  EXTERN$cCivComanche            (SymID= 349), INT, Value=18.
+  EXTERN$cCivCree                (SymID= 350), INT, Value=19.
+  EXTERN$cCivIncas               (SymID= 351), INT, Value=20.
+  EXTERN$cCivIroquois            (SymID= 352), INT, Value=21.
+  EXTERN$cCivLakota              (SymID= 353), INT, Value=22.
+  EXTERN$cCivMaya                (SymID= 354), INT, Value=23.
+  EXTERN$cCivNootka              (SymID= 355), INT, Value=24.
+  EXTERN$cCivSeminoles           (SymID= 356), INT, Value=25.
+  EXTERN$cCivTupi                (SymID= 357), INT, Value=26.
+  EXTERN$cConnectAreas           (SymID= 358), INT, Value=0.
+  EXTERN$cConnectPlayers         (SymID= 359), INT, Value=1.
+  EXTERN$cConnectAllies          (SymID= 360), INT, Value=2.
+  EXTERN$cConnectEnemies         (SymID= 361), INT, Value=3.
+  EXTERN$cMapSize                (SymID= 362), INT, Value=0.
+  EXTERN$cMapResources           (SymID= 363), INT, Value=1.
+  EXTERN$cElevNormal             (SymID= 364), INT, Value=0.
+  EXTERN$cElevFractalSum         (SymID= 365), INT, Value=2.
+  EXTERN$cElevTurbulence         (SymID= 366), INT, Value=1.
+  EXTERN$cClusterLand            (SymID= 367), INT, Value=0.
+  EXTERN$cClusterWater           (SymID= 368), INT, Value=1.
+  EXTERN$cClusterShallowWater    (SymID= 369), INT, Value=2.
+  EXTERN$cClusterEverywhere      (SymID= 370), INT, Value=3.
+
+149 Labels:
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L0 (SymID= 374), Position=736.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L1 (SymID= 375), Position=273.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L2 (SymID= 377), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L3 (SymID= 378), Position=177.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L4 (SymID= 380), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L5 (SymID= 381), Position=256.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L6 (SymID= 383), Position=735.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L7 (SymID= 384), Position=526.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L8 (SymID= 386), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L9 (SymID= 387), Position=430.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L10 (SymID= 389), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L11 (SymID= 390), Position=509.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L12 (SymID= 393), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L13 (SymID= 394), Position=655.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L14 (SymID= 396), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L15 (SymID= 397), Position=734.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L16 (SymID= 399), Position=1462.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L17 (SymID= 400), Position=999.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L18 (SymID= 402), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L19 (SymID= 403), Position=903.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L20 (SymID= 405), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L21 (SymID= 406), Position=982.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L22 (SymID= 408), Position=1461.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L23 (SymID= 409), Position=1252.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L24 (SymID= 411), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L25 (SymID= 412), Position=1156.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L26 (SymID= 414), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L27 (SymID= 415), Position=1235.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L28 (SymID= 418), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L29 (SymID= 419), Position=1381.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L30 (SymID= 421), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L31 (SymID= 422), Position=1460.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L32 (SymID= 424), Position=2188.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L33 (SymID= 425), Position=1725.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L34 (SymID= 427), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L35 (SymID= 428), Position=1629.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L36 (SymID= 430), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L37 (SymID= 431), Position=1708.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L38 (SymID= 433), Position=2187.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L39 (SymID= 434), Position=1978.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L40 (SymID= 436), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L41 (SymID= 437), Position=1882.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L42 (SymID= 439), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L43 (SymID= 440), Position=1961.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L44 (SymID= 443), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L45 (SymID= 444), Position=2107.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L46 (SymID= 446), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L47 (SymID= 447), Position=2186.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L48 (SymID= 449), Position=2502.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L49 (SymID= 450), Position=2372.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L50 (SymID= 452), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L51 (SymID= 453), Position=2355.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L52 (SymID= 456), Position=-1.
+  D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$L53 (SymID= 457), Position=2501.
+  Amazonia$main1$L54             (SymID= 465), Position=-1.
+  Amazonia$main1$L55             (SymID= 466), Position=3116.
+  Amazonia$main1$L56             (SymID= 469), Position=-1.
+  Amazonia$main1$L57             (SymID= 470), Position=2775.
+  Amazonia$main1$L58             (SymID= 474), Position=-1.
+  Amazonia$main1$L59             (SymID= 475), Position=2868.
+  Amazonia$main1$L60             (SymID= 477), Position=3115.
+  Amazonia$main1$L61             (SymID= 478), Position=3016.
+  Amazonia$main1$L62             (SymID= 481), Position=-1.
+  Amazonia$main1$L63             (SymID= 482), Position=2999.
+  Amazonia$main1$L64             (SymID= 486), Position=-1.
+  Amazonia$main1$L65             (SymID= 487), Position=3114.
+  Amazonia$main1$L66             (SymID= 490), Position=-1.
+  Amazonia$main1$L67             (SymID= 491), Position=3192.
+  Amazonia$main1$L68             (SymID= 492), Position=-1.
+  Amazonia$main1$L69             (SymID= 493), Position=3237.
+  Amazonia$main1$L70             (SymID= 613), Position=6020.
+  Amazonia$main1$L71             (SymID= 614), Position=5346.
+  Amazonia$main1$L72             (SymID= 615), Position=6019.
+  Amazonia$main1$L73             (SymID= 616), Position=5702.
+  Amazonia$main1$L74             (SymID= 617), Position=5680.
+  Amazonia$main1$L75             (SymID= 618), Position=5544.
+  Amazonia$main1$L76             (SymID= 619), Position=6018.
+  Amazonia$main1$L77             (SymID= 620), Position=5882.
+  Amazonia$main1$L78             (SymID= 629), Position=-1.
+  Amazonia$main1$L79             (SymID= 630), Position=6314.
+  Amazonia$main1$L80             (SymID= 648), Position=-1.
+  Amazonia$main1$L81             (SymID= 649), Position=7537.
+  Amazonia$main1$L82             (SymID= 657), Position=9195.
+  Amazonia$main1$L83             (SymID= 658), Position=8146.
+  Amazonia$main1$L84             (SymID= 661), Position=-1.
+  Amazonia$main1$L85             (SymID= 662), Position=7946.
+  Amazonia$main1$L86             (SymID= 665), Position=9194.
+  Amazonia$main1$L87             (SymID= 666), Position=8854.
+  Amazonia$main1$L88             (SymID= 669), Position=-1.
+  Amazonia$main1$L89             (SymID= 670), Position=8300.
+  Amazonia$main1$L90             (SymID= 675), Position=-1.
+  Amazonia$main1$L91             (SymID= 676), Position=8634.
+  Amazonia$main1$L92             (SymID= 681), Position=-1.
+  Amazonia$main1$L93             (SymID= 682), Position=8990.
+  Amazonia$main1$L94             (SymID= 687), Position=9326.
+  Amazonia$main1$L95             (SymID= 688), Position=9304.
+  Amazonia$main1$L96             (SymID= 691), Position=9612.
+  Amazonia$main1$L97             (SymID= 692), Position=9417.
+  Amazonia$main1$L98             (SymID= 700), Position=9915.
+  Amazonia$main1$L99             (SymID= 701), Position=9781.
+  Amazonia$main1$L100            (SymID= 702), Position=9944.
+  Amazonia$main1$L101            (SymID= 714), Position=10892.
+  Amazonia$main1$L102            (SymID= 715), Position=10436.
+  Amazonia$main1$L103            (SymID= 716), Position=10921.
+  Amazonia$main1$L104            (SymID= 718), Position=-1.
+  Amazonia$main1$L105            (SymID= 719), Position=10606.
+  Amazonia$main1$L106            (SymID= 722), Position=-1.
+  Amazonia$main1$L107            (SymID= 723), Position=11499.
+  Amazonia$main1$L108            (SymID= 731), Position=11498.
+  Amazonia$main1$L109            (SymID= 732), Position=11324.
+  Amazonia$main1$L110            (SymID= 733), Position=11497.
+  Amazonia$main1$L111            (SymID= 734), Position=11418.
+  Amazonia$main1$L112            (SymID= 735), Position=-1.
+  Amazonia$main1$L113            (SymID= 736), Position=11496.
+  Amazonia$main1$L114            (SymID= 737), Position=-1.
+  Amazonia$main1$L115            (SymID= 738), Position=12079.
+  Amazonia$main1$L116            (SymID= 746), Position=12078.
+  Amazonia$main1$L117            (SymID= 747), Position=11899.
+  Amazonia$main1$L118            (SymID= 748), Position=12077.
+  Amazonia$main1$L119            (SymID= 749), Position=11998.
+  Amazonia$main1$L120            (SymID= 750), Position=-1.
+  Amazonia$main1$L121            (SymID= 751), Position=12076.
+  Amazonia$main1$L122            (SymID= 752), Position=13015.
+  Amazonia$main1$L123            (SymID= 753), Position=12554.
+  Amazonia$main1$L124            (SymID= 761), Position=12532.
+  Amazonia$main1$L125            (SymID= 762), Position=12453.
+  Amazonia$main1$L126            (SymID= 763), Position=-1.
+  Amazonia$main1$L127            (SymID= 764), Position=12531.
+  Amazonia$main1$L128            (SymID= 765), Position=-1.
+  Amazonia$main1$L129            (SymID= 766), Position=13014.
+  Amazonia$main1$L130            (SymID= 774), Position=13013.
+  Amazonia$main1$L131            (SymID= 775), Position=12934.
+  Amazonia$main1$L132            (SymID= 776), Position=-1.
+  Amazonia$main1$L133            (SymID= 777), Position=13012.
+  Amazonia$main1$L134            (SymID= 801), Position=-1.
+  Amazonia$main1$L135            (SymID= 802), Position=15538.
+  Amazonia$main1$L136            (SymID= 817), Position=16150.
+  Amazonia$main1$L137            (SymID= 818), Position=15857.
+  Amazonia$main1$L138            (SymID= 819), Position=16179.
+  Amazonia$main1$L139            (SymID= 823), Position=16494.
+  Amazonia$main1$L140            (SymID= 824), Position=16201.
+  Amazonia$main1$L141            (SymID= 825), Position=16523.
+  Amazonia$main1$L142            (SymID= 829), Position=17195.
+  Amazonia$main1$L143            (SymID= 830), Position=16614.
+  Amazonia$main1$L144            (SymID= 831), Position=17224.
+  Amazonia$main1$L145            (SymID= 836), Position=17189.
+  Amazonia$main1$L146            (SymID= 837), Position=17167.
+  Amazonia$main1$L147            (SymID= 838), Position=-1.
+  Amazonia$main1$L148            (SymID= 839), Position=17150.
+
+2 User Functions:
+  void           chooseMercs() ID=0.
+                   CodeOffset=0.
+                   0 Parameters.
+                   32 Variables (Parms AND Vars).
+                     V[0]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR0, STRING, Value=MercJaeger.
+                     V[1]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR1, STRING, Value=MercBlackRider.
+                     V[2]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR2, STRING, Value=MercLandsknecht.
+                     V[3]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR3, STRING, Value=MercBlackRider.
+                     V[4]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR4, STRING, Value=MercJaeger.
+                     V[5]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR5, STRING, Value=MercLandsknecht.
+                     V[6]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR6, STRING, Value=MercLandsknecht.
+                     V[7]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR7, STRING, Value=MercBlackRider.
+                     V[8]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR8, STRING, Value=MercJaeger.
+                     V[9]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR9, STRING, Value=MercHighlander.
+                     V[10]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR10, STRING, Value=MercHackapell.
+                     V[11]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR11, STRING, Value=MercSwissPikeman.
+                     V[12]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR12, STRING, Value=MercHackapell.
+                     V[13]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR13, STRING, Value=MercHighlander.
+                     V[14]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR14, STRING, Value=MercSwissPikeman.
+                     V[15]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR15, STRING, Value=MercSwissPikeman.
+                     V[16]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR16, STRING, Value=MercHackapell.
+                     V[17]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR17, STRING, Value=MercHighlander.
+                     V[18]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR18, STRING, Value=MercBarbaryCorsair.
+                     V[19]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR19, STRING, Value=MercMameluke.
+                     V[20]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR20, STRING, Value=MercStradiot.
+                     V[21]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR21, STRING, Value=MercMameluke.
+                     V[22]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR22, STRING, Value=MercBarbaryCorsair.
+                     V[23]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR23, STRING, Value=MercStradiot.
+                     V[24]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR24, STRING, Value=MercStradiot.
+                     V[25]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR25, STRING, Value=MercMameluke.
+                     V[26]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR26, STRING, Value=MercBarbaryCorsair.
+                     V[27]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR27, STRING, Value=MercRonin.
+                     V[28]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR28, STRING, Value=MercManchu.
+                     V[29]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR29, STRING, Value=MercManchu.
+                     V[30]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR30, STRING, Value=MercRonin.
+                     V[31]: D:\Age of Empires\Age of Empires III - Complete Collection\RM\mercenaries$chooseMercs0$TEMPVAR31, STRING, Value=Privateer.
+  void           main() ID=1.
+                   CodeOffset=2558.
+                   0 Parameters.
+                   301 Variables (Parms AND Vars).
+                     V[0]: Amazonia$main1$TEMPVAR0, STRING, Value=.
+                     V[1]: Amazonia$main1$subCiv0, INT, Value=0.
+                     V[2]: Amazonia$main1$subCiv1, INT, Value=0.
+                     V[3]: Amazonia$main1$subCiv2, INT, Value=0.
+                     V[4]: Amazonia$main1$TEMPVAR4, STRING, Value=Tupi.
+                     V[5]: Amazonia$main1$TEMPVAR5, STRING, Value=subCiv0 is Tupi.
+                     V[6]: Amazonia$main1$TEMPVAR6, STRING, Value=Tupi.
+                     V[7]: Amazonia$main1$TEMPVAR7, STRING, Value=Caribs.
+                     V[8]: Amazonia$main1$TEMPVAR8, STRING, Value=subCiv1 is Carib.
+                     V[9]: Amazonia$main1$TEMPVAR9, STRING, Value=Caribs.
+                     V[10]: Amazonia$main1$TEMPVAR10, STRING, Value=Tupi.
+                     V[11]: Amazonia$main1$TEMPVAR11, STRING, Value=subCiv2 is Tupi.
+                     V[12]: Amazonia$main1$TEMPVAR12, STRING, Value=Tupi.
+                     V[13]: Amazonia$main1$TEMPVAR13, STRING, Value=Incas.
+                     V[14]: Amazonia$main1$TEMPVAR14, STRING, Value=subCiv2 is Inca.
+                     V[15]: Amazonia$main1$TEMPVAR15, STRING, Value=Incas.
+                     V[16]: Amazonia$main1$playerTiles, INT, Value=0.
+                     V[17]: Amazonia$main1$size, INT, Value=0.
+                     V[18]: Amazonia$main1$TEMPVAR18, STRING, Value=Map size=.
+                     V[19]: Amazonia$main1$TEMPVAR19, STRING, Value=m x .
+                     V[20]: Amazonia$main1$TEMPVAR20, STRING, Value=m.
+                     V[21]: Amazonia$main1$TEMPVAR21, STRING, Value=Amazon River Basin.
+                     V[22]: Amazonia$main1$TEMPVAR22, STRING, Value=amazon grass.
+                     V[23]: Amazonia$main1$TEMPVAR23, STRING, Value=amazonia.
+                     V[24]: Amazonia$main1$TEMPVAR24, STRING, Value=tropical.
+                     V[25]: Amazonia$main1$TEMPVAR25, STRING, Value=water.
+                     V[26]: Amazonia$main1$TEMPVAR26, STRING, Value=amazon.
+                     V[27]: Amazonia$main1$TEMPVAR27, STRING, Value=water.
+                     V[28]: Amazonia$main1$classPlayer, INT, Value=0.
+                     V[29]: Amazonia$main1$TEMPVAR29, STRING, Value=player.
+                     V[30]: Amazonia$main1$TEMPVAR30, STRING, Value=starting settlement.
+                     V[31]: Amazonia$main1$TEMPVAR31, STRING, Value=startingUnit.
+                     V[32]: Amazonia$main1$TEMPVAR32, STRING, Value=classForest.
+                     V[33]: Amazonia$main1$TEMPVAR33, STRING, Value=classCliff.
+                     V[34]: Amazonia$main1$TEMPVAR34, STRING, Value=importantItem.
+                     V[35]: Amazonia$main1$TEMPVAR35, STRING, Value=natives.
+                     V[36]: Amazonia$main1$classIsland, INT, Value=0.
+                     V[37]: Amazonia$main1$TEMPVAR37, STRING, Value=island.
+                     V[38]: Amazonia$main1$classTeamIsland, INT, Value=0.
+                     V[39]: Amazonia$main1$TEMPVAR39, STRING, Value=teamIsland.
+                     V[40]: Amazonia$main1$playerEdgeConstraint, INT, Value=0.
+                     V[41]: Amazonia$main1$TEMPVAR41, STRING, Value=player edge of map.
+                     V[42]: Amazonia$main1$Northward, INT, Value=0.
+                     V[43]: Amazonia$main1$TEMPVAR43, STRING, Value=northMapConstraint.
+                     V[44]: Amazonia$main1$Southward, INT, Value=0.
+                     V[45]: Amazonia$main1$TEMPVAR45, STRING, Value=southMapConstraint.
+                     V[46]: Amazonia$main1$Eastward, INT, Value=0.
+                     V[47]: Amazonia$main1$TEMPVAR47, STRING, Value=eastMapConstraint.
+                     V[48]: Amazonia$main1$Westward, INT, Value=0.
+                     V[49]: Amazonia$main1$TEMPVAR49, STRING, Value=westMapConstraint.
+                     V[50]: Amazonia$main1$playerConstraint, INT, Value=0.
+                     V[51]: Amazonia$main1$TEMPVAR51, STRING, Value=stay away from players.
+                     V[52]: Amazonia$main1$shipVsShip, INT, Value=0.
+                     V[53]: Amazonia$main1$TEMPVAR53, STRING, Value=ships avoid ship.
+                     V[54]: Amazonia$main1$TEMPVAR54, STRING, Value=ship.
+                     V[55]: Amazonia$main1$flagLand, INT, Value=0.
+                     V[56]: Amazonia$main1$TEMPVAR56, STRING, Value=flag vs land.
+                     V[57]: Amazonia$main1$TEMPVAR57, STRING, Value=land.
+                     V[58]: Amazonia$main1$flagVsFlag, INT, Value=0.
+                     V[59]: Amazonia$main1$TEMPVAR59, STRING, Value=flag avoid same.
+                     V[60]: Amazonia$main1$TEMPVAR60, STRING, Value=HomeCityWaterSpawnFlag.
+                     V[61]: Amazonia$main1$flagEdgeConstraint, INT, Value=0.
+                     V[62]: Amazonia$main1$TEMPVAR62, STRING, Value=flags stay near edge of map.
+                     V[63]: Amazonia$main1$islandConstraint, INT, Value=0.
+                     V[64]: Amazonia$main1$TEMPVAR64, STRING, Value=islands avoid each other.
+                     V[65]: Amazonia$main1$fishVsFishID, INT, Value=0.
+                     V[66]: Amazonia$main1$TEMPVAR66, STRING, Value=fish v fish.
+                     V[67]: Amazonia$main1$TEMPVAR67, STRING, Value=fish.
+                     V[68]: Amazonia$main1$fishLand, INT, Value=0.
+                     V[69]: Amazonia$main1$TEMPVAR69, STRING, Value=fish land.
+                     V[70]: Amazonia$main1$TEMPVAR70, STRING, Value=land.
+                     V[71]: Amazonia$main1$forestObjConstraint, INT, Value=0.
+                     V[72]: Amazonia$main1$TEMPVAR72, STRING, Value=forest obj.
+                     V[73]: Amazonia$main1$TEMPVAR73, STRING, Value=all.
+                     V[74]: Amazonia$main1$forestConstraint, INT, Value=0.
+                     V[75]: Amazonia$main1$TEMPVAR75, STRING, Value=forest vs. forest.
+                     V[76]: Amazonia$main1$TEMPVAR76, STRING, Value=classForest.
+                     V[77]: Amazonia$main1$avoidResource, INT, Value=0.
+                     V[78]: Amazonia$main1$TEMPVAR78, STRING, Value=resource avoid resource.
+                     V[79]: Amazonia$main1$TEMPVAR79, STRING, Value=resource.
+                     V[80]: Amazonia$main1$avoidCoin, INT, Value=0.
+                     V[81]: Amazonia$main1$TEMPVAR81, STRING, Value=avoid coin.
+                     V[82]: Amazonia$main1$TEMPVAR82, STRING, Value=gold.
+                     V[83]: Amazonia$main1$avoidNugget, INT, Value=0.
+                     V[84]: Amazonia$main1$TEMPVAR84, STRING, Value=nugget avoid nugget.
+                     V[85]: Amazonia$main1$TEMPVAR85, STRING, Value=AbstractNugget.
+                     V[86]: Amazonia$main1$avoidImpassableLand, INT, Value=0.
+                     V[87]: Amazonia$main1$TEMPVAR87, STRING, Value=avoid impassable land.
+                     V[88]: Amazonia$main1$TEMPVAR88, STRING, Value=Land.
+                     V[89]: Amazonia$main1$shortAvoidImpassableLand, INT, Value=0.
+                     V[90]: Amazonia$main1$TEMPVAR90, STRING, Value=short avoid impassable land.
+                     V[91]: Amazonia$main1$TEMPVAR91, STRING, Value=Land.
+                     V[92]: Amazonia$main1$mediumShortAvoidImpassableLand, INT, Value=0.
+                     V[93]: Amazonia$main1$TEMPVAR93, STRING, Value=mediumshort avoid impassable land.
+                     V[94]: Amazonia$main1$TEMPVAR94, STRING, Value=Land.
+                     V[95]: Amazonia$main1$mediumAvoidImpassableLand, INT, Value=0.
+                     V[96]: Amazonia$main1$TEMPVAR96, STRING, Value=medium avoid impassable land.
+                     V[97]: Amazonia$main1$TEMPVAR97, STRING, Value=Land.
+                     V[98]: Amazonia$main1$longAvoidImpassableLand, INT, Value=0.
+                     V[99]: Amazonia$main1$TEMPVAR99, STRING, Value=long avoid impassable land.
+                     V[100]: Amazonia$main1$TEMPVAR100, STRING, Value=Land.
+                     V[101]: Amazonia$main1$avoidWater4, INT, Value=0.
+                     V[102]: Amazonia$main1$TEMPVAR102, STRING, Value=avoid water.
+                     V[103]: Amazonia$main1$TEMPVAR103, STRING, Value=Land.
+                     V[104]: Amazonia$main1$avoidWater10, INT, Value=0.
+                     V[105]: Amazonia$main1$TEMPVAR105, STRING, Value=avoid water medium.
+                     V[106]: Amazonia$main1$TEMPVAR106, STRING, Value=Land.
+                     V[107]: Amazonia$main1$avoidWater20, INT, Value=0.
+                     V[108]: Amazonia$main1$TEMPVAR108, STRING, Value=avoid water large.
+                     V[109]: Amazonia$main1$TEMPVAR109, STRING, Value=Land.
+                     V[110]: Amazonia$main1$ferryOnShore, INT, Value=0.
+                     V[111]: Amazonia$main1$TEMPVAR111, STRING, Value=ferry v. water.
+                     V[112]: Amazonia$main1$TEMPVAR112, STRING, Value=water.
+                     V[113]: Amazonia$main1$avoidImportantItem, INT, Value=0.
+                     V[114]: Amazonia$main1$TEMPVAR114, STRING, Value=avoid natives, secrets.
+                     V[115]: Amazonia$main1$TEMPVAR115, STRING, Value=importantItem.
+                     V[116]: Amazonia$main1$farAvoidImportantItem, INT, Value=0.
+                     V[117]: Amazonia$main1$TEMPVAR117, STRING, Value=secrets avoid each other by a lot.
+                     V[118]: Amazonia$main1$TEMPVAR118, STRING, Value=importantItem.
+                     V[119]: Amazonia$main1$avoidTownCenter, INT, Value=0.
+                     V[120]: Amazonia$main1$TEMPVAR120, STRING, Value=avoid Town Center.
+                     V[121]: Amazonia$main1$TEMPVAR121, STRING, Value=townCenter.
+                     V[122]: Amazonia$main1$avoidTownCenterFar, INT, Value=0.
+                     V[123]: Amazonia$main1$TEMPVAR123, STRING, Value=avoid Town Center Far.
+                     V[124]: Amazonia$main1$TEMPVAR124, STRING, Value=townCenter.
+                     V[125]: Amazonia$main1$avoidAll, INT, Value=0.
+                     V[126]: Amazonia$main1$TEMPVAR126, STRING, Value=avoid all.
+                     V[127]: Amazonia$main1$TEMPVAR127, STRING, Value=all.
+                     V[128]: Amazonia$main1$avoidCliff, INT, Value=0.
+                     V[129]: Amazonia$main1$TEMPVAR129, STRING, Value=cliff vs. cliff.
+                     V[130]: Amazonia$main1$TEMPVAR130, STRING, Value=classCliff.
+                     V[131]: Amazonia$main1$avoidTradeRoute, INT, Value=0.
+                     V[132]: Amazonia$main1$TEMPVAR132, STRING, Value=trade route.
+                     V[133]: Amazonia$main1$avoidTradeRouteFar, INT, Value=0.
+                     V[134]: Amazonia$main1$TEMPVAR134, STRING, Value=trade route far.
+                     V[135]: Amazonia$main1$teamStartLoc, FLOAT, Value=0.000000.
+                     V[136]: Amazonia$main1$randomTreeID, INT, Value=0.
+                     V[137]: Amazonia$main1$TEMPVAR137, STRING, Value=random tree.
+                     V[138]: Amazonia$main1$TEMPVAR138, STRING, Value=treeamazon.
+                     V[139]: Amazonia$main1$TEMPVAR139, STRING, Value=.
+                     V[140]: Amazonia$main1$northIslandID, INT, Value=0.
+                     V[141]: Amazonia$main1$TEMPVAR141, STRING, Value=north island.
+                     V[142]: Amazonia$main1$areaSizerNum, INT, Value=0.
+                     V[143]: Amazonia$main1$areaSizer, FLOAT, Value=0.000000.
+                     V[144]: Amazonia$main1$TEMPVAR144, STRING, Value=Island size .
+                     V[145]: Amazonia$main1$TEMPVAR145, STRING, Value=caribbean grass.
+                     V[146]: Amazonia$main1$TEMPVAR146, STRING, Value=amazon grass.
+                     V[147]: Amazonia$main1$southIslandID, INT, Value=0.
+                     V[148]: Amazonia$main1$TEMPVAR148, STRING, Value=south island.
+                     V[149]: Amazonia$main1$TEMPVAR149, STRING, Value=caribbean grass.
+                     V[150]: Amazonia$main1$TEMPVAR150, STRING, Value=amazon grass.
+                     V[151]: Amazonia$main1$northIslandConstraint, INT, Value=0.
+                     V[152]: Amazonia$main1$TEMPVAR152, STRING, Value=north Island.
+                     V[153]: Amazonia$main1$southIslandConstraint, INT, Value=0.
+                     V[154]: Amazonia$main1$TEMPVAR154, STRING, Value=south Island.
+                     V[155]: Amazonia$main1$TEMPVAR155, STRING, Value=.
+                     V[156]: Amazonia$main1$startingUnits, INT, Value=0.
+                     V[157]: Amazonia$main1$TEMPVAR157, STRING, Value=.
+                     V[158]: Amazonia$main1$TEMPVAR158, STRING, Value=.
+                     V[159]: Amazonia$main1$TEMPVAR159, STRING, Value=.
+                     V[160]: Amazonia$main1$tradeRouteNum, INT, Value=0.
+                     V[161]: Amazonia$main1$tradeRouteID, INT, Value=0.
+                     V[162]: Amazonia$main1$tradeRoute2ID, INT, Value=0.
+                     V[163]: Amazonia$main1$tradeRoute3ID, INT, Value=0.
+                     V[164]: Amazonia$main1$tradeRoute4ID, INT, Value=0.
+                     V[165]: Amazonia$main1$socketID, INT, Value=0.
+                     V[166]: Amazonia$main1$TEMPVAR166, STRING, Value=sockets to dock Trade Posts.
+                     V[167]: Amazonia$main1$TEMPVAR167, STRING, Value=SocketTradeRoute.
+                     V[168]: Amazonia$main1$placedTradeRoute, BOOL, Value=0.
+                     V[169]: Amazonia$main1$TEMPVAR169, STRING, Value=dirt.
+                     V[170]: Amazonia$main1$TEMPVAR170, STRING, Value=Failed to place trade route.
+                     V[171]: Amazonia$main1$socketLoc, VECTOR, Value=(0.000000, 0.000000, 0.000000).
+                     V[172]: Amazonia$main1$placedTradeRoute2, BOOL, Value=0.
+                     V[173]: Amazonia$main1$TEMPVAR173, STRING, Value=dirt.
+                     V[174]: Amazonia$main1$TEMPVAR174, STRING, Value=Failed to place trade route.
+                     V[175]: Amazonia$main1$socket2Loc, VECTOR, Value=(0.000000, 0.000000, 0.000000).
+                     V[176]: Amazonia$main1$placedTradeRoute3, BOOL, Value=0.
+                     V[177]: Amazonia$main1$TEMPVAR177, STRING, Value=dirt.
+                     V[178]: Amazonia$main1$TEMPVAR178, STRING, Value=Failed to place trade route.
+                     V[179]: Amazonia$main1$socket3Loc, VECTOR, Value=(0.000000, 0.000000, 0.000000).
+                     V[180]: Amazonia$main1$placedTradeRoute4, BOOL, Value=0.
+                     V[181]: Amazonia$main1$TEMPVAR181, STRING, Value=dirt.
+                     V[182]: Amazonia$main1$TEMPVAR182, STRING, Value=Failed to place trade route.
+                     V[183]: Amazonia$main1$socket4Loc, VECTOR, Value=(0.000000, 0.000000, 0.000000).
+                     V[184]: Amazonia$main1$TEMPVAR184, STRING, Value=.
+                     V[185]: Amazonia$main1$TCfloat, INT, Value=0.
+                     V[186]: Amazonia$main1$TCID, INT, Value=0.
+                     V[187]: Amazonia$main1$TEMPVAR187, STRING, Value=player TC.
+                     V[188]: Amazonia$main1$TEMPVAR188, STRING, Value=CoveredWagon.
+                     V[189]: Amazonia$main1$TEMPVAR189, STRING, Value=TownCenter.
+                     V[190]: Amazonia$main1$playerMarketID, INT, Value=0.
+                     V[191]: Amazonia$main1$TEMPVAR191, STRING, Value=player market.
+                     V[192]: Amazonia$main1$TEMPVAR192, STRING, Value=market.
+                     V[193]: Amazonia$main1$waterFlagID, INT, Value=0.
+                     V[194]: Amazonia$main1$i, INT, Value=0.
+                     V[195]: Amazonia$main1$TEMPVAR195, STRING, Value=HC water flag .
+                     V[196]: Amazonia$main1$TEMPVAR196, STRING, Value=HomeCityWaterSpawnFlag.
+                     V[197]: Amazonia$main1$playerSilverID, INT, Value=0.
+                     V[198]: Amazonia$main1$TEMPVAR198, STRING, Value=player mine.
+                     V[199]: Amazonia$main1$TEMPVAR199, STRING, Value=mine.
+                     V[200]: Amazonia$main1$playerDeerID, INT, Value=0.
+                     V[201]: Amazonia$main1$TEMPVAR201, STRING, Value=player turkey.
+                     V[202]: Amazonia$main1$TEMPVAR202, STRING, Value=turkey.
+                     V[203]: Amazonia$main1$playerTreeID, INT, Value=0.
+                     V[204]: Amazonia$main1$TEMPVAR204, STRING, Value=player trees.
+                     V[205]: Amazonia$main1$TEMPVAR205, STRING, Value=TreeAmazon.
+                     V[206]: Amazonia$main1$TCLoc, VECTOR, Value=(0.000000, 0.000000, 0.000000).
+                     V[207]: Amazonia$main1$closestPoint, VECTOR, Value=(0.000000, 0.000000, 0.000000).
+                     V[208]: Amazonia$main1$NativeVillageLoc, FLOAT, Value=0.000000.
+                     V[209]: Amazonia$main1$TEMPVAR209, STRING, Value=Tupi.
+                     V[210]: Amazonia$main1$tupiVillageID, INT, Value=0.
+                     V[211]: Amazonia$main1$tupiVillageType, INT, Value=0.
+                     V[212]: Amazonia$main1$TEMPVAR212, STRING, Value=tupi village.
+                     V[213]: Amazonia$main1$TEMPVAR213, STRING, Value=native tupi village .
+                     V[214]: Amazonia$main1$TEMPVAR214, STRING, Value=natives.
+                     V[215]: Amazonia$main1$TEMPVAR215, STRING, Value=importantItem.
+                     V[216]: Amazonia$main1$TEMPVAR216, STRING, Value=Caribs.
+                     V[217]: Amazonia$main1$caribVillageID, INT, Value=0.
+                     V[218]: Amazonia$main1$caribVillageType, INT, Value=0.
+                     V[219]: Amazonia$main1$TEMPVAR219, STRING, Value=carib village.
+                     V[220]: Amazonia$main1$TEMPVAR220, STRING, Value=native carib village .
+                     V[221]: Amazonia$main1$TEMPVAR221, STRING, Value=natives.
+                     V[222]: Amazonia$main1$TEMPVAR222, STRING, Value=importantItem.
+                     V[223]: Amazonia$main1$TEMPVAR223, STRING, Value=Tupi.
+                     V[224]: Amazonia$main1$tupi2VillageID, INT, Value=0.
+                     V[225]: Amazonia$main1$tupi2VillageType, INT, Value=0.
+                     V[226]: Amazonia$main1$TEMPVAR226, STRING, Value=Tupi2 village.
+                     V[227]: Amazonia$main1$TEMPVAR227, STRING, Value=native tupi village .
+                     V[228]: Amazonia$main1$TEMPVAR228, STRING, Value=natives.
+                     V[229]: Amazonia$main1$TEMPVAR229, STRING, Value=importantItem.
+                     V[230]: Amazonia$main1$TEMPVAR230, STRING, Value=Incas.
+                     V[231]: Amazonia$main1$inca2VillageID, INT, Value=0.
+                     V[232]: Amazonia$main1$inca2VillageType, INT, Value=0.
+                     V[233]: Amazonia$main1$TEMPVAR233, STRING, Value=inca2 village.
+                     V[234]: Amazonia$main1$TEMPVAR234, STRING, Value=native inca village .
+                     V[235]: Amazonia$main1$TEMPVAR235, STRING, Value=natives.
+                     V[236]: Amazonia$main1$TEMPVAR236, STRING, Value=importantItem.
+                     V[237]: Amazonia$main1$TEMPVAR237, STRING, Value=.
+                     V[238]: Amazonia$main1$numTries, INT, Value=0.
+                     V[239]: Amazonia$main1$failCount, INT, Value=0.
+                     V[240]: Amazonia$main1$TEMPVAR240, STRING, Value=.
+                     V[241]: Amazonia$main1$southNugget1, INT, Value=0.
+                     V[242]: Amazonia$main1$TEMPVAR242, STRING, Value=south nugget easy.
+                     V[243]: Amazonia$main1$TEMPVAR243, STRING, Value=Nugget.
+                     V[244]: Amazonia$main1$northNugget1, INT, Value=0.
+                     V[245]: Amazonia$main1$TEMPVAR245, STRING, Value=north nugget easy.
+                     V[246]: Amazonia$main1$TEMPVAR246, STRING, Value=Nugget.
+                     V[247]: Amazonia$main1$southNugget2, INT, Value=0.
+                     V[248]: Amazonia$main1$TEMPVAR248, STRING, Value=south nugget medium.
+                     V[249]: Amazonia$main1$TEMPVAR249, STRING, Value=Nugget.
+                     V[250]: Amazonia$main1$northNugget2, INT, Value=0.
+                     V[251]: Amazonia$main1$TEMPVAR251, STRING, Value=north nugget medium.
+                     V[252]: Amazonia$main1$TEMPVAR252, STRING, Value=Nugget.
+                     V[253]: Amazonia$main1$southNugget3, INT, Value=0.
+                     V[254]: Amazonia$main1$TEMPVAR254, STRING, Value=south nugget hard.
+                     V[255]: Amazonia$main1$TEMPVAR255, STRING, Value=Nugget.
+                     V[256]: Amazonia$main1$northNugget3, INT, Value=0.
+                     V[257]: Amazonia$main1$TEMPVAR257, STRING, Value=north nugget hard.
+                     V[258]: Amazonia$main1$TEMPVAR258, STRING, Value=Nugget.
+                     V[259]: Amazonia$main1$nuggetNutsNum, INT, Value=0.
+                     V[260]: Amazonia$main1$southNugget4, INT, Value=0.
+                     V[261]: Amazonia$main1$TEMPVAR261, STRING, Value=south nugget nuts.
+                     V[262]: Amazonia$main1$TEMPVAR262, STRING, Value=Nugget.
+                     V[263]: Amazonia$main1$northNugget4, INT, Value=0.
+                     V[264]: Amazonia$main1$TEMPVAR264, STRING, Value=north nugget nuts.
+                     V[265]: Amazonia$main1$TEMPVAR265, STRING, Value=Nugget.
+                     V[266]: Amazonia$main1$fishID, INT, Value=0.
+                     V[267]: Amazonia$main1$TEMPVAR267, STRING, Value=fish.
+                     V[268]: Amazonia$main1$TEMPVAR268, STRING, Value=FishBass.
+                     V[269]: Amazonia$main1$TEMPVAR269, STRING, Value=.
+                     V[270]: Amazonia$main1$silverType, INT, Value=0.
+                     V[271]: Amazonia$main1$silverID, INT, Value=0.
+                     V[272]: Amazonia$main1$silverCount, INT, Value=0.
+                     V[273]: Amazonia$main1$TEMPVAR273, STRING, Value=silver count = .
+                     V[274]: Amazonia$main1$southSilverID, INT, Value=0.
+                     V[275]: Amazonia$main1$TEMPVAR275, STRING, Value=south silver .
+                     V[276]: Amazonia$main1$TEMPVAR276, STRING, Value=mine.
+                     V[277]: Amazonia$main1$TEMPVAR277, STRING, Value=north silver .
+                     V[278]: Amazonia$main1$TEMPVAR278, STRING, Value=mine.
+                     V[279]: Amazonia$main1$forestTreeID, INT, Value=0.
+                     V[280]: Amazonia$main1$forest, INT, Value=0.
+                     V[281]: Amazonia$main1$TEMPVAR281, STRING, Value=forest.
+                     V[282]: Amazonia$main1$TEMPVAR282, STRING, Value=amazon rain forest.
+                     V[283]: Amazonia$main1$TEMPVAR283, STRING, Value=classForest.
+                     V[284]: Amazonia$main1$TEMPVAR284, STRING, Value=.
+                     V[285]: Amazonia$main1$tapirCount, INT, Value=0.
+                     V[286]: Amazonia$main1$capyCount, INT, Value=0.
+                     V[287]: Amazonia$main1$tapirNID, INT, Value=0.
+                     V[288]: Amazonia$main1$TEMPVAR288, STRING, Value=north tapir crash.
+                     V[289]: Amazonia$main1$TEMPVAR289, STRING, Value=tapir.
+                     V[290]: Amazonia$main1$tapirSID, INT, Value=0.
+                     V[291]: Amazonia$main1$TEMPVAR291, STRING, Value=south tapir crash.
+                     V[292]: Amazonia$main1$TEMPVAR292, STRING, Value=tapir.
+                     V[293]: Amazonia$main1$TEMPVAR293, STRING, Value=.
+                     V[294]: Amazonia$main1$capybaraNID, INT, Value=0.
+                     V[295]: Amazonia$main1$TEMPVAR295, STRING, Value=north capybara crash.
+                     V[296]: Amazonia$main1$TEMPVAR296, STRING, Value=capybara.
+                     V[297]: Amazonia$main1$capybaraSID, INT, Value=0.
+                     V[298]: Amazonia$main1$TEMPVAR298, STRING, Value=south capybara crash.
+                     V[299]: Amazonia$main1$TEMPVAR299, STRING, Value=capybara.
+                     V[300]: Amazonia$main1$TEMPVAR300, STRING, Value=.
+
+0 Function Overloads:
+
+0 User Rule Groups:
+
+0 User Rules:
+
+317 Syscalls:
+  void           xsDisableRule( string= ) ID=0.
+  void           xsDisableSelf() ID=1.
+  void           xsEnableRule( string= ) ID=2.
+  bool           xsIsRuleEnabled( string= ) ID=3.
+  void           xsSetRulePriority( string=, int=0 ) ID=4.
+  void           xsSetRulePrioritySelf( int=0 ) ID=5.
+  void           xsSetRuleMinInterval( string=, int=0 ) ID=6.
+  void           xsSetRuleMinIntervalSelf( int=0 ) ID=7.
+  void           xsSetRuleMaxInterval( string=, int=0 ) ID=8.
+  void           xsSetRuleMaxIntervalSelf( int=0 ) ID=9.
+  void           xsEnableRuleGroup( string= ) ID=10.
+  void           xsDisableRuleGroup( string= ) ID=11.
+  void           xsIsRuleGroupEnabled( string= ) ID=12.
+  float          xsVectorGetX(  vector=(0.000000, 0.000000, 0.000000) ) ID=13.
+  float          xsVectorGetY(  vector=(0.000000, 0.000000, 0.000000) ) ID=14.
+  float          xsVectorGetZ(  vector=(0.000000, 0.000000, 0.000000) ) ID=15.
+  vector         xsVectorSetX(  vector=(0.000000, 0.000000, 0.000000), float=0.000000 ) ID=16.
+  vector         xsVectorSetY(  vector=(0.000000, 0.000000, 0.000000), float=0.000000 ) ID=17.
+  vector         xsVectorSetZ(  vector=(0.000000, 0.000000, 0.000000), float=0.000000 ) ID=18.
+  vector         xsVectorSet( float=0.000000, float=0.000000, float=0.000000 ) ID=19.
+  float          xsVectorLength(  vector=(0.000000, 0.000000, 0.000000) ) ID=20.
+  vector         xsVectorNormalize(  vector=(0.000000, 0.000000, 0.000000) ) ID=21.
+  int            xsArrayCreateInt( int=-1, int=0, string= ) ID=22.
+  bool           xsArraySetInt( int=-1, int=-1, int=-1 ) ID=23.
+  int            xsArrayGetInt( int=-1, int=-1 ) ID=24.
+  int            xsArrayCreateFloat( int=-1, float=0.000000, string= ) ID=25.
+  bool           xsArraySetFloat( int=-1, int=-1, float=-1.000000 ) ID=26.
+  float          xsArrayGetFloat( int=-1, int=-1 ) ID=27.
+  int            xsArrayCreateBool( int=-1, bool=0, string= ) ID=28.
+  bool           xsArraySetBool( int=-1, int=-1, bool=0 ) ID=29.
+  bool           xsArrayGetBool( int=-1, int=-1 ) ID=30.
+  int            xsArrayCreateString( int=-1, string=<default string>, string= ) ID=31.
+  bool           xsArraySetString( int=-1, int=-1, string=<default string> ) ID=32.
+  string         xsArrayGetString( int=-1, int=-1 ) ID=33.
+  int            xsArrayCreateVector( int=-1,  vector=(-1.000000, -1.000000, -1.000000), string= ) ID=34.
+  bool           xsArraySetVector( int=-1, int=-1,  vector=(-1.000000, -1.000000, -1.000000) ) ID=35.
+  vector         xsArrayGetVector( int=-1, int=-1 ) ID=36.
+  int            xsArrayGetSize( int=-1 ) ID=37.
+  void           xsDumpArrays() ID=38.
+  int            xsGetContextPlayer() ID=39.
+  void           xsSetContextPlayer( int=-1 ) ID=40.
+  int            xsGetTime() ID=41.
+  bool           xsAddRuntimeEvent( string=, string=, int=-1 ) ID=42.
+  int            xsGetFunctionID( string= ) ID=43.
+  void           rmEchoWarning( string=None ) ID=44.
+  void           rmEchoError( string=None ) ID=45.
+  void           rmEchoInfo( string=None ) ID=46.
+  float          rmRandFloat( float=0.000000, float=1.000000 ) ID=47.
+  int            rmRandInt( int=0, int=1 ) ID=48.
+  bool           rmGetNomadStart() ID=49.
+  bool           rmGetIsFFA() ID=50.
+  bool           rmSetMapSize( float=-1.000000, float=-1.000000 ) ID=51.
+  int            rmGetMapXSize() ID=52.
+  int            rmGetMapZSize() ID=53.
+  void           rmSetSeaLevel( float=0.000000 ) ID=54.
+  float          rmGetSeaLevel() ID=55.
+  bool           rmSetSeaType( string= ) ID=56.
+  bool           rmSetMapElevationParameters( int=0, float=0.100000, int=4, float=0.100000, float=6.000000 ) ID=57.
+  bool           rmSetBaseTerrainMix( string= ) ID=58.
+  bool           rmAddMapTerrainByHeightInfo( string=, float=0.000000, float=0.000000, float=0.000000 ) ID=59.
+  bool           rmAddMapTerrainByAngleInfo( string=, float=0.000000, float=0.000000, float=0.000000 ) ID=60.
+  bool           rmSetMapElevationHeightBlend( int=0 ) ID=61.
+  bool           rmPlaceMapClusters( string=, string= ) ID=62.
+  bool           rmSetMapClusteringPlacementParams( float=0.400000, float=0.400000, float=1.000000, int=0 ) ID=63.
+  bool           rmSetMapClusteringObjectParams( int=0, int=3, float=0.500000 ) ID=64.
+  bool           rmSetMapClusteringNoiseParams( float=0.200000, int=4, float=0.150000 ) ID=65.
+  int            rmAreaFractionToTiles( float=0.000000 ) ID=66.
+  float          rmAreaTilesToFraction( int=0 ) ID=67.
+  int            rmXFractionToTiles( float=0.000000 ) ID=68.
+  float          rmXTilesToFraction( int=0 ) ID=69.
+  int            rmZFractionToTiles( float=0.000000 ) ID=70.
+  float          rmZTilesToFraction( int=0 ) ID=71.
+  float          rmDegreesToRadians( float=0.000000 ) ID=72.
+  int            rmMetersToTiles( float=0.000000 ) ID=73.
+  float          rmTilesToMeters( int=0 ) ID=74.
+  float          rmXMetersToFraction( float=0.000000 ) ID=75.
+  float          rmZMetersToFraction( float=0.000000 ) ID=76.
+  float          rmXFractionToMeters( float=0.000000 ) ID=77.
+  float          rmZFractionToMeters( float=0.000000 ) ID=78.
+  int            rmCreateArea( string=, int=-1 ) ID=79.
+  bool           rmSetAreaSize( int=-1, float=0.000000, float=0.000000 ) ID=80.
+  bool           rmSetAreaEdgeFilling( int=-1, int=0 ) ID=81.
+  bool           rmSetAreaLocation( int=-1, float=0.000000, float=0.000000 ) ID=82.
+  bool           rmSetAreaLocPlayer( int=-1, int=-1 ) ID=83.
+  bool           rmSetAreaLocTeam( int=-1, int=-1 ) ID=84.
+  bool           rmBuildArea( int=-1 ) ID=85.
+  int            rmBuildAllAreas() ID=86.
+  bool           rmSetAreaTerrainType( int=-1, string= ) ID=87.
+  bool           rmSetAreaMix( int=-1, string= ) ID=88.
+  bool           rmPaintAreaTerrain( int=-1 ) ID=89.
+  bool           rmPaintAreaTerrainByHeight( int=-1, string=, float=0.000000, float=0.000000, float=0.000000 ) ID=90.
+  bool           rmPaintAreaTerrainByAngle( int=-1, string=, float=0.000000, float=0.000000, float=0.000000 ) ID=91.
+  bool           rmSetAreaBaseHeight( int=-1, float=0.000000 ) ID=92.
+  bool           rmSetAreaWarnFailure( int=-1, bool=1 ) ID=93.
+  bool           rmSetAreaForestType( int=-1, string= ) ID=94.
+  bool           rmSetAreaForestDensity( int=-1, float=1.000000 ) ID=95.
+  bool           rmSetAreaForestClumpiness( int=-1, float=0.500000 ) ID=96.
+  bool           rmSetAreaForestUnderbrush( int=-1, float=0.500000 ) ID=97.
+  bool           rmSetAreaWaterType( int=-1, string= ) ID=98.
+  vector         rmGetAreaClosestPoint( int=-1,  vector=(-1.000000, -1.000000, -1.000000), float=3.000000, int=-1 ) ID=99.
+  bool           rmSetAreaCliffType( int=-1, string= ) ID=100.
+  bool           rmSetAreaCliffPainting( int=-1, bool=1, bool=1, bool=1, float=1.500000, bool=1 ) ID=101.
+  bool           rmSetAreaCliffEdge( int=-1, int=1, float=0.500000, float=0.000000, float=1.000000, int=0 ) ID=102.
+  bool           rmSetAreaCliffHeight( int=-1, float=4.000000, float=0.000000, float=0.500000 ) ID=103.
+  bool           rmAddAreaCliffEdgeAvoidClass( int=-1, int=-1, float=0.000000 ) ID=104.
+  int            rmRiverCreate( int=-1, string=, int=5, int=15, int=5, int=10 ) ID=105.
+  bool           rmRiverSetConnections( int=-1, float=0.000000, float=0.000000, float=0.000000, float=0.000000 ) ID=106.
+  bool           rmRiverConnectRiver( int=-1, int=-1, float=0.000000, float=0.000000, float=0.000000 ) ID=107.
+  bool           rmRiverAddWaypoint( int=-1, float=0.000000, float=0.000000 ) ID=108.
+  bool           rmRiverSetBankNoiseParams( int=-1, float=0.050000, int=5, float=0.500000, float=10.000000, float=0.667000, float=0.000000 ) ID=109.
+  bool           rmRiverSetShallowRadius( int=-1, int=3 ) ID=110.
+  bool           rmRiverAddShallow( int=-1, float=0.000000 ) ID=111.
+  bool           rmRiverAddShallows( int=-1, int=-1, int=3 ) ID=112.
+  bool           rmRiverAvoid( int=-1, int=-1, float=0.000000 ) ID=113.
+  bool           rmRiverBuild( int=-1 ) ID=114.
+  bool           rmRiverReveal( int=-1, int=0 ) ID=115.
+  bool           rmSetRiverFoundationParams( int=8, float=0.500000 ) ID=116.
+  bool           rmSetWorldCircleConstraint( bool=0 ) ID=117.
+  bool           rmSetAreaObeyWorldCircleConstraint( int=-1, bool=1 ) ID=118.
+  bool           rmAddAreaTerrainLayer( int=-1, string=, float=0.000000, float=0.000000 ) ID=119.
+  bool           rmSetAreaTerrainLayerVariance( int=-1, bool=1 ) ID=120.
+  bool           rmSetAreaMinBlobs( int=-1, int=0 ) ID=121.
+  bool           rmSetAreaMaxBlobs( int=-1, int=0 ) ID=122.
+  bool           rmSetAreaMinBlobDistance( int=-1, float=0.000000 ) ID=123.
+  bool           rmSetAreaMaxBlobDistance( int=-1, float=0.000000 ) ID=124.
+  bool           rmSetAreaCoherence( int=-1, float=0.000000 ) ID=125.
+  bool           rmSetAreaSmoothDistance( int=-1, int=0 ) ID=126.
+  bool           rmSetAreaHeightBlend( int=-1, int=1 ) ID=127.
+  int            rmAreaID( string= ) ID=128.
+  bool           rmAddAreaInfluencePoint( int=-1, float=0.000000, float=0.000000 ) ID=129.
+  bool           rmAddAreaInfluenceSegment( int=-1, float=0.000000, float=0.000000, float=0.000000, float=0.000000 ) ID=130.
+  bool           rmAddAreaRemoveType( int=-1, string= ) ID=131.
+  bool           rmAddAreaTerrainReplacement( int=-1, string=, string= ) ID=132.
+  bool           rmSetAreaElevationType( int=-1, int=0 ) ID=133.
+  bool           rmSetAreaElevationMinFrequency( int=-1, float=0.100000 ) ID=134.
+  bool           rmSetAreaElevationOctaves( int=-1, int=4 ) ID=135.
+  bool           rmSetAreaElevationPersistence( int=-1, float=0.100000 ) ID=136.
+  bool           rmSetAreaElevationVariation( int=-1, float=6.000000 ) ID=137.
+  bool           rmSetAreaElevationEdgeFalloffDist( int=-1, float=0.000000 ) ID=138.
+  bool           rmSetAreaElevationNoiseBias( int=-1, float=6.000000 ) ID=139.
+  bool           rmSetAreaReveal( int=-1, int=-1 ) ID=140.
+  void           rmSetGlobalSnow( float=-1.000000 ) ID=141.
+  void           rmSetGlobalRain( float=-1.000000 ) ID=142.
+  void           rmSetGlobalStormLength( int=20, int=60 ) ID=143.
+  void           rmSetWindMagnitude( float=1.000000 ) ID=144.
+  void           rmTerrainInitialize( string=, float=10.000000 ) ID=145.
+  void           rmFillMapCorners() ID=146.
+  void           rmSetLightingSet( string= ) ID=147.
+  void           rmDoLightingFade( string=None, float=0.000000 ) ID=148.
+  void           rmDoLightingEffect( string=None, float=0.000000, float=0.000000, float=0.000000 ) ID=149.
+  void           rmSetGaiaCiv( int=0 ) ID=150.
+  bool           rmAllocateSubCivs( int=0 ) ID=151.
+  bool           rmSetSubCiv( int=0, string=, bool=0 ) ID=152.
+  int            rmGetCivID( string= ) ID=153.
+  int            rmAddMerc( string=, float=0.000000, float=0.000000, float=30.000000, float=2.000000, bool=1 ) ID=154.
+  bool           rmSetPlayerLocation( int=-1, float=0.000000, float=0.000000 ) ID=155.
+  void           rmSetPlayerPlacementArea( float=0.000000, float=0.000000, float=1.000000, float=1.000000 ) ID=156.
+  void           rmSetTeamSpacingModifier( float=1.000000 ) ID=157.
+  void           rmSetPlacementTeam( int=-1 ) ID=158.
+  void           rmSetPlacementSection( float=0.000000, float=1.000000 ) ID=159.
+  bool           rmPlacePlayersCircular( float=0.000000, float=0.000000, float=0.000000 ) ID=160.
+  bool           rmPlacePlayersSquare( float=0.000000, float=0.000000, float=0.000000 ) ID=161.
+  bool           rmPlacePlayersLine( float=0.000000, float=0.000000, float=0.000000, float=0.000000, float=0.000000, float=0.000000 ) ID=162.
+  bool           rmPlacePlayersRiver( int=-1, float=0.000000, float=0.000000, float=0.000000 ) ID=163.
+  bool           rmPlacePlayer( int=0, float=0.000000, float=0.000000 ) ID=164.
+  bool           rmSetPlayerArea( int=-1, int=-1 ) ID=165.
+  float          rmPlayerLocXFraction( int=-1 ) ID=166.
+  float          rmPlayerLocZFraction( int=-1 ) ID=167.
+  int            rmAddFairLoc( string=, bool=1, bool=1, float=0.000000, float=0.000000, float=0.000000, float=0.000000, bool=0, bool=0 ) ID=168.
+  bool           rmPlaceFairLocs( int=-1 ) ID=169.
+  void           rmResetFairLocs() ID=170.
+  int            rmGetNumberFairLocs( int=-1 ) ID=171.
+  float          rmFairLocXFraction( int=-1, int=-1 ) ID=172.
+  float          rmFairLocZFraction( int=-1, int=-1 ) ID=173.
+  bool           rmSetPlayerResource( int=-1, string=, float=0.000000 ) ID=174.
+  bool           rmAddPlayerResource( int=-1, string=, float=0.000000 ) ID=175.
+  bool           rmMultiplyPlayerResource( int=-1, string=, float=0.000000 ) ID=176.
+  string         rmGetPlayerName( int=-1 ) ID=177.
+  int            rmGetPlayerTeam( int=-1 ) ID=178.
+  int            rmGetPlayerCiv( int=-1 ) ID=179.
+  int            rmGetPlayerCulture( int=-1 ) ID=180.
+  int            rmGetNumberPlayersOnTeam( int=-1 ) ID=181.
+  bool           rmSetTeamArea( int=-1, int=-1 ) ID=182.
+  int            rmCreateBoxConstraint( string=, float=0.000000, float=0.000000, float=0.000000, float=0.000000, float=0.100000 ) ID=183.
+  int            rmCreatePieConstraint( string=, float=0.000000, float=0.000000, float=0.000000, float=0.000000, float=0.000000, float=0.000000, float=0.100000 ) ID=184.
+  int            rmCreateAreaOverlapConstraint( string=, int=-1 ) ID=185.
+  int            rmCreateAreaConstraint( string=, int=-1 ) ID=186.
+  int            rmCreateAreaDistanceConstraint( string=, int=-1, float=-1.000000 ) ID=187.
+  int            rmCreateAreaMaxDistanceConstraint( string=, int=-1, float=-1.000000 ) ID=188.
+  int            rmCreateEdgeConstraint( string=, int=-1 ) ID=189.
+  int            rmCreateEdgeDistanceConstraint( string=, int=-1, float=-1.000000 ) ID=190.
+  int            rmCreateEdgeMaxDistanceConstraint( string=, int=-1, float=-1.000000 ) ID=191.
+  int            rmCreateCliffEdgeConstraint( string=, int=-1 ) ID=192.
+  int            rmCreateCliffEdgeDistanceConstraint( string=, int=-1, float=-1.000000 ) ID=193.
+  int            rmCreateCliffEdgeMaxDistanceConstraint( string=, int=-1, float=-1.000000 ) ID=194.
+  int            rmCreateCliffRampConstraint( string=, int=-1 ) ID=195.
+  int            rmCreateCliffRampDistanceConstraint( string=, int=-1, float=-1.000000 ) ID=196.
+  int            rmCreateCliffRampMaxDistanceConstraint( string=, int=-1, float=-1.000000 ) ID=197.
+  int            rmCreateClassDistanceConstraint( string=, int=-1, float=-1.000000 ) ID=198.
+  int            rmCreateTypeDistanceConstraint( string=, string=, float=-1.000000 ) ID=199.
+  int            rmCreateTerrainDistanceConstraint( string=, string=, bool=0, float=-1.000000 ) ID=200.
+  int            rmCreateTerrainMaxDistanceConstraint( string=, string=, bool=0, float=-1.000000 ) ID=201.
+  int            rmCreateCornerConstraint( string=, int=-1, bool=1 ) ID=202.
+  int            rmCreateTradeRouteDistanceConstraint( string=, float=0.000000 ) ID=203.
+  bool           rmAddAreaConstraint( int=-1, int=-1 ) ID=204.
+  bool           rmCreateHCGPConstraint( string=, float=0.000000 ) ID=205.
+  bool           rmCreateHCGPSelfConstraint( string=, int=-1, float=0.000000 ) ID=206.
+  bool           rmCreateHCGPAllyConstraint( string=, int=-1, float=0.000000 ) ID=207.
+  bool           rmCreateHCGPEnemyConstraint( string=, int=-1, float=0.000000 ) ID=208.
+  int            rmCreateMaxHeightConstraint( string=, float=0.000000 ) ID=209.
+  bool           rmAddFairLocConstraint( int=-1, int=-1 ) ID=210.
+  bool           rmAddObjectDefConstraint( int=-1, int=-1 ) ID=211.
+  int            rmDefineClass( string= ) ID=212.
+  bool           rmAddAreaToClass( int=-1, int=-1 ) ID=213.
+  bool           rmAddObjectDefToClass( int=-1, int=-1 ) ID=214.
+  int            rmClassID( string= ) ID=215.
+  int            rmConstraintID( string= ) ID=216.
+  int            rmCreateObjectDef( string= ) ID=217.
+  int            rmCreateStartingUnitsObjectDef( float=3.000000 ) ID=218.
+  bool           rmSetObjectDefMinDistance( int=-1, float=0.000000 ) ID=219.
+  bool           rmSetObjectDefMaxDistance( int=-1, float=0.000000 ) ID=220.
+  bool           rmSetObjectDefGarrisonSecondaryUnits( int=-1, bool=1 ) ID=221.
+  bool           rmSetObjectDefGarrisonStartingUnits( int=-1, bool=1 ) ID=222.
+  bool           rmSetObjectDefCreateHerd( int=-1, bool=1 ) ID=223.
+  bool           rmSetObjectDefHerdAngle( int=-1, float=45.000000 ) ID=224.
+  bool           rmSetObjectDefAllowOverlap( int=-1, bool=1 ) ID=225.
+  bool           rmSetObjectDefForceFullRotation( int=-1, bool=1 ) ID=226.
+  bool           rmAddObjectDefItem( int=-1, string=, int=0, float=0.000000 ) ID=227.
+  bool           rmAddObjectDefItemByTypeID( int=-1, int=-1, int=0, float=0.000000 ) ID=228.
+  int            rmPlaceObjectDefAtLoc( int=-1, int=-1, float=0.000000, float=0.000000, int=1 ) ID=229.
+  int            rmPlaceObjectDefAtPoint( int=-1, int=-1,  vector=(-1.000000, -1.000000, -1.000000), int=1 ) ID=230.
+  int            rmSetObjectDefTradeRouteID( int=-1, int=-1 ) ID=231.
+  int            rmPlaceObjectDefPerPlayer( int=-1, bool=1, int=1 ) ID=232.
+  int            rmPlaceObjectDefAtAreaLoc( int=-1, int=-1, int=-1, int=1 ) ID=233.
+  int            rmPlaceObjectDefInArea( int=-1, int=-1, int=-1, int=1 ) ID=234.
+  int            rmPlaceObjectDefAtRandomAreaOfClass( int=-1, int=-1, int=-1, int=1 ) ID=235.
+  int            rmPlaceObjectDefInRandomAreaOfClass( int=-1, int=-1, int=-1, int=1 ) ID=236.
+  int            rmCreateConnection( string= ) ID=237.
+  int            rmSetConnectionType( int=-1, int=0, bool=1, float=1.000000 ) ID=238.
+  bool           rmAddConnectionArea( int=-1, int=-1 ) ID=239.
+  bool           rmSetConnectionPositionVariance( int=-1, float=0.000000 ) ID=240.
+  bool           rmSetConnectionWidth( int=-1, float=0.000000, float=0.000000 ) ID=241.
+  bool           rmSetConnectionBaseHeight( int=-1, float=0.000000 ) ID=242.
+  bool           rmSetConnectionCoherence( int=-1, float=0.000000 ) ID=243.
+  bool           rmSetConnectionWarnFailure( int=-1, bool=0 ) ID=244.
+  bool           rmSetConnectionHeightBlend( int=-1, int=0 ) ID=245.
+  bool           rmSetConnectionSmoothDistance( int=-1, int=0 ) ID=246.
+  bool           rmAddConnectionTerrainReplacement( int=-1, string=, string= ) ID=247.
+  bool           rmSetConnectionTerrainCost( int=-1, string=, float=1.000000 ) ID=248.
+  bool           rmSetConnectionBaseTerrainCost( int=-1, float=1.000000 ) ID=249.
+  bool           rmBuildConnection( int=-1 ) ID=250.
+  bool           rmAddConnectionToClass( int=-1, int=-1 ) ID=251.
+  bool           rmAddConnectionConstraint( int=-1, int=-1 ) ID=252.
+  bool           rmAddConnectionStartConstraint( int=-1, int=-1 ) ID=253.
+  bool           rmAddConnectionEndConstraint( int=-1, int=-1 ) ID=254.
+  void           rmSetStatusText( string=, float=0.000000 ) ID=255.
+  float          sqrt( float=0.000000 ) ID=256.
+  void           rmSetVPFile( string= ) ID=257.
+  int            rmCreateTrigger( string= ) ID=258.
+  bool           rmSwitchToTrigger( int=-1 ) ID=259.
+  int            rmTriggerID( string= ) ID=260.
+  int            rmSetTriggerPriority( int=2 ) ID=261.
+  int            rmSetTriggerActive( bool=1 ) ID=262.
+  int            rmSetTriggerRunImmediately( bool=0 ) ID=263.
+  int            rmSetTriggerLoop( bool=0 ) ID=264.
+  int            rmAddTriggerCondition( string= ) ID=265.
+  bool           rmSetTriggerConditionParam( string=, string=, bool=0 ) ID=266.
+  bool           rmSetTriggerConditionParamInt( string=, int=0, bool=0 ) ID=267.
+  bool           rmSetTriggerConditionParamFloat( string=, float=0.000000, bool=0 ) ID=268.
+  bool           rmSetTriggerConditionParamArmy( string=, int=-1, int=-1, bool=0 ) ID=269.
+  bool           rmAddTriggerEffect( string= ) ID=270.
+  int            rmSetTriggerEffectParam( string=, string=, bool=0 ) ID=271.
+  bool           rmSetTriggerEffectParamInt( string=, int=0, bool=0 ) ID=272.
+  bool           rmSetTriggerEffectParamFloat( string=, float=0.000000, bool=0 ) ID=273.
+  bool           rmSetTriggerEffectParamArmy( string=, int=-1, int=-1, bool=0 ) ID=274.
+  int            rmCreateArmy( int=-1, string= ) ID=275.
+  bool           rmAddUnitsToArmy( int=-1, int=-1, int=-1 ) ID=276.
+  int            rmGetNumberUnitsPlaced( int=-1 ) ID=277.
+  int            rmGetUnitPlaced( int=-1, int=-1 ) ID=278.
+  int            rmGetUnitPlacedOfPlayer( int=-1, int=-1 ) ID=279.
+  bool           rmDefineConstant( string=, int=-1 ) ID=280.
+  void           rmSetIgnoreForceToGaia( bool=0 ) ID=281.
+  int            rmCreateGrouping( string=, string= ) ID=282.
+  bool           rmAddGroupingConstraint( int=-1, int=-1 ) ID=283.
+  int            rmPlaceGroupingAtLoc( int=-1, int=-1, float=0.000000, float=0.000000, int=1 ) ID=284.
+  int            rmPlaceGroupingAtPoint( int=-1, int=-1,  vector=(-1.000000, -1.000000, -1.000000), int=1 ) ID=285.
+  int            rmPlaceGroupingInArea( int=-1, int=-1, int=-1, int=1 ) ID=286.
+  bool           rmSetGroupingMinDistance( int=-1, float=0.000000 ) ID=287.
+  bool           rmSetGroupingMaxDistance( int=-1, float=0.000000 ) ID=288.
+  bool           rmAddGroupingToClass( int=-1, int=-1 ) ID=289.
+  int            rmCreateTradeRoute() ID=290.
+  bool           rmAddTradeRouteWaypoint( int=-1, float=0.000000, float=0.000000 ) ID=291.
+  bool           rmAddTradeRouteWaypointVector( int=-1,  vector=(0.000000, 0.000000, 0.000000) ) ID=292.
+  bool           rmAddRandomTradeRouteWaypoints( int=-1, float=0.000000, float=0.000000, int=0, float=0.000000 ) ID=293.
+  bool           rmAddRandomTradeRouteWaypointsVector( int=-1,  vector=(0.000000, 0.000000, 0.000000), int=0, float=0.000000 ) ID=294.
+  bool           rmCreateTradeRouteWaypointsInArea( int=-1, int=-1, float=0.000000 ) ID=295.
+  vector         rmGetTradeRouteWayPoint( int=-1, float=0.000000 ) ID=296.
+  bool           rmBuildTradeRoute( int=-1, string= ) ID=297.
+  bool           rmSetHomeCityGatherPoint( int=-1,  vector=(-1.000000, -1.000000, -1.000000) ) ID=298.
+  bool           rmSetHomeCityWaterSpawnPoint( int=-1,  vector=(-1.000000, -1.000000, -1.000000) ) ID=299.
+  int            rmGetLowHomeCityLevel() ID=300.
+  int            rmGetAverageHomeCityLevel() ID=301.
+  int            rmGetHighHomeCityLevel() ID=302.
+  int            rmGetHomeCityLevel( int=-1 ) ID=303.
+  vector         rmGetUnitPosition( int=-1 ) ID=304.
+  void           rmSetMapType( string= ) ID=305.
+  bool           rmIsMapType( string= ) ID=306.
+  void           rmEnableLocalWater( bool=0 ) ID=307.
+  bool           rmAddClosestPointConstraint( int=-1 ) ID=308.
+  void           rmClearClosestPointConstraints() ID=309.
+  vector         rmFindClosestPoint( float=0.000000, float=0.000000, float=0.000000 ) ID=310.
+  vector         rmFindClosestPointVector(  vector=(0.000000, 0.000000, 0.000000), float=0.000000 ) ID=311.
+  int            rmFindCloserArea( float=0.000000, float=0.000000, int=-1, int=-1 ) ID=312.
+  bool           rmAddAreaCliffWaypoint( int=-1, float=0.000000, float=0.000000 ) ID=313.
+  bool           rmAddAreaCliffRandomWaypoints( int=-1, float=0.000000, float=0.000000, int=0, float=0.000000 ) ID=314.
+  void           rmSetNuggetDifficulty( int=0, int=2147483647 ) ID=315.
+  void           rmSetOceanReveal( bool=1 ) ID=316.
+
+0 User Classes:
+
+
+
