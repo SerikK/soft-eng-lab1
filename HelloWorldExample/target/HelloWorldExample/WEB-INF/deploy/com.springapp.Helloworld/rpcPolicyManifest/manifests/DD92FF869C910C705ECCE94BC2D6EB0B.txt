@@ -1,2 +1,0 @@
-serviceClass: com.springapp.client.appService
-path: 35F8228B8171276875F072030B5905DD.gwt.rpc

@@ -1,7 +1,0 @@
-A3 ex2
-1. In first page, At the back side something is written, it interrupts to read
-2. At the bottom sides, there is no written about page number and name of topic, so when someone tries to find something it can be more difficult
-3. In overall descriptions, it can be better to understand if we can see description firstly, and then diagrams.
-
-Dean can register new student and new cources.
-This document is decorated good.
